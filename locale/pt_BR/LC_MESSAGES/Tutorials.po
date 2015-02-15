@@ -1,0 +1,67 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-15 10:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../Tutorials.rst:5
+msgid "Quick Start Tutorial"
+msgstr ""
+
+#: ../../Tutorials.rst:11
+msgid ""
+"The following is a basic tutorial about the use of the Semi-Automatic "
+"Classification Plugin. If you don't have any experience about remote sensing"
+" it is recommended to read the :ref:`remote_sensing` before this tutorial."
+msgstr ""
+
+#: ../../Tutorials.rst:14
+msgid "**AVAILABLE SOON**"
+msgstr ""
+
+#: ../../Tutorials.rst:16
+msgid ""
+"Please, visit the blog `From GIS to Remote Sensing "
+"<http://fromgistors.blogspot.com/search/label/Tutorial>`_ for other "
+"tutorials such as:"
+msgstr ""
+
+#: ../../Tutorials.rst:18
+msgid ""
+"`Supervised Classification of Hyperspectral Data "
+"<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
+"hyperspectral.html>`_;"
+msgstr ""
+
+#: ../../Tutorials.rst:20
+msgid ""
+"`Monitoring deforestation <http://fromgistors.blogspot.com/2014/09"
+"/monitoring-changes-in-amazon-rainforest.html>`_;"
+msgstr ""
+
+#: ../../Tutorials.rst:22
+msgid ""
+"`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
+"tutorial-using-semi.html>`_;"
+msgstr ""
+
+#: ../../Tutorials.rst:24
+msgid ""
+"`Estimation of Land Surface Temperature with Landsat Thermal Infrared Band "
+"<http://fromgistors.blogspot.com/2014/01/estimation-of-land-surface-"
+"temperature.html>`_;"
+msgstr ""
+
+#: ../../Tutorials.rst:26
+msgid ""
+"`Land Cover Classification of Cropland "
+"<http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-"
+"cropland.html>`_."
+msgstr ""

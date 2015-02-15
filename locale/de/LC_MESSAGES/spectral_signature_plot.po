@@ -1,0 +1,221 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-15 10:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../spectral_signature_plot.rst:5
+msgid "Spectral Signature Plot"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:11
+msgid ""
+"The ``Spectral Signature Plot`` window allows for the displaying of spectral"
+" signature plots, which are the signature values (usually reflectance) as a "
+"function of wavelength. Signatures can be added to the ``Spectral Signature "
+"Plot`` through the :ref:`roi_dock` and the :ref:`classification_dock`. Only "
+"signatures checked in the :ref:`signature_list_plot` are displayed (which is"
+" independent from :ref:`signature_list` in the :ref:`classification_dock` )."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:19
+msgid ":guilabel:`Spectral Signature Plot`"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:24
+msgid "Plot Signature list"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:31
+msgid "Table fields:"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:27
+msgid ""
+"``S`` : checkbox field; if checked, then signature is displayed in the plot;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:28
+msgid "``MC ID`` : Macroclass ID;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:29
+msgid "``MC Info`` : Macroclass Information;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:30
+msgid "``Class ID`` : Class ID;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:31
+msgid "``C Info`` : Class Information;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:32
+msgid "``Color`` : color field; double click to select a color for the plot;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:33
+msgid ""
+"``Plot`` :math:`\\sigma` : if checked, plot the standard deviation for each "
+"signature;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:34
+msgid ""
+"[ ``Remove signatures`` ]: remove highlighted signatures from this list;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:35
+msgid "[ ``Fit to data`` ]: resize the plot to fit to all the data;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:41
+msgid ""
+"``Calculate spectral distances`` : if checked, calculate the following "
+"spectral distances in :"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:37
+msgid "Jeffries-Matusita distance;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:38
+msgid "Spectral angle;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:39
+msgid "Euclidean distance;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:40
+msgid "Bray-Curtis similarity."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:46
+msgid "Plot"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:48
+msgid "It is possible to move the legend inside the plot with the mouse."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:58
+msgid "Plot commands (from Matplotlib):"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:51
+msgid "|m_home|: Reset to original view;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:52
+msgid "|m_back|: Back to previous view;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:53
+msgid "|m_forward|: Forward to next view;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:54
+msgid "|m_pan|: Pan axes with left mouse, zoom with right;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:55
+msgid "|m_zoom|: Zoom to rectangle;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:56
+msgid "|m_sub|: Unused;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:57
+msgid "|m_save|: Save plot to a figure (e.g. JPG file);"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:58
+msgid "|m_edit|: Unused."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:60
+msgid "|br|"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:91
+msgid ":guilabel:`Example Spectral Signature Plot`"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:96
+msgid "Signature details"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:102
+msgid ":guilabel:`Spectral Signature: Signature details`"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:104
+msgid ""
+"Display the details about spectral signatures (i.e. Wavelength, Values, and "
+"Standard deviation)"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:110
+msgid ":guilabel:`Spectral Signature: Example signature details`"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:115
+msgid "Spectral distances"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:121
+msgid ":guilabel:`Spectral Signature: Spectral distances`"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:123
+msgid ""
+"Display spectral distances for each combination of signatures, if "
+"``Calculate spectral distances`` is checked in :ref:`signature_list_plot` . "
+"It is useful for assessing ROI separability."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:126
+msgid "The following spectral distances are calculated :"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:128
+msgid ""
+"Jeffries-Matusita distance:  range [0 = identical, 2 = different],; useful "
+"in particular for Maximum Likelihood classifications;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:129
+msgid ""
+"Spectral angle: range [0 = identical, 90 = different]; useful in particular "
+"for Spectral Angle Mapping classifications;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:130
+msgid ""
+"Euclidean distance: useful in particular for Minimum Distance "
+"classifications;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:131
+msgid ""
+"Bray-Curtis similarity [%]: range [0 = different, 100 = identical]; useful "
+"in general."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:133
+msgid "Values are displayed in red if signatures are particularly similar."
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:139
+msgid ":guilabel:`Spectral Signature: Example spectral distances`"
+msgstr ""
