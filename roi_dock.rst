@@ -9,7 +9,7 @@ ROI Creation dock
  <br />
 
 .. figure:: _static/ROI_dock.jpg
-	:align: right
+	:align: center
 	
 	:guilabel:`ROI creation dock`
 		
@@ -49,6 +49,11 @@ Training shapefiles (which can be created by SCP) must contain at least four fie
 Training shapefile
 ==================
 
+.. figure:: _static/training_shapefile.jpg
+	:align: center
+	
+	:guilabel:`Training shapefile`
+	
 * ``Training shapefile`` [P]: select a shapefile from a list of shapefiles (containing the required fields) loaded in QGIS; ; ROIs polygons are saved in this shapefile;
 * |refresh|: refresh layer list;
 * [ ``New shp`` ]: create a new shapefile containing the required fields Macroclass ID, Macroclass Information , Class ID, and Class Information.
@@ -61,8 +66,14 @@ Training shapefile
 ROI list
 ==================
 
+.. figure:: _static/ROI_list.jpg
+	:align: center
+	
+	:guilabel:`ROI list`
+	
 The ``ROI list`` displays the ROI polygons collected in the ``Training shapefile``.
 Double click on any table item to zoom in the map to that ROI; also, ROIs can be edited within this table (changes affect also the shapefile).
+In order to highlight items perform a mouse selection in the table.
 
 * Table fields:
 	* ``MC ID`` : ROI Macroclass ID [int];
@@ -88,6 +99,11 @@ Double click on any table item to zoom in the map to that ROI; also, ROIs can be
 ROI parameters
 ==============
 
+.. figure:: _static/ROI_parameters.jpg
+	:align: center
+	
+	:guilabel:`ROI parameters`
+	
 ROI parameters are required for the ROI creation using a region growing algorithm. Region growing works on the ``Input image`` defined in the :ref:`toolbar`.
 
 * ``Range radius`` [P]: set the interval which defines the maximum spectral distance between the seed pixel and the surrounding pixels (in radiometry unit);
@@ -102,6 +118,11 @@ ROI parameters are required for the ROI creation using a region growing algorith
 ROI creation
 ============
 
+.. figure:: _static/ROI_creation.jpg
+	:align: center
+	
+	:guilabel:`ROI creation`
+	
 ROI creation is used for creating ROI polygons; these ROIs are **temporary** until they are saved in the :ref:`training_shapefile` .
 
 * [+]: recall the pointer for ROI creation using the region growing algorithm; **left click** on the map for creating the ROI: **right click** on the map for displaying the spectral signature of a pixel of the ``Input image``;
@@ -122,6 +143,11 @@ ROI creation is used for creating ROI polygons; these ROIs are **temporary** unt
 ROI Signature definition
 ========================
 
+.. figure:: _static/ROI_signature_definition.jpg
+	:align: center
+	
+	:guilabel:`ROI Signature definition`
+	
 This allows for the definition of ROI's class and saving the temporary ROI to the :ref:`training_shapefile` ; in addition, it is possible to automatically calculate the ROI spectral signature and add it to the :ref:`signature_list` .
 
 * ``MC ID`` [P]: ROI Macroclass ID [int];

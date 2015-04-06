@@ -33,12 +33,11 @@ Plot Signature list
 * ``Plot`` :math:`\sigma` : if checked, plot the standard deviation for each signature;
 * [ ``Remove signatures`` ]: remove highlighted signatures from this list;
 * [ ``Fit to data`` ]: resize the plot to fit to all the data;
-* ``Calculate spectral distances`` : if checked, calculate the following spectral distances in :
-	* Jeffries-Matusita distance;
-	* Spectral angle;
-	* Euclidean distance;
-	* Bray-Curtis similarity.
-
+* ``Calculate spectral distances`` : if checked, calculate the following spectral distances:
+	* :ref:`Jeffries_Matusita_distance`;
+	* :ref:`spectral_angle`;
+	* :ref:`euclidean_distance`;
+	* :ref:`Bray_Curtis_similarity`.
 	
 .. _signature_plot:
 
@@ -83,12 +82,12 @@ It is possible to move the legend inside the plot with the mouse.
 .. |m_edit| image:: _static/matplotlib_edit.jpg
 	:width: 20pt
 	
-		
+
 .. figure:: _static/example_plot.jpg
 	:align: center
 	:width: 500pt
 
-	:guilabel:`Example Spectral Signature Plot`
+	:guilabel:`Spectral Signature: Example of spectral signature plot`
 	
 .. _signature_details:
 
@@ -101,13 +100,15 @@ Signature details
 	
 	:guilabel:`Spectral Signature: Signature details`
 
-Display the details about spectral signatures (i.e. Wavelength, Values, and Standard deviation)
-		
+Display the details about spectral signatures (i.e. Wavelength, Values, and Standard deviation).
+
+This is useful for comparing the values of different spectral signatures or pixels.
+
 .. figure:: _static/example_details.jpg
 	:align: center
 	:width: 500pt
 
-	:guilabel:`Spectral Signature: Example signature details`
+	:guilabel:`Spectral Signature: Example of signature details`
 		
 .. _spectral_distances:
 
@@ -121,13 +122,13 @@ Spectral distances
 	:guilabel:`Spectral Signature: Spectral distances`
 
 Display spectral distances for each combination of signatures, if ``Calculate spectral distances`` is checked in :ref:`signature_list_plot` .
-It is useful for assessing ROI separability.
+It is useful for assessing ROI separability (see :ref:`spectral_distance_definition`).
 
 The following spectral distances are calculated :
 
-* Jeffries-Matusita distance:  range [0 = identical, 2 = different],; useful in particular for Maximum Likelihood classifications;
-* Spectral angle: range [0 = identical, 90 = different]; useful in particular for Spectral Angle Mapping classifications;
-* Euclidean distance: useful in particular for Minimum Distance classifications;
+* Jeffries-Matusita distance:  range [0 = identical, 2 = different]; useful in particular for :ref:`max_likelihood_algorithm` classifications;
+* Spectral angle: range [0 = identical, 90 = different]; useful in particular for :ref:`spectra_angle_mapping_algorithm` classifications;
+* Euclidean distance: useful in particular for :ref:`minimum_distance_algorithm` classifications;
 * Bray-Curtis similarity [%]: range [0 = different, 100 = identical]; useful in general.
 	
 Values are displayed in red if signatures are particularly similar.
@@ -136,4 +137,4 @@ Values are displayed in red if signatures are particularly similar.
 	:align: center
 	:width: 500pt
 	
-	:guilabel:`Spectral Signature: Example spectral distances`
+	:guilabel:`Spectral Signature: Example of spectral distances`

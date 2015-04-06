@@ -9,7 +9,7 @@ Classification dock
  <br />
 
 .. figure:: _static/classification_dock.jpg
-	:align: right
+	:align: center
 	
 	:guilabel:`Classification dock`
 	
@@ -36,6 +36,11 @@ The **classification** can be performed for the entire image ( :ref:`classificat
 Signature list file
 -------------------
 
+.. figure:: _static/signature_list_file.jpg
+	:align: center
+	
+	:guilabel:`Signature list file`
+	
 * ``Open`` [P]: open a signature list file (a .xml file) loading the signatures in the :ref:`signature_list` and displaying the file path (absolute or relative path according to QGIS project settings);
 * ``Save`` : save the signature list to the open file; if no signature list is open, a window will ask for the creation of a new signature file;
 * ``Reset`` : clear the path of the signature list file.
@@ -45,8 +50,14 @@ Signature list file
 Signature list
 --------------
 
+.. figure:: _static/signature_list.jpg
+	:align: center
+	
+	:guilabel:`Signature list`
+	
 The ``Signature list`` displays loaded spectral signatures.
 Spectral signatures are automatically saved in the :ref:`signature_list_file`  every time the QGIS project is saved, or when the button ``Save`` is clicked.
+In order to highlight items perform a mouse selection in the table.
 
 * Table fields:
 	* ``S`` : checkbox field; only the spectral signatures checked in this list are used for the classification process; double click on any item to check/uncheck all the items in the list;
@@ -87,21 +98,40 @@ Spectral signatures are automatically saved in the :ref:`signature_list_file`  e
 Classification algorithm
 ------------------------
 
-*  ``Select a classification algorithm`` : available classification algorithms are:
-	* Minimum Distance;
-	* Maximum Likelihood;
-	* Spectral Angle Mapping;
-* ``Threshold`` [optional]: if threshold is equal to 0, then no threshold is considered and all image pixels are classified; otherwise:
+.. figure:: _static/classification_alg.jpg
+	:align: center
+	
+	:guilabel:`Classification algorithm`
+	
+* |weight_tool| : open the :ref:`Algorithm_band_weight_tab` for the definition of band weights;
+*  ``Select a classification algorithm`` : select one of the :ref:`classification_algorithm_definition`; available classification algorithms are:
+	* :ref:`minimum_distance_algorithm`;
+	* :ref:`max_likelihood_algorithm`;
+	* :ref:`spectra_angle_mapping_algorithm`;
+* ``Threshold`` [optional]: allows for the definition of a classification threshold for all the spectral signatures (for individual settings see :ref:`Signature_threshold_tab`); if threshold is equal to 0, then no threshold is considered and all image pixels are classified; otherwise:
 	* for Minimum Distance, pixels are unclassified if distance is greater than threshold value;
 	* for Maximum Likelihood, pixels are unclassified if probability is less than threshold  value (max 100);
-	* for Spectral Angle Mapping, pixels are unclassified if spectral angle distance is greater than threshold value (max 90).
-* ``Use Macroclass ID`` : if checked, the classification is performed using the Macroclass ID (code `MC ID` of the signature); if unchecked, then the classification is performed using the Class ID (code `C ID` of the signature).
+	* for Spectral Angle Mapping, pixels are unclassified if spectral angle distance is greater than threshold value (max 90);
+
+* ``Use Macroclass ID`` : if checked, the classification is performed using the Macroclass ID (code `MC ID` of the signature); if unchecked, then the classification is performed using the Class ID (code `C ID` of the signature);
+* |threshold_tool| : open the :ref:`Signature_threshold_tab` for the definition of signature thresholds.
+
+.. |weight_tool| image:: _static/semiautomaticclassificationplugin_weight_tool.png
+	:width: 20pt
+
+.. |threshold_tool| image:: _static/semiautomaticclassificationplugin_threshold_tool.png
+	:width: 20pt
 
 .. _classification_preview:
 
 Classification preview
 ----------------------
 
+.. figure:: _static/classification_preview.jpg
+	:align: center
+	
+	:guilabel:`Classification preview`
+	
 Classification previews are temporary classifications of part of the `input image` (every pixel has a value that represents a class).
 Also, a algorithm raster can be displayed with a click on the map; algorithm raster represents the distance of the classified pixel to the corresponding signature (every pixel has a value calculated by the algorithm with the spectral signature);
 algorithm raster is useful for assessing how much a pixel classified as class `X` is distant from the corresponding spectral signature `X` (black pixels are distant from the spectral signature and white pixels are closer).
@@ -117,6 +147,11 @@ Previews are temporarily placed in QGIS Layers inside a layer group named ``Clas
 Classification style
 --------------------
 
+.. figure:: _static/classification_style.jpg
+	:align: center
+	
+	:guilabel:`Classification style`
+	
 **Class colors** (for classifications and previews) are defined in the :ref:`signature_list` ; in addition, a `classification style` can be loaded from a QGIS .qml file saved previously.
 
 * [ ``Select qml`` ] [P]: select a .qml file overriding the colors defined in the :ref:`signature_list` ;
@@ -127,10 +162,15 @@ Classification style
 Classification output
 ---------------------
 
+.. figure:: _static/classification_output.jpg
+	:align: center
+	
+	:guilabel:`Classification output`
+	
 The **classification output** is a .tif raster file.
 
 * ``Apply mask`` [optional]: if checked, a mask shapefile can be selected and used for masking the classification (i.e. the part of `input image` that is outside the mask shapefile will not be classified);
 * [ ``Reset`` ]: reset the shapefile mask;
 * ``Create vector`` [optional]: if checked, when ``Perform classification`` is clicked,  a shapefile of the classification is saved inside the same folder and with the same name defined for the classification output; conversion to vector can also be performed later in :ref:`classification_vector_tab`;
 * ``Classification report`` [optional]: if checked, when ``Perform classification`` is clicked, a report about the land cover classification is calculated providing the pixel count, the percentage and area for each class; the report is saved as a .csv file in the same folder and with the same name defined for the classification output and the suffix ``_report``; in addition, the results are shown in the :ref:`classification_report_tab`;
-* [ ``Perform classification`` ]: define a classification output (a .tif file) and perform the image classification.
+* [ ``Perform classification`` ]: define a classification output (a .tif file) and perform the image classification (the .qml file of the QGIS style is saved along with the classification).

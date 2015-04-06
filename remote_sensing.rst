@@ -7,7 +7,12 @@ Brief Introduction to Remote Sensing
 .. |br| raw:: html
 
  <br />
-
+  
+  
+.. contents::
+    :depth: 2
+    :local:
+	
 .. _basic_definitions:
  
 Basic Definitions
@@ -87,7 +92,14 @@ There are several kinds of **resolutions**:
 Radiance and Reflectance
 -------------------------
 
-Sensors measure the **radiance**, which corresponds to the brightness in a given direction toward the sensor; it useful to define also the **reflectance** as the ratio of reflected versus total power energy. The **spectral signature** is the reflectance as a function of wavelength  (see Figure :ref:`figSR`); each material has a unique signature, therefore it can be used for material classification (NASA, 2013).
+Sensors measure the **radiance**, which corresponds to the brightness in a given direction toward the sensor; it useful to define also the **reflectance** as the ratio of reflected versus total power energy.
+
+.. _spectral_signature_definition:
+
+Spectral Signature
+-------------------------
+
+The **spectral signature** is the reflectance as a function of wavelength  (see Figure :ref:`figSR`); each material has a unique signature, therefore it can be used for material classification (NASA, 2013).
 
 .. _figSR:
 
@@ -104,7 +116,7 @@ Sensors measure the **radiance**, which corresponds to the brightness in a given
 Landsat Satellite
 -------------------------
 
-**Landsat** is a multispectral family of satellites developed by the NASA (National Aeronautics and Space Administration of USA), since the early 1970’s.
+**Landsat** is a set of multispectral satellites developed by the NASA (National Aeronautics and Space Administration of USA), since the early 1970’s.
 
 Landsat images are very used for environmental research. The resolutions of Landsat 4 and Landsat 5 sensors are reported in the following table (from http://landsat.usgs.gov/band_designations_landsat_satellites.php); also, Landsat temporal resolution is 16 days (NASA, 2013).
 
@@ -218,6 +230,8 @@ The following Figure :ref:`figCC` shows a color composite "R G B = 4 3 2" of a L
 Supervised Classification Definitions
 =====================================
 	
+This chapter provides basic definitions about supervised classifications.
+	
 .. _Land_cover_definition:
 
 Land Cover
@@ -235,12 +249,17 @@ A **semi-automatic classification** (also supervised classification) is an image
 Image processing and GIS spatial analyses require specific software such as the Semi-Automatic Classification Plugin for QGIS.
 
 	
+.. _ROI_definition:
+
+Training Areas
+-------------------------
+
+Usually, supervised classifications require the user to select one or more Regions of Interest (ROIs, also Training Areas) for each land cover class identified in the image. **ROIs** are polygons drawn over homogeneous areas of the image that overlay pixels belonging to the same land cover class.
+	
 .. _classes_definition:
 
 Classes and Macroclasses
 -------------------------
-
-Usually, supervised classifications require the user to select one or more Regions of Interest (ROIs, also Training Areas) for each land cover class identified in the image. **ROIs** are polygons drawn over homogeneous areas of the image that overlay pixels belonging to the same land cover class.
 
 Land cover classes are identified with an arbitrary ID code (i.e. Identifier).
 SCP allows for the definition of **Macroclass ID** (i.e. MC ID) and **Class ID** (i.e. C ID), which are the identification codes of land cover classes.
@@ -272,11 +291,224 @@ If the use of Macroclass is not required for the study purpose, then the same Ma
 .. _classification_algorithm_definition:
 
 Classification Algorithms
--------------------------
+----------------------------
 
 The **spectral signatures** (spectral characteristics) of reference land cover classes are calculated considering the values of pixels under each ROI having the same Class ID (or Macroclass ID).
 Therefore, the classification algorithm classifies the whole image by comparing the spectral characteristics of each pixel to the spectral characteristics of reference land cover classes.
-The result of the classification process is a raster (see an example of Landsat classification in Figure :ref:`figLC`), where pixel values correspond to class IDs and each color to a land cover class.
+SCP implements the following classification algorithms.
+ 
+.. _minimum_distance_algorithm:
+
+Minimum Distance
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Minimum Distance algorithm calculates the Euclidean distance :math:`d(x, y)` between spectral signatures of image pixels and training spectral signatures, according to the following equation:
+
+.. math::
+	d(x, y) = \sqrt{ \sum_{i=1}^{n} (x_i - y_i)^2}
+	
+where:
+
+* :math:`x` = spectral signature vector of an image pixel;
+* :math:`y` = spectral signature vector of a training area;
+* :math:`n` = number of image bands.
+	
+Therefore, the distance is calculated for every pixel in the image, assigning the class of the spectral signature that is closer, according to the following discriminant function (adapted from Richards and Jia, 2006):
+
+.. math::
+	x \in C_k \iff d(x, y_k) < d(x, y_j) \forall k \neq j
+	
+where:
+
+* :math:`C_k` = land cover class :math:`k`;
+* :math:`y_k` = spectral signature of class :math:`k`;
+* :math:`y_j` = spectral signature of class :math:`j`.
+
+It is possible to define a threshold :math:`T_i` in order to exclude pixels below this value from the classification:
+
+.. math::
+	x \in C_k \iff d(x, y_k) < d(x, y_j) \forall k \neq j
+	
+	and
+
+	d(x, y_k) < T_i
+
+.. _max_likelihood_algorithm:
+
+Maximum Likelihood
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Maximum Likelihood algorithm calculates the probability distributions for the classes, related to Bayes’ theorem, estimating if a pixel belongs to a  land cover class.
+In particular, the probability distributions for the classes are assumed the of form of multivariate normal models (Richards & Jia, 2006).
+In order to use this algorithm, a sufficient number of pixels is required for each training area allowing for the calculation of the covariance matrix.
+The discriminant function, described by Richards and Jia (2006), is calculated for every pixel as:
+
+.. math::
+	g_k(x) = \ln p(C_k) - \frac{1}{2} \ln | \Sigma_{k} | - \frac{1}{2} (x - y_k)^t \Sigma_{k}^{-1} (x - y_k) 
+	
+where:
+
+* :math:`C_k` = land cover class :math:`k`;
+* :math:`x` = spectral signature vector of a image pixel;
+* :math:`p(C_k)` = probability that the correct class is :math:`C_k`;
+* :math:`| \Sigma_{k} |` = determinant of the covariance matrix of the data in class :math:`C_k`;
+* :math:`\Sigma_{k}^{-1}` = inverse of the covariance matrix;
+* :math:`y_k` = spectral signature vector of class :math:`k`.
+
+Therefore:
+
+.. math::
+	x \in C_k \iff g_k(x) > g_j(x) \forall k \neq j
+
+In addition, it is possible to define a threshold to the discriminant function in order to exclude pixels below this value from the classification.
+Considering a threshold :math:`T_i` the classification condition becomes:
+
+.. math::
+	x \in C_k \iff g_k(x) > g_j(x) \forall k \neq j
+	
+	and
+
+	g_k(x) > T_i
+
+Maximum likelihood is one of the most common supervised classifications, however the classification process can be slower than :ref:`minimum_distance_algorithm`.	
+
+.. _spectra_angle_mapping_algorithm:
+
+Spectra Angle Mapping
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Spectral Angle Mapping calculates the spectral angle between spectral signatures of image pixels and training spectral signatures.
+The spectral angle :math:`\theta` is defined as (Kruse et al., 1993):
+
+.. math::
+	\theta(x, y) = \cos^{-1} \left( \frac{ \sum_{i=1}^{n} x_i y_i } { \left( \sum_{i=1}^{n} x_i^2 \right)^\frac{1}{2} * \left( \sum_{i=1}^{n} y_i^2 \right)^\frac{1}{2} } \right)
+
+Where:
+
+* :math:`x` = spectral signature vector of an image pixel;
+* :math:`y` = spectral signature vector of a training area;
+* :math:`n` = number of image bands.
+
+Therefore a pixel belongs to the class having the lowest angle, that is:
+
+.. math::
+	x \in C_k \iff \theta(x, y_k) < \theta(x, y_j) \forall k \neq j
+	
+where:
+
+* :math:`C_k` = land cover class :math:`k`;
+* :math:`y_k` = spectral signature of class :math:`k`;
+* :math:`y_j` = spectral signature of class :math:`j`.
+
+In order to exclude pixels below this value from the classification it is possible to define a threshold :math:`T_i`:
+
+.. math::
+	x \in C_k \iff \theta(x, y_k) < \theta(x, y_j) \forall k \neq j
+	
+	and
+
+	\theta(x, y_k) < T_i
+	
+Spectral Angle Mapping is largely used, especially with hyperspectral data.
+	
+.. _spectral_distance_definition:
+
+Spectral Distance 
+-----------------------------------
+ 
+It is useful to evaluate the spectral distance (or separability) between training signatures or pixels, in order to assess if different classes that are too similar could cause classification errors.
+The SCP implements the following algorithms for assessing similarity of spectral signatures.
+
+.. _Jeffries_Matusita_distance:
+
+Jeffries-Matusita Distance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Jeffries-Matusita Distance calculates the separability of a pair of probability distributions.
+This can be particularly meaningful for evaluating the results of :ref:`max_likelihood_algorithm` classifications.
+
+The Jeffries-Matusita Distance :math:`J_{xy}` is calculated as (Richards and Jia, 2006):
+
+.. math::
+	J_{xy} = 2 \left( 1 - e^{-B} \right)
+	
+where:
+
+.. math::
+	B = \frac{1}{8} (x - y)^t \left( \frac{\Sigma_{x} + \Sigma_{y}}{2} \right)^{-1} (x - y)  + \frac{1}{2} \ln \left(  \frac{ | \frac{ \Sigma_{x} + \Sigma_{y}}{2} | }{ | \Sigma_{x} |^{\frac{1}{2}} | \Sigma_{y} |^{\frac{1}{2}} } \right)
+	
+where:
+
+* :math:`x` = first spectral signature vector;
+* :math:`y` = second spectral signature vector;
+* :math:`\Sigma_{x}` = covariance matrix of sample :math:`x`;
+* :math:`\Sigma_{y}` = covariance matrix of sample :math:`y`;
+
+The Jeffries-Matusita Distance is asymptotic to 2 when signatures are completely different, and tends to 0 when signatures are identical.
+
+.. _spectral_angle:
+
+Spectral Angle
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Spectral Angle is the most appropriate for assessing the :ref:`spectra_angle_mapping_algorithm` algorithm.
+The spectral angle :math:`\theta` is defined as (Kruse et al., 1993):
+
+.. math::
+	\theta(x, y) = \cos^{-1} \left( \frac{ \sum_{i=1}^{n} x_i y_i } { \left( \sum_{i=1}^{n} x_i^2 \right)^\frac{1}{2} * \left( \sum_{i=1}^{n} y_i^2 \right)^\frac{1}{2} } \right)
+
+Where:
+
+* :math:`x` = spectral signature vector of an image pixel;
+* :math:`y` = spectral signature vector of a training area;
+* :math:`n` = number of image bands.
+
+Spectral angle goes from 0 when signatures are identical to 90 when signatures are completely different.
+
+.. _euclidean_distance:
+
+Euclidean Distance
+^^^^^^^^^^^^^^^^^^^^^^^^^
+	
+The Euclidean Distance is particularly useful for the evaluating the result of :ref:`minimum_distance_algorithm` classifications.
+In fact, the distance is defined as:
+
+.. math::
+	d(x, y) = \sqrt{ \sum_{i=1}^{n} (x_i - y_i)^2}
+	
+where:
+
+* :math:`x` = first spectral signature vector;
+* :math:`y` = second spectral signature vector;
+* :math:`n` = number of image bands.
+
+The Euclidean Distance is 0 when signatures are identical and tends to increase according to the spectral distance of signatures.
+
+.. _Bray_Curtis_similarity:
+
+Bray-Curtis Similarity
+^^^^^^^^^^^^^^^^^^^^^^^^^
+	
+The Bray-Curtis Similarity is a statistic used for assessing the relationship between two samples (`read this <http://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity>`_).
+It is useful in general for assessing the similarity of spectral signatures, and Bray-Curtis Similarity :math:`S(x, y)` is calculated as:
+
+.. math::
+	S(x, y) = 100 - \left( \frac{\sum_{i=1}^{n} | (x_i - y_i) |}{\sum_{i=1}^{n} x_i + \sum_{i=1}^{n} y_i} \right) * 100
+
+where:
+
+* :math:`x` = first spectral signature vector;
+* :math:`y` = second spectral signature vector;
+* :math:`n` = number of image bands.
+
+The Bray-Curtis similarity is calculated as percentage and ranges from 0 when signatures are completely different to 100 when spectral signatures are identical.
+	
+.. _classification_result_definition:
+
+Classification Result
+-------------------------
+
+The result of the classification process is a raster (see an example of Landsat classification in Figure :ref:`figLC`), where pixel values correspond to class IDs and each color represent a land cover class.
 	
 .. _figLC:
 
@@ -294,7 +526,8 @@ A certain amount of errors can occur in the land cover classification (i.e. pixe
 Accuracy Assessment
 -------------------------
 
-After the classification process, it is useful to assess the accuracy of land cover classification, in order to identify and measure map errors. Usually, **accuracy assessment** is performed with the calculation of an error matrix, which is a table that compares map information with reference data (i.e. ground truth data) for a number of sample areas (Congalton and Green, 2009).
+After the classification process, it is useful to assess the accuracy of land cover classification, in order to identify and measure map errors. 
+Usually, **accuracy assessment** is performed with the calculation of an error matrix, which is a table that compares map information with reference data (i.e. ground truth data) for a number of sample areas (Congalton and Green, 2009).
 
 The following table is a scheme of error matrix, where k is the number of classes identified in the land cover classification, and n is the total number of collected sample units. The items in the major diagonal (aii) are the number of samples correctly identified, while the other items are classification error.
 
@@ -326,6 +559,8 @@ For further information, the following documentation is freely available: `Lands
 
 * JARS, 1993. Remote Sensing Note. Japan Association on Remote Sensing. Available at http://www.jars1974.net/pdf/rsnote_e.html
 
+* Kruse, F. A., et al., 1993. The Spectral Image Processing System (SIPS) - Interactive Visualization and Analysis of Imaging spectrometer. Data Remote Sensing of Environment.
+
 * NASA, 2013. Landsat 7 Science Data User's Handbook. Available at http://landsathandbook.gsfc.nasa.gov
 
 * Richards, J. A. and Jia, X., 2006. Remote Sensing Digital Image Analysis: An Introduction. Berlin, Germany: Springer.
@@ -337,7 +572,9 @@ For further information, the following documentation is freely available: `Lands
 Landsat image conversion to reflectance and DOS1 atmospheric correction
 =======================================================================
 
-This chapter provides information about the Landsat conversion to reflectance implemented in SCP :ref:`landsat_tab`. Landsat images downloaded from http://earthexplorer.usgs.gov are composed of several bands and a metadata file (MTL) which contains useful information about image data.
+This chapter provides information about the Landsat conversion to reflectance implemented in SCP :ref:`landsat_tab`.
+
+Landsat images downloaded from http://earthexplorer.usgs.gov or through the SCP tool :ref:`Landsat_download_tab` are composed of several bands and a metadata file (MTL) which contains useful information about image data.
 
 .. _radiance_conversion:
 
@@ -533,7 +770,7 @@ where:
 * :math:`K_{1}` = Band-specific thermal conversion constant (in watts/meter squared * ster * :math:`\mu m`)
 * :math:`K_{2}` = Band-specific thermal conversion constant (in kelvin)
 
-and :math:`L_{\lambda}` is the Spectral Radiance at the sensor's aperture, measured in watts/(meter squared * ster * :math:`\mu m`); for Landsat images it is given by (from https://landsat.usgs.gov/Landsat8_Using_Product.php)
+and :math:`L_{\lambda}` is the Spectral Radiance at the sensor's aperture, measured in watts/(meter squared * ster * :math:`\mu m`); for Landsat images it is given by (from https://landsat.usgs.gov/Landsat8_Using_Product.php):
 
 .. math::
 	L_{\lambda} = M_{L} * Q_{cal} + A_{L}

@@ -13,7 +13,7 @@ Installation in Windows 32 bit
 QGIS download and installation
 ------------------------------------------
 
-* Download the latest QGIS version 32 bit from `here <http://www.qgis.org/en/site/forusers/download.html>`_ (the direct download of QGIS 2.6 from this `link <http://qgis.org/downloads/QGIS-OSGeo4W-2.6.1-1-Setup-x86.exe>`_);
+* Download the latest QGIS version 32 bit from `here <http://www.qgis.org/en/site/forusers/download.html>`_ (the direct download of QGIS 2.8 from this `link <http://qgis.org/downloads/QGIS-OSGeo4W-2.8.1-1-Setup-x86.exe>`_);
 
 * Execute the QGIS installer with administrative rights, accepting the default configuration.
 
@@ -54,4 +54,4 @@ It is possible to move the :ref:`toolbar` and the docks according to your needs,
 
 Known issues
 ---------------------------
-QGIS 32bit installation could include an old version of NumPy as default; in order to use some SCP tools (e.g. :ref:`land_cover_change_tab` ), the update of NumPy is required. Please, follow `these instructions <http://fromgistors.blogspot.com/p/frequently-asked-questions.html#numpy_version>`_ .
+QGIS 32bit installation could include an old version of NumPy as default; in order to use some SCP tools (e.g. :ref:`land_cover_change_tab` ), the update of NumPy is required. Please, follow the instructions described in :ref:`error_2`.

@@ -110,6 +110,184 @@ Select a library
 
 	**Tip**: spectral libraries downloaded from the ``USGS Spectral Library`` can be used with Minimum Distance or Spectral Angle Mapping algorithms, but not Maximum Likelihood because this algorithm needs the covariance matrix that is not included in the spectral libraries.
 	
+.. _Algorithm_band_weight_tab:
+
+Algorithm band weight
+-------------------------
+
+.. figure:: _static/Algorithm_band_weight.jpg
+	:align: center
+	:width: 500pt
+	
+	:guilabel:`Algorithm band weight`
+
+The tab ``Algorithm band weight`` allows for the definition of band weights that are useful for improving the spectral separability of materials.
+During the classification process, the spectral signature values and the corresponding band weights are multiplied thus modifying the spectral distances.
+
+.. _band_weight:
+
+Band weight
+^^^^^^^^^^^^^^^^^
+		
+* Table fields:
+	* ``Band number`` : number of the band in the band set;
+	* ``Band name`` : name of the band;
+	* ``Weight`` : weight of the band; it can be edited directly or through the button ``Set weight value``;
+	
+* [ ``Weight value`` ]: value of weight used with the button ``Set weight value``;
+* [ ``Set weight value`` ]: set the value defined in ``Weight value`` for all the highlighted bands in the table;
+* [ ``Reset weights`` ]: reset all band weights to 1.
+		
+.. _Signature_threshold_tab:
+
+Signature threshold
+-------------------------
+
+.. figure:: _static/Signature_threshold.jpg
+	:align: center
+	:width: 500pt
+	
+	:guilabel:`Signature threshold`
+
+The tab ``Signature threshold`` allows for the definition of a classification threshold for each signature.
+This is useful for improving the classification results, especially when spectral signatures are similar.
+
+If threshold is 0 then no threshold is applied.
+Depending on the selected :ref:`classification_alg` the threshold value is considered differently:
+
+* for Minimum Distance, pixels are unclassified if distance is greater than threshold value;
+* for Maximum Likelihood, pixels are unclassified if probability is less than threshold  value (max 100);
+* for Spectral Angle Mapping, pixels are unclassified if spectral angle distance is greater than threshold value (max 90).
+	
+.. _signature_threshold:
+
+Signature threshold
+^^^^^^^^^^^^^^^^^^^^^^^
+		
+* Table fields:
+	* ``MC ID`` : signature Macroclass ID;
+	* ``MC Info`` : signature Macroclass Information;
+	* ``C ID`` : signature Class ID;
+	* ``C Info`` : signature Class Information;
+	* ``Threshold`` : signature threshold;
+	
+* [ ``Threshold value`` ]: value of threshold used with the button ``Set threshold value``;
+* [ ``Set threshold value`` ]: set the value defined in ``Threshold value`` for all the highlighted signatures in the table;
+* [ ``Reset thresholds`` ]: reset all signatures thresholds to 0.
+
+.. _Landsat_download_tab:
+
+Download Landsat
+-------------------------
+
+.. figure:: _static/download_landsat.jpg
+	:align: center
+	:width: 500pt
+	
+	:guilabel:`Download Landsat`
+
+The tab ``Download Landsat`` allows for searching and downloading the :ref:`Landsat_definition` 4, 5, 7, and 8 images of the whole world from the 80s to present days, freely available through the `Google Earth Engine <https://earthengine.google.org/#intro>`_ and the `Amazon Web Services (AWS) <http://aws.amazon.com/public-data-sets/landsat/>`_ .
+Before the use of this tool, the download of the Landsat image dabatase (about 500MB) is required, which consist of the following files (updated daily):
+
+* http://landsat-pds.s3.amazonaws.com/scene_list.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_8.csv.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_ETM.csv.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_ETM_SLC_OFF.csv.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_TM-1980-1989.csv.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_TM-1990-1999.csv.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_TM-2000-2009.csv.gz
+* http://landsat.usgs.gov/metadata_service/bulk_metadata_files/LANDSAT_TM-2010-2012.csv.gz
+
+Images from the Amazon Web Services allows for the download of single bands.
+
+.. _database_landsat:
+
+Database
+^^^^^^^^^^^^^^^^^
+	
+* [ ``Update database`` ]: update Landsat database; only the databases of the satellites checked in ``Satellites`` under the tool :ref:`search_Landsat` are downloaded;
+* ``only Landsat 8`` : if checked, only the Landsat 8 database is downloaded from the Amazon Web Services;
+* [ ``Select database directory`` ] [Q]: select a directory where the Landsat database is stored; it is recommended to select a custom directory in order to prevent the database deletion when upgrading SCP;
+* [ ``Reset directory`` ]: reset the database directory to the default SCP installation directory;
+	
+.. _area_coordinates_Landsat:
+
+Area coordinates
+^^^^^^^^^^^^^^^^^
+	
+Define the search area.
+
+* [+]: click the map for the definition of the Upper Left (UL) and Lower Right (LR) point coordinates (X and Y) of the rectangle defining the search area; it is possible to enter the coordinates manually;
+
+.. _search_Landsat:
+
+Search
+^^^^^^^^^^^^^^^^^
+	
+Define search settings such as the date of acquisition, maximum cloud cover, or search for specific Landsat images using the Image ID.
+In addition it is possible to limit the search to certain Landsat satellites.
+
+* ``Acquisition date from to`` : define the range of acquisition dates; a narrow date range can make the search faster;
+* ``Max cloud cover (%)`` : define the maximum percentage of cloud cover present in the image;
+* ``Image ID`` : search only the Image ID of Landsat images (e.g. ``LC81910312015006LGN00``); it is possible to enter multiple Image IDs separated by comma or semicolon (e.g. ``LC81910312015006LGN00, LC81910312013224LGN00`` );
+* ``Satellites`` : search only the databases of the Landsat satellites checked here; deselecting unwanted satellites can make the search faster;
+* [ ``Find images`` ]: start searching Landsat images; the search can last a few minutes depending on the settings thereof; results are displayed inside the table in :ref:`landsat_images`.
+
+.. _landsat_images:
+
+Landsat images
+^^^^^^^^^^^^^^^^^
+
+**Image list**
+
+This table displays the results of the Landsat search.
+		
+* Table fields:
+	* ``ImageID`` : the Landsat Image ID;
+	* ``AcquisitionDate`` : date of acquisition of Landsat image;
+	* ``CloudCover`` : percentage of cloud cover in the image;
+	* ``Path`` : path of the image;
+	* ``Row`` : row of the image;
+	* ``min_lat`` : minimum latitude of the image;
+	* ``min_lon`` : minimum longitude of the image;
+	* ``max_lat`` : maximum latitude of the image;
+	* ``max_lon`` : maximum longitude of the image;
+	* ``Service`` : download service of the image;
+	* ``Preview`` : URL of the image preview;
+	
+* [ ``Display image preview`` ]: display image preview of highlighted images in the map; preview are roughly georeferenced on the fly;
+* [ ``Remove images from list`` ]: remove highlighted images from the list;
+
+.. _landsat_download_options:
+
+Download options
+^^^^^^^^^^^^^^^^^
+
+.. figure:: _static/download_landsat_options.jpg
+	:align: center
+	:width: 500pt
+	
+	:guilabel:`Download options`
+		
+**Landsat 8 bands**
+
+* ``Bands`` : Only checked bands are downloaded (if the image is provided by  the Amazon Web Services);
+* [ ``Check/uncheck all bands`` ]: select or deselect all Landsat 8 bands;
+	
+.. _landsat_download:
+
+Download
+^^^^^^^^^^^^^^^^^
+
+It is possible to download multiple images (i.e. all the images in the image list table) and select which bands to download for each image.
+During the download it is recommended not to interact with QGIS.
+
+* [ ``Export links`` ]: export the download links to a text file;
+* [ ``Download images from list`` ]: start the download process of all the images listed in :ref:`landsat_images`;
+* ``only if preview in legend`` : if checked, the download is performed only for the images listed in :ref:`landsat_images` that are also displayed as previews in the map;
+* ``Pre process images`` : if checked, bands are converted to reflectance (and temperature) after the download, according to the settings defined in :ref:`landsat_tab`;
+* ``Load bands in QGIS`` : if checked, bands are loaded in QGIS after the download;
+	
 .. _pre_processing_tab:
  
 Pre processing
@@ -200,7 +378,7 @@ Raster list
 Clip coordinates
 ^^^^^^^^^^^^^^^^
 
-* [+]: click the map for the definition of the Upper Left (UL) and Lower Right (LR) point coordinates (X and Y) of the rectangle used for clipping;
+* [+]: click the map for the definition of the Upper Left (UL) and Lower Right (LR) point coordinates (X and Y) of the rectangle used for clipping; it is possible to enter the coordinates manually;
 * ``Use shapefile for clipping``: if checked, use the selected shapefile (already loaded in QGIS) for clipping, overriding point coordinates;
 * < ``No data value`` >: set the value for 'NoData' pixels (e.g. pixel outside the clipped area);
 * < ``Output name prefix`` >: set the prefix for output file names;
@@ -595,7 +773,13 @@ Classification process
 
 * ``Play sound when finished`` [Q]: if checked, play a sound when the classification process is completed;
 * ``Save algorithm files`` [Q]: if checked, in addition to the classification output, save the intermediate files calculated by the classification algorithm (one .tif file for each land cover class representing the `similarity` of each pixel to the class thereof);
-* ``Use virtual rasters for temp files`` [Q]: if checked, create virtual rasters for certain temporary files, instead of creating real rasters; it is useful for reducing disk space usage during calculations;
+* ``Use virtual rasters for temp files`` [Q]: if checked, create virtual rasters for certain temporary files, instead of creating real rasters; it is useful for reducing disk space usage during calculations.
+
+.. _image_calculation:
+
+Image calculation
+^^^^^^^^^^^^^^^^^^^^^^^^^
+* ``Raster data type for image calculations`` [Q]: select the raster data type between Float32 (default) and Float64, which is used for the creation of raster outputs;
 
 .. _ram:
 
@@ -633,4 +817,4 @@ Log file
 Test
 ^^^^^^^^^^^^^^^^^^
 
-* [ ``Test dependencies`` ]: test SCP dependencies (GDAL, GDAL subprocess, NumPy, SciPy, Matplotlib); a window will display test results.
+* [ ``Test dependencies`` ]: test SCP dependencies (GDAL, GDAL subprocess, NumPy, SciPy, Matplotlib, Internet connection); a window displays the test results.

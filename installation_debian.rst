@@ -69,4 +69,4 @@ In the :ref:`settings_tab`, set the ``Available RAM (MB)`` to a value that shoul
 .. |settings| image:: _static/settings.png
 	:width: 20pt
 	
-.. image:: _static/RAMSettings_d.jpg
+.. image:: _static/RAMSettings.jpg

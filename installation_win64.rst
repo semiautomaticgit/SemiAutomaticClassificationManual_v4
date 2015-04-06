@@ -13,7 +13,7 @@ Installation in Windows 64 bit
 QGIS download and installation
 ------------------------------------------
 
-* Download the latest QGIS version 64 bit from `here <http://www.qgis.org/en/site/forusers/download.html>`_ (the direct download of QGIS 2.6 from this `link <http://qgis.org/downloads/QGIS-OSGeo4W-2.6.1-1-Setup-x86_64.exe>`_);
+* Download the latest QGIS version 64 bit from `here <http://www.qgis.org/en/site/forusers/download.html>`_ (the direct download of QGIS 2.8 from this `link <http://qgis.org/downloads/QGIS-OSGeo4W-2.8.1-1-Setup-x86_64.exe>`_);
 
 * Execute the QGIS installer with administrative rights, accepting the default configuration.
 
