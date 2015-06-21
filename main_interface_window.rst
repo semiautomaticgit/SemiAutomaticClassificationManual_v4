@@ -284,7 +284,7 @@ During the download it is recommended not to interact with QGIS.
 
 * [ ``Export links`` ]: export the download links to a text file;
 * [ ``Download images from list`` ]: start the download process of all the images listed in :ref:`landsat_images`;
-* ``only if preview in legend`` : if checked, the download is performed only for the images listed in :ref:`landsat_images` that are also displayed as previews in the map;
+* ``only if preview in Layers`` : if checked, the download is performed only for the images listed in :ref:`landsat_images` that are also displayed as previews in the map;
 * ``Pre process images`` : if checked, bands are converted to reflectance (and temperature) after the download, according to the settings defined in :ref:`landsat_tab`;
 * ``Load bands in QGIS`` : if checked, bands are loaded in QGIS after the download;
 	

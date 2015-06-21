@@ -13,7 +13,7 @@ Installation in Windows 32 bit
 QGIS download and installation
 ------------------------------------------
 
-* Download the latest QGIS version 32 bit from `here <http://www.qgis.org/en/site/forusers/download.html>`_ (the direct download of QGIS 2.8 from this `link <http://qgis.org/downloads/QGIS-OSGeo4W-2.8.1-1-Setup-x86.exe>`_);
+* Download the latest QGIS version 32 bit from `here <http://www.qgis.org/en/site/forusers/download.html>`_ (the direct download of QGIS 2.8 from this `link <http://qgis.org/downloads/QGIS-OSGeo4W-2.8.2-1-Setup-x86.exe>`_);
 
 * Execute the QGIS installer with administrative rights, accepting the default configuration.
 
