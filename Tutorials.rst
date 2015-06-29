@@ -32,6 +32,14 @@ In this tutorial we are going to classify a remote sensing image acquired over F
 #. Vegetation;
 #. Bare soil.
 
+Following the video of this tutorial.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/nZffzX_sMnk?rel=0" width="640"></iframe>
+
+http://www.youtube.com/watch?v=nZffzX_sMnk
+
 .. _tutorial_1_data:
 
 Data
