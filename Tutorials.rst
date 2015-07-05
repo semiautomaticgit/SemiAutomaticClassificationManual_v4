@@ -251,6 +251,14 @@ In this tutorial we are going to classify a Landsat 8 image acquired over Frasca
 #. Vegetation;
 #. Bare soil.
 
+Following the video of this tutorial.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/ImbYhiIgl1g?rel=0" width="640"></iframe>
+
+http://www.youtube.com/watch?v=ImbYhiIgl1g
+
 .. _tutorial_2_data_download:
 
 Data Download
