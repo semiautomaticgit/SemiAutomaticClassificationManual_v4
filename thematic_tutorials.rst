@@ -117,7 +117,7 @@ The values that indicate with high confidence cirrus or clouds pixels are (for t
 In particular, the Quality Assessment Band of the sample dataset includes mainly the value 53248 indicating clouds.
 Therefore, in this tutorial we are going to exclude the pixels with the **value 53248** from all the Landsat bands.
 
-First, **download the sample dataset**, which is a Landsat 8 image already converted to reflectance (see :ref:`tutorial_2_1`) from this link `from here <https://docs.google.com/uc?id=0BysUrKXWIDwBZFFMMlJNZXJpS3c&export=download>`_ (data available from the U.S. Geological Survey).
+First, **download the sample dataset**, which is a Landsat 8 image already converted to reflectance (see :ref:`tutorial_2_1`) from `this link <https://docs.google.com/uc?id=0BysUrKXWIDwBZFFMMlJNZXJpS3c&export=download>`_ (data available from the U.S. Geological Survey).
 Also, **download the land cover classification** from `here <https://docs.google.com/uc?id=0BysUrKXWIDwBYVlTZ2ZQRVo2V1k&export=download>`_ .
 
 .. _thematic_tutorial_6_1:
