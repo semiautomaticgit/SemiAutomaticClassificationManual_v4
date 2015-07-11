@@ -611,7 +611,7 @@ The following buttons are available:
 * [ ``atan`` ]: inverse tangent;
 * [ ``log`` ]: natural logarithm;
 * [ ``π`` ]: pi;
-
+* [ ``np.where`` ]: conditional expression with the syntax ``np.where( condition , value if true, value if false)`` ;
 * [ ``Calculate`` ]: if ``Expression`` is green, choose the output destination and start the calculation; if multiple expressions are entered, then multiple outputs are created with the same name and a numerical suffix according to the numerical order of expressions.
 
 .. _band_set_tab:
