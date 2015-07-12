@@ -117,6 +117,14 @@ The values that indicate with high confidence cirrus or clouds pixels are (for t
 In particular, the Quality Assessment Band of the sample dataset includes mainly the value 53248 indicating clouds.
 Therefore, in this tutorial we are going to exclude the pixels with the **value 53248** from all the Landsat bands.
 
+Following the video of this tutorial.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/vjKX00jML64?rel=0" width="640"></iframe>
+
+http://www.youtube.com/watch?v=vjKX00jML64
+
 First, **download the sample dataset**, which is a Landsat 8 image already converted to reflectance (see :ref:`tutorial_2_1`) from `this link <https://docs.google.com/uc?id=0BysUrKXWIDwBZFFMMlJNZXJpS3c&export=download>`_ (data available from the U.S. Geological Survey).
 Also, **download the land cover classification** from `here <https://docs.google.com/uc?id=0BysUrKXWIDwBYVlTZ2ZQRVo2V1k&export=download>`_ .
 
@@ -139,7 +147,7 @@ Open the :ref:`band_calc_tab` and click the button ``Refresh list``.
 	
 	:guilabel:`The Band calc tool`
 	
-We are going to use conditional expressions (i.e. ``np.where``, for more information see `this page <http://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html>`_) with the follwing structure: ::
+We are going to use conditional expressions (i.e. ``np.where``, for more information see `this page <http://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html>`_) with the following structure: ::
 
 	np.where( condition , value if true, value if false)
 	
