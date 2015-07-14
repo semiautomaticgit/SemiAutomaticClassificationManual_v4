@@ -15,10 +15,10 @@ The Semi-Automatic OS is a lightweight virtual machine for the land cover classi
 	
 	:guilabel:`Semi-Automatic OS desktop`
 	
-The Semi-Automatic OS is based on `Debian <https://www.debian.org/>`_ 7 32-bit, and it is designed to require very little hardware resources. It uses `LXDE <http://lxde.org/>`_ and `Openbox <http://openbox.org/>`_ as main desktop environment.
+The Semi-Automatic OS is based on `Debian <https://www.debian.org/>`_ , and it is designed to require very little hardware resources. It uses `LXDE <http://lxde.org/>`_ and `Openbox <http://openbox.org/>`_ as main desktop environment.
 This virtual machine can be useful for testing the Semi-Automatic Classification Plugin, or when the installation of the required programs in the host system is problematic.
 |br|
-The Semi-Automatic OS is available as a virtual machine that can be run in the open source VirtualBox, or any other virtualization program. The following is a guide for the installation of the Semi-Automatic OS in the open source program of virtualization VirtualBox.
+The Semi-Automatic OS is available as a 32 bit and 64 bit virtual machine that can be run in the open source VirtualBox, or any other virtualization program. The following is a guide for the installation of the Semi-Automatic OS in the open source program of virtualization VirtualBox.
 
 .. _installation_in_VirtualBox:
  
@@ -27,7 +27,7 @@ Installation in VirtualBox
 
 	#. Download `VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ open source software (select a proper version depending on your OS) and install it; at the end of the installation restart the system;
 	
-	#. Download the Semi-Automatic OS virtual machine (about 600 MB) from `here <https://sourceforge.net/projects/semi-automatic-os/files/latest/download?source=files>`_;
+	#. Download the Semi-Automatic OS virtual machine (about 600 MB) from `here <https://sourceforge.net/projects/semi-automatic-os/files/Semi-Automatic%20OS%204.0.0/>`_ (32 bit or 64 bit);
 	
 	#. Extract the virtual machine content in a directory (it requires about 3 GB of disk space); the file is compressed in 7z format (if needed, download the open source extraction software from http://www.7-zip.org/);
 	
@@ -35,7 +35,7 @@ Installation in VirtualBox
 	
 		#. Click the New button;
 		
-		#. Type a name for the virtual machine (for instance Semi-Automatic OS); select Linux and Debian as Type and Version respectively; click Next;
+		#. Type a name for the virtual machine (for instance Semi-Automatic OS); select Linux and Debian (32 or 64 bit) as Type and Version respectively; click Next;
 		
 			.. image:: _static/v1.jpg
 		
