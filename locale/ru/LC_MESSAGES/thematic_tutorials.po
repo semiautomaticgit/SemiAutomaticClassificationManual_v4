@@ -1,0 +1,386 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-25 10:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../thematic_tutorials.rst:5
+msgid "Thematic Tutorials"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:11
+msgid ""
+"The following are thematic tutorials. Before these tutorials, it is "
+"recommended to read the :ref:`tutorials`."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:23
+msgid "Tutorial 1: Set the Input in SCP"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:25 ../../thematic_tutorials.rst:37
+#: ../../thematic_tutorials.rst:44 ../../thematic_tutorials.rst:51
+#: ../../thematic_tutorials.rst:58 ../../thematic_tutorials.rst:65
+#: ../../thematic_tutorials.rst:72 ../../thematic_tutorials.rst:79
+#: ../../thematic_tutorials.rst:86 ../../thematic_tutorials.rst:93
+msgid "Work in progress ..."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:30
+msgid "Tutorial 2: Pre processing"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:35
+msgid "Download Landsat Images with the SCP"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:42
+msgid "Clip multiple rasters"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:49
+msgid "Split a multiband raster"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:56
+msgid "Tutorial 3: ROI Creation"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:63
+msgid "Tutorial 4: Classifications"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:70
+msgid "Classification Previews"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:77
+msgid "Band Weights and Algorithm Thresholds"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:84
+msgid "Algorithm Raster"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:91
+msgid "Tutorial 5: Post Processing"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:98
+msgid "Tutorial: Using the tool Band calc"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:100
+msgid ""
+"This is a tutorial about the use of the tool :ref:`band_calc_tab` that "
+"allows for the **raster calculation for bands**. In particular, we are going"
+" to calculate the NDVI (Normalized Difference Vegetation Index) of a Landsat"
+" image, and then apply a condition in order to refine a land cover "
+"classification (see :ref:`tutorial_2` ) basing on NDVI values (a sort of "
+"Decision Tree Classifier)."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:103
+msgid ""
+"The :ref:`band_calc_tab` can perform multiple calculations in sequence. We "
+"are going to apply a mask to every Landsat bands in order to exclude cirrus "
+"and cloud pixels from the NDVI calculation, and avoid anomalous values. In "
+"particular, Landsat 8 includes a `Quality Assessment Band "
+"<http://landsat.usgs.gov/L8QualityAssessmentBand.php>`_ ) that can be used "
+"for masking cirrus and cloud pixels."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:107
+msgid ""
+"The values that indicate with high confidence cirrus or clouds pixels are "
+"(for the description of these codes see the table at "
+"http://landsat.usgs.gov/L8QualityAssessmentBand.php ):"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:109
+msgid "61440;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:110
+msgid "59424;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:111
+msgid "57344;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:112
+msgid "56320;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:113
+msgid "53248;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:114
+msgid "31744;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:115
+msgid "28672 ."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:117
+msgid ""
+"In particular, the Quality Assessment Band of the sample dataset includes "
+"mainly the value 53248 indicating clouds. Therefore, in this tutorial we are"
+" going to exclude the pixels with the **value 53248** from all the Landsat "
+"bands."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:120
+msgid "Following the video of this tutorial."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:126
+msgid "http://www.youtube.com/watch?v=vjKX00jML64"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:128
+msgid ""
+"First, **download the sample dataset**, which is a Landsat 8 image already "
+"converted to reflectance (see :ref:`tutorial_2_1`) from `this link "
+"<https://docs.google.com/uc?id=0BysUrKXWIDwBZFFMMlJNZXJpS3c&export=download>`_"
+" (data available from the U.S. Geological Survey). Also, **download the land"
+" cover classification** from `here "
+"<https://docs.google.com/uc?id=0BysUrKXWIDwBYVlTZ2ZQRVo2V1k&export=download>`_"
+" ."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:134
+msgid "Application of a mask to multiple bands"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:136
+msgid "Unzip the downloaded dataset and load all the raster bands in QGIS."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:141
+msgid ":guilabel:`Bands loaded in QGIS`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:143
+msgid "Open the :ref:`band_calc_tab` and click the button ``Refresh list``."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:148
+msgid ":guilabel:`The Band calc tool`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:150
+msgid ""
+"We are going to use conditional expressions (i.e. ``np.where``, for more "
+"information see `this page "
+"<http://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html>`_) "
+"with the following structure: ::"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:154
+msgid "Where:"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:156
+msgid "``condition`` is a logical condition between bands or values;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:157
+msgid ""
+"``value if true`` and ``value if false`` can be a numerical value, a band, "
+"or another expression."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:159
+msgid "In ``Expression`` enter the following block of expressions: ::"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:172 ../../thematic_tutorials.rst:208
+#: ../../thematic_tutorials.rst:263
+msgid ":guilabel:`The expression in Band calc`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:175
+msgid ""
+"**TIP** : If the text in ``Expression`` is green it means that the syntax is"
+" correct, otherwise it is red and the button ``Calculate`` is disabled."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:177
+msgid ""
+"Click the button ``Calculate``, select where to save the bands (e.g. a new "
+"directory named `masked_bands`) and write the output name (e.g. ``masked``)."
+" Multiple outputs are created with the same output name and a numerical "
+"suffix based on the numerical order of the expressions. Calculated bands are"
+" also added to QGIS."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:184
+msgid ":guilabel:`Masked bands`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:186
+msgid ""
+"According to the order of expressions, the file ``masked_1`` corresponds to "
+"the band ``RT_LC81910312015006LGN00_B2``,  the file ``masked_2`` corresponds"
+" to the band ``RT_LC81910312015006LGN00_B3``, and so on. Masked pixels have "
+"NoData values (i.e. nan)."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:192
+msgid "NDVI Calculation"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:194
+msgid ""
+"NDVI is an index calculated as ``( Near Infrared band - Red band ) / (Near "
+"Infrared band + Red band)`` which ranges from -1 to 1 . Green vegetation has"
+" the highest NDVI values tending to 1."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:197
+msgid ""
+"Open the :ref:`band_calc_tab` and click the button `Refresh list`. Clear the"
+" content of ``Expression`` and write the following expression for the "
+"calculation of NDVI: ::"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:202
+msgid ""
+"where ``masked_4.tif`` is the Near Infrared band and ``masked_3.tif`` is the"
+" Red band."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:211
+msgid ""
+"**TIP** : The expression can work both with ``Variable`` and ``Band name`` "
+"between quotes. Also, bands in the :ref:`band_set_tab` can be referenced "
+"directly; for example ``bandset#b1`` refers to band 1 of the Band set. "
+"Double click on any item in the :ref:`band_list2` for adding its name to the"
+" expression."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:215
+msgid ""
+"Click the button ``Calculate``, select where to save the NDVI (e.g. a new "
+"file named `NDVI`). The NDVI is added to QGIS."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:221
+msgid ":guilabel:`The NDVI calculated`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:227
+msgid "Classification refinement basing on NDVI values"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:229
+msgid "Load the downloaded classification in QGIS."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:234
+msgid ":guilabel:`The land cover classification`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:236
+msgid ""
+"The classification is the result of :ref:`tutorial_2` where the land cover "
+"classes described in the following table were identified."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:239
+msgid "Class name"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:239
+msgid "Pixel value"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:241
+msgid "Water"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:241
+msgid "1"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:243
+msgid "Built-up"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:243
+msgid "2"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:245
+msgid "Vegetation"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:245
+msgid "3"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:247
+msgid "Bare soil"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:247
+msgid "4"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:250
+msgid ""
+"We are going to refine this classification defining the following condition:"
+" pixels having NDVI > 0.5 are classified Vegetation. The value 0.5 is an "
+"arbitrary value that should be changed according to the image condition "
+"(i.e. phenological state of vegetation)."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:253
+msgid ""
+"Open the :ref:`band_calc_tab` and click the button `Refresh list`. Clear the"
+" content of ``Expression`` and write the following expression: ::"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:258
+msgid ""
+"which means that if NDVI value is greater than 0.5, assign the pixel value 3"
+" (i.e. Vegetation), otherwise leave the original classification value."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:265
+msgid ""
+"Click the button ``Calculate``, select where to save the new classification "
+"(e.g. a new file named ``refined_classification``). The new classification "
+"is added to QGIS."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:271
+msgid ":guilabel:`The output land cover classification`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:273
+msgid ""
+"It is possible to copy the style from the original classification (in QGIS "
+"Layers right click on the layer name and select ``Copy style``) and paste it"
+" to the new classification (right click on the layer name and select ``Paste"
+" style``)."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:278
+msgid ":guilabel:`The output land cover classification with color style`"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:280
+msgid "You can see that now a larger area is classified as vegetation."
+msgstr ""

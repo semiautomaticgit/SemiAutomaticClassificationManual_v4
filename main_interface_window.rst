@@ -306,7 +306,7 @@ Landsat
 	
 	:guilabel:`Landsat`
 	
-The tab ``Landsat`` allows for the conversion of **Landsat 4, 5, 7, and 8** images from DN (i.e. Digital Numbers) to the physical measure of Top Of Atmosphere reflectance (TOA), or the application of a simple atmospheric correction using the DOS1 method (Dark Object Subtraction 1), which is an image-based technique (for more information about the Landsat conversion to TOA and DOS1 correction, see :ref:`landsat_conversion_to_reflectance`).
+The tab ``Landsat`` allows for the conversion of **Landsat 1, 2, and 3 MSS** and **Landsat 4, 5, 7, and 8** images from DN (i.e. Digital Numbers) to the physical measure of Top Of Atmosphere reflectance (TOA), or the application of a simple atmospheric correction using the DOS1 method (Dark Object Subtraction 1), which is an image-based technique (for more information about the Landsat conversion to TOA and DOS1 correction, see :ref:`landsat_conversion_to_reflectance`).
 
 .. _landsat_conversion:
 
@@ -535,7 +535,7 @@ Classification input
 * ``automatic C ID to MC ID values using codes from Signature list``: if checked, the reclassification table is filled according to the :ref:`signature_list` when ``Calculate unique values`` is clicked;
 
 * Table fields:
-	* ``Old value`` : set the expression defining old values to be reclassified; ``Old value`` can be a value or an expressions defined using the variable name ``raster`` (custom names can be defined in :ref:`variable_name` ), following Python operators (e.g. ``raster > 3`` select all pixels having value > 3 ; ``raster > 5 | raster < 2`` select all pixels having value > 5 or < 2);
+	* ``Old value`` : set the expression defining old values to be reclassified; ``Old value`` can be a value or an expressions defined using the variable name ``raster`` (custom names can be defined in :ref:`variable_name` ), following Python operators (e.g. ``raster > 3`` select all pixels having value > 3 ; ``raster > 5 | raster < 2`` select all pixels having value > 5 or < 2 ; ``raster >= 2 & raster <= 5`` select all pixel values between 2 and 5);
 	* ``New value`` : set the new value for the old values defined in ``Old value``;
 
 * [ ``Add value`` ]: add a row to the table;
@@ -612,7 +612,9 @@ The following buttons are available:
 * [ ``log`` ]: natural logarithm;
 * [ ``π`` ]: pi;
 * [ ``np.where`` ]: conditional expression with the syntax ``np.where( condition , value if true, value if false)`` ;
-* [ ``Calculate`` ]: if ``Expression`` is green, choose the output destination and start the calculation; if multiple expressions are entered, then multiple outputs are created with the same name and a numerical suffix according to the numerical order of expressions.
+* ``Use NoData value`` : if checked, pixels equal to NoData value will be excluded from the output raster
+* [ ``Calculate`` ]: if ``Expression`` is green, choose the output destination and start the calculation; if multiple expressions are entered, then multiple outputs are created with the same name and a numerical suffix according to the numerical order of expressions;
+* ``Intersection`` : if checked, extension of output raster equals the extensions of input rasters.
 
 .. _band_set_tab:
  
@@ -671,6 +673,7 @@ Although it is recommended to define the ``Center wavelength`` of bands, it is p
 	* Landsat 7 ETM+;
 	* Landsat 5 TM;
 	* Landsat 4 TM;
+	* Landsat 1, 2, and 3 MSS;
 	* Pleiades;
 	* QuickBird;
 	* RapidEye;
@@ -788,7 +791,7 @@ RAM
 
 * < ``Available RAM (MB)`` > [Q]: set the available RAM (in MB) that will be used during the processes; this value should be half of the system RAM (e.g. 1024MB if system has 2GB of RAM).
 
-.. settings_debug_tab:
+.. _settings_debug_tab:
 
 Settings: Debug
 -------------------------

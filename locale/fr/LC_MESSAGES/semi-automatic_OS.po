@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.0\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-15 10:06+0100\n"
+"POT-Creation-Date: 2015-07-25 10:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,16 +29,16 @@ msgstr ""
 
 #: ../../semi-automatic_OS.rst:18
 msgid ""
-"The Semi-Automatic OS is based on `Debian <https://www.debian.org/>`_ 7 "
-"32-bit, and it is designed to require very little hardware resources. It "
-"uses `LXDE <http://lxde.org/>`_ and `Openbox <http://openbox.org/>`_ as main"
-" desktop environment. This virtual machine can be useful for testing the "
-"Semi-Automatic Classification Plugin, or when the installation of the "
-"required programs in the host system is problematic. |br| The Semi-Automatic"
-" OS is available as a virtual machine that can be run in the open source "
-"VirtualBox, or any other virtualization program. The following is a guide "
-"for the installation of the Semi-Automatic OS in the open source program of "
-"virtualization VirtualBox."
+"The Semi-Automatic OS is based on `Debian <https://www.debian.org/>`_ , and "
+"it is designed to require very little hardware resources. It uses `LXDE "
+"<http://lxde.org/>`_ and `Openbox <http://openbox.org/>`_ as main desktop "
+"environment. This virtual machine can be useful for testing the Semi-"
+"Automatic Classification Plugin, or when the installation of the required "
+"programs in the host system is problematic. |br| The Semi-Automatic OS is "
+"available as a 32 bit and 64 bit virtual machine that can be run in the open"
+" source VirtualBox, or any other virtualization program. The following is a "
+"guide for the installation of the Semi-Automatic OS in the open source "
+"program of virtualization VirtualBox."
 msgstr ""
 
 #: ../../semi-automatic_OS.rst:26
@@ -55,8 +55,8 @@ msgstr ""
 #: ../../semi-automatic_OS.rst:30
 msgid ""
 "Download the Semi-Automatic OS virtual machine (about 600 MB) from `here "
-"<https://sourceforge.net/projects/semi-automatic-"
-"os/files/latest/download?source=files>`_;"
+"<https://sourceforge.net/projects/semi-automatic-os/files/Semi-"
+"Automatic%20OS%204.0.0/>`_ (32 bit or 64 bit);"
 msgstr ""
 
 #: ../../semi-automatic_OS.rst:32
@@ -77,7 +77,8 @@ msgstr ""
 #: ../../semi-automatic_OS.rst:38
 msgid ""
 "Type a name for the virtual machine (for instance Semi-Automatic OS); select"
-" Linux and Debian as Type and Version respectively; click Next;"
+" Linux and Debian (32 or 64 bit) as Type and Version respectively; click "
+"Next;"
 msgstr ""
 
 #: ../../semi-automatic_OS.rst:42

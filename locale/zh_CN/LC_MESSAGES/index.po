@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.0\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-15 10:06+0100\n"
+"POT-Creation-Date: 2015-07-25 10:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,19 +42,20 @@ msgstr ""
 
 #: ../../index.rst:16
 msgid ""
-"The following tools are available for the **pre processing** of images: "
+"SCP implements a tool for **searching and downloading Landsat** images. The "
+"following tools are available for the **pre processing** of images: "
 "**automatic Landsat conversion to surface reflectance**, **clipping** "
 "multiple rasters, and **splitting** multi-band rasters."
 msgstr ""
 
-#: ../../index.rst:18
+#: ../../index.rst:19
 msgid ""
 "The **classification algorithms** available are: Minimum Distance, Maximum "
 "Likelihood, Spectral Angle Mapping. SCP allows for interactive **preview of "
 "classification**."
 msgstr ""
 
-#: ../../index.rst:20
+#: ../../index.rst:21
 msgid ""
 "The **post processing** tools include: **accuracy assessment**, land cover "
 "change, classification report, classification to vector, reclassification of"
@@ -63,21 +64,21 @@ msgid ""
 "<http://docs.scipy.org/doc/numpy/reference/routines.math.html>`_ ."
 msgstr ""
 
-#: ../../index.rst:23
+#: ../../index.rst:24
 msgid ""
 "For more information and tutorials visit the official site `From GIS to "
 "Remote Sensing <http://fromgistors.blogspot.com/>`_."
 msgstr ""
 
-#: ../../index.rst:25 ../../index.rst:32 ../../index.rst:39 ../../index.rst:48
+#: ../../index.rst:26 ../../index.rst:33 ../../index.rst:40 ../../index.rst:49
 msgid "|br|"
 msgstr ""
 
-#: ../../index.rst:27
+#: ../../index.rst:28
 msgid "**How to cite:**"
 msgstr ""
 
-#: ../../index.rst:29
+#: ../../index.rst:30
 msgid ""
 "*Congedo Luca, Munafo' Michele, Macchi Silvia (2013). \"Investigating the "
 "Relationship between Land Cover and Vulnerability to Climate Change in Dar "
@@ -86,18 +87,18 @@ msgid ""
 "DoM_for_LCC_in_Dar_using_Landsat_Imagery.pdf"
 msgstr ""
 
-#: ../../index.rst:34
+#: ../../index.rst:35
 msgid "**License:**"
 msgstr ""
 
-#: ../../index.rst:36
+#: ../../index.rst:37
 msgid ""
 "Except where otherwise noted, content of this work is licensed under a "
 "`Creative Commons Attribution-ShareAlike 4.0 International License "
 "<http://creativecommons.org/licenses/by-sa/4.0/>`_."
 msgstr ""
 
-#: ../../index.rst:41
+#: ../../index.rst:42
 msgid ""
 "``Semi-Automatic Classification Plugin is free software: you can "
 "redistribute it and/or modify it under the terms of the GNU General Public "
@@ -110,7 +111,7 @@ msgid ""
 "Plugin. If not, see http://www.gnu.org/licenses/.``"
 msgstr ""
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 msgid ""
 "``The first version of the Semi-Automatic Classification Plugin was written "
 "by Luca Congedo for the Adapting to Climate Change in Coastal Dar es Salaam "

@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.0\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-15 10:06+0100\n"
+"POT-Creation-Date: 2015-07-25 10:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,145 +77,152 @@ msgstr ""
 msgid "[ ``Fit to data`` ]: resize the plot to fit to all the data;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:41
+#: ../../spectral_signature_plot.rst:40
 msgid ""
 "``Calculate spectral distances`` : if checked, calculate the following "
-"spectral distances in :"
+"spectral distances:"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:37
-msgid "Jeffries-Matusita distance;"
+msgid ":ref:`Jeffries_Matusita_distance`;"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:38
-msgid "Spectral angle;"
+msgid ":ref:`spectral_angle`;"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:39
-msgid "Euclidean distance;"
+msgid ":ref:`euclidean_distance`;"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:40
-msgid "Bray-Curtis similarity."
+msgid ":ref:`Bray_Curtis_similarity`."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:46
+#: ../../spectral_signature_plot.rst:45
 msgid "Plot"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:48
+#: ../../spectral_signature_plot.rst:47
 msgid "It is possible to move the legend inside the plot with the mouse."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:58
+#: ../../spectral_signature_plot.rst:57
 msgid "Plot commands (from Matplotlib):"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:51
+#: ../../spectral_signature_plot.rst:50
 msgid "|m_home|: Reset to original view;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:52
+#: ../../spectral_signature_plot.rst:51
 msgid "|m_back|: Back to previous view;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:53
+#: ../../spectral_signature_plot.rst:52
 msgid "|m_forward|: Forward to next view;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:54
+#: ../../spectral_signature_plot.rst:53
 msgid "|m_pan|: Pan axes with left mouse, zoom with right;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:55
+#: ../../spectral_signature_plot.rst:54
 msgid "|m_zoom|: Zoom to rectangle;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:56
+#: ../../spectral_signature_plot.rst:55
 msgid "|m_sub|: Unused;"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:57
+#: ../../spectral_signature_plot.rst:56
 msgid "|m_save|: Save plot to a figure (e.g. JPG file);"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:58
+#: ../../spectral_signature_plot.rst:57
 msgid "|m_edit|: Unused."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:60
+#: ../../spectral_signature_plot.rst:59
 msgid "|br|"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:91
-msgid ":guilabel:`Example Spectral Signature Plot`"
+#: ../../spectral_signature_plot.rst:90
+msgid ":guilabel:`Spectral Signature: Example of spectral signature plot`"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:96
+#: ../../spectral_signature_plot.rst:95
 msgid "Signature details"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:102
+#: ../../spectral_signature_plot.rst:101
 msgid ":guilabel:`Spectral Signature: Signature details`"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:104
+#: ../../spectral_signature_plot.rst:103
 msgid ""
 "Display the details about spectral signatures (i.e. Wavelength, Values, and "
-"Standard deviation)"
+"Standard deviation)."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:110
-msgid ":guilabel:`Spectral Signature: Example signature details`"
+#: ../../spectral_signature_plot.rst:105
+msgid ""
+"This is useful for comparing the values of different spectral signatures or "
+"pixels."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:115
+#: ../../spectral_signature_plot.rst:111
+msgid ":guilabel:`Spectral Signature: Example of signature details`"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:116
 msgid "Spectral distances"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:121
+#: ../../spectral_signature_plot.rst:122
 msgid ":guilabel:`Spectral Signature: Spectral distances`"
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:123
+#: ../../spectral_signature_plot.rst:124
 msgid ""
 "Display spectral distances for each combination of signatures, if "
 "``Calculate spectral distances`` is checked in :ref:`signature_list_plot` . "
-"It is useful for assessing ROI separability."
+"It is useful for assessing ROI separability (see "
+":ref:`spectral_distance_definition`)."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:126
+#: ../../spectral_signature_plot.rst:127
 msgid "The following spectral distances are calculated :"
-msgstr ""
-
-#: ../../spectral_signature_plot.rst:128
-msgid ""
-"Jeffries-Matusita distance:  range [0 = identical, 2 = different],; useful "
-"in particular for Maximum Likelihood classifications;"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:129
 msgid ""
-"Spectral angle: range [0 = identical, 90 = different]; useful in particular "
-"for Spectral Angle Mapping classifications;"
+"Jeffries-Matusita distance:  range [0 = identical, 2 = different]; useful in"
+" particular for :ref:`max_likelihood_algorithm` classifications;"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:130
 msgid ""
-"Euclidean distance: useful in particular for Minimum Distance "
-"classifications;"
+"Spectral angle: range [0 = identical, 90 = different]; useful in particular "
+"for :ref:`spectra_angle_mapping_algorithm` classifications;"
 msgstr ""
 
 #: ../../spectral_signature_plot.rst:131
+msgid ""
+"Euclidean distance: useful in particular for "
+":ref:`minimum_distance_algorithm` classifications;"
+msgstr ""
+
+#: ../../spectral_signature_plot.rst:132
 msgid ""
 "Bray-Curtis similarity [%]: range [0 = different, 100 = identical]; useful "
 "in general."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:133
+#: ../../spectral_signature_plot.rst:134
 msgid "Values are displayed in red if signatures are particularly similar."
 msgstr ""
 
-#: ../../spectral_signature_plot.rst:139
-msgid ":guilabel:`Spectral Signature: Example spectral distances`"
+#: ../../spectral_signature_plot.rst:140
+msgid ":guilabel:`Spectral Signature: Example of spectral distances`"
 msgstr ""

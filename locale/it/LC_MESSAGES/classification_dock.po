@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.0\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-15 10:06+0100\n"
+"POT-Creation-Date: 2015-07-25 10:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,92 +69,101 @@ msgstr ""
 msgid "Signature list file"
 msgstr ""
 
-#: ../../classification_dock.rst:39
+#: ../../classification_dock.rst:42
+msgid ":guilabel:`Signature list file`"
+msgstr ""
+
+#: ../../classification_dock.rst:44
 msgid ""
 "``Open`` [P]: open a signature list file (a .xml file) loading the "
 "signatures in the :ref:`signature_list` and displaying the file path "
 "(absolute or relative path according to QGIS project settings);"
 msgstr ""
 
-#: ../../classification_dock.rst:40
+#: ../../classification_dock.rst:45
 msgid ""
 "``Save`` : save the signature list to the open file; if no signature list is"
 " open, a window will ask for the creation of a new signature file;"
 msgstr ""
 
-#: ../../classification_dock.rst:41
+#: ../../classification_dock.rst:46
 msgid "``Reset`` : clear the path of the signature list file."
 msgstr ""
 
-#: ../../classification_dock.rst:46
+#: ../../classification_dock.rst:51
 msgid "Signature list"
 msgstr ""
 
-#: ../../classification_dock.rst:48
+#: ../../classification_dock.rst:56
+msgid ":guilabel:`Signature list`"
+msgstr ""
+
+#: ../../classification_dock.rst:58
 msgid ""
 "The ``Signature list`` displays loaded spectral signatures. Spectral "
 "signatures are automatically saved in the :ref:`signature_list_file`  every "
-"time the QGIS project is saved, or when the button ``Save`` is clicked."
+"time the QGIS project is saved, or when the button ``Save`` is clicked. In "
+"order to highlight items perform a mouse selection in the table."
 msgstr ""
 
-#: ../../classification_dock.rst:56
+#: ../../classification_dock.rst:67
 msgid "Table fields:"
 msgstr ""
 
-#: ../../classification_dock.rst:52
+#: ../../classification_dock.rst:63
 msgid ""
 "``S`` : checkbox field; only the spectral signatures checked in this list "
 "are used for the classification process; double click on any item to "
 "check/uncheck all the items in the list;"
 msgstr ""
 
-#: ../../classification_dock.rst:53
+#: ../../classification_dock.rst:64
 msgid ""
 "``MC ID`` : signature Macroclass ID [int]; it can be edited with a single "
 "click;"
 msgstr ""
 
-#: ../../classification_dock.rst:54
+#: ../../classification_dock.rst:65
 msgid ""
 "``MC Info`` : signature Macroclass Information [text]; it can be edited with"
 " a single click;"
 msgstr ""
 
-#: ../../classification_dock.rst:55
+#: ../../classification_dock.rst:66
 msgid ""
 "``C ID`` : signature Class ID [int]; it can be edited with a single click;"
 msgstr ""
 
-#: ../../classification_dock.rst:56
+#: ../../classification_dock.rst:67
 msgid ""
 "``C Info`` : signature Class Information [text]; it can be edited with a "
 "single click;"
 msgstr ""
 
-#: ../../classification_dock.rst:57
+#: ../../classification_dock.rst:68
 msgid ""
 "``Color`` : color field; double click to select a color for the class that "
 "is used in the classification."
 msgstr ""
 
-#: ../../classification_dock.rst:58
+#: ../../classification_dock.rst:69
 msgid "|delete_sign|: delete highlighted spectral signatures from the list;"
 msgstr ""
 
-#: ../../classification_dock.rst:59
+#: ../../classification_dock.rst:70
 msgid ""
 "|merge_sign|: merge highlighted spectral signatures obtaining a new "
 "signature calculated as the average of signature values for each band "
 "(covariance matrix is excluded);"
 msgstr ""
 
-#: ../../classification_dock.rst:60
+#: ../../classification_dock.rst:71
 msgid ""
 "|sign_plot|: add highlighted signatures to the "
 ":ref:`spectral_signature_plot`;"
 msgstr ""
 
-#: ../../classification_dock.rst:61
+#: ../../classification_dock.rst:72
 msgid ""
 "|spectral_library|: import a spectral library from ASTER spectral libraries "
 "(i.e. files .txt downloaded from http://speclib.jpl.nasa.gov), USGS spectral"
@@ -162,89 +171,112 @@ msgid ""
 "/spectral-lib.html), or generic .csv files;"
 msgstr ""
 
-#: ../../classification_dock.rst:62
+#: ../../classification_dock.rst:73
 msgid ""
 "|USGS_spectral_library|: open the :ref:`USGS_spec_library_tab` for importing"
 " USGS spectral libraries directly from internet;"
 msgstr ""
 
-#: ../../classification_dock.rst:63
+#: ../../classification_dock.rst:74
 msgid ""
 "|export_csv| : open a window for exporting signatures; every signature is "
 "exported as a .csv file in the selected directory;"
 msgstr ""
 
-#: ../../classification_dock.rst:64
+#: ../../classification_dock.rst:75
 msgid ""
 "``Export``: export the signature list to a new signature file (i.e. a .xml "
 "file for the :ref:`signature_list_file` );"
 msgstr ""
 
-#: ../../classification_dock.rst:65
+#: ../../classification_dock.rst:76
 msgid ""
 "``Import``: import a .xml file, adding the spectral signatures to the ones "
 "already loeaded in the ``Signature list``."
 msgstr ""
 
-#: ../../classification_dock.rst:88
+#: ../../classification_dock.rst:99
 msgid "Classification algorithm"
 msgstr ""
 
-#: ../../classification_dock.rst:92
+#: ../../classification_dock.rst:104
+msgid ":guilabel:`Classification algorithm`"
+msgstr ""
+
+#: ../../classification_dock.rst:106
 msgid ""
-"``Select a classification algorithm`` : available classification algorithms "
-"are:"
+"|weight_tool| : open the :ref:`Algorithm_band_weight_tab` for the definition"
+" of band weights;"
 msgstr ""
 
-#: ../../classification_dock.rst:91
-msgid "Minimum Distance;"
-msgstr ""
-
-#: ../../classification_dock.rst:92
-msgid "Maximum Likelihood;"
-msgstr ""
-
-#: ../../classification_dock.rst:93
-msgid "Spectral Angle Mapping;"
-msgstr ""
-
-#: ../../classification_dock.rst:96
+#: ../../classification_dock.rst:109
 msgid ""
-"``Threshold`` [optional]: if threshold is equal to 0, then no threshold is "
-"considered and all image pixels are classified; otherwise:"
+"``Select a classification algorithm`` : select one of the "
+":ref:`classification_algorithm_definition`; available classification "
+"algorithms are:"
 msgstr ""
 
-#: ../../classification_dock.rst:95
+#: ../../classification_dock.rst:108
+msgid ":ref:`minimum_distance_algorithm`;"
+msgstr ""
+
+#: ../../classification_dock.rst:109
+msgid ":ref:`max_likelihood_algorithm`;"
+msgstr ""
+
+#: ../../classification_dock.rst:110
+msgid ":ref:`spectra_angle_mapping_algorithm`;"
+msgstr ""
+
+#: ../../classification_dock.rst:114
+msgid ""
+"``Threshold`` [optional]: allows for the definition of a classification "
+"threshold for all the spectral signatures (for individual settings see "
+":ref:`Signature_threshold_tab`); if threshold is equal to 0, then no "
+"threshold is considered and all image pixels are classified; otherwise:"
+msgstr ""
+
+#: ../../classification_dock.rst:112
 msgid ""
 "for Minimum Distance, pixels are unclassified if distance is greater than "
 "threshold value;"
 msgstr ""
 
-#: ../../classification_dock.rst:96
+#: ../../classification_dock.rst:113
 msgid ""
 "for Maximum Likelihood, pixels are unclassified if probability is less than "
 "threshold  value (max 100);"
 msgstr ""
 
-#: ../../classification_dock.rst:97
+#: ../../classification_dock.rst:114
 msgid ""
 "for Spectral Angle Mapping, pixels are unclassified if spectral angle "
-"distance is greater than threshold value (max 90)."
+"distance is greater than threshold value (max 90);"
 msgstr ""
 
-#: ../../classification_dock.rst:98
+#: ../../classification_dock.rst:116
 msgid ""
 "``Use Macroclass ID`` : if checked, the classification is performed using "
 "the Macroclass ID (code `MC ID` of the signature); if unchecked, then the "
 "classification is performed using the Class ID (code `C ID` of the "
-"signature)."
+"signature);"
 msgstr ""
 
-#: ../../classification_dock.rst:103
+#: ../../classification_dock.rst:117
+msgid ""
+"|threshold_tool| : open the :ref:`Signature_threshold_tab` for the "
+"definition of signature thresholds."
+msgstr ""
+
+#: ../../classification_dock.rst:128
 msgid "Classification preview"
 msgstr ""
 
-#: ../../classification_dock.rst:105
+#: ../../classification_dock.rst:133
+msgid ":guilabel:`Classification preview`"
+msgstr ""
+
+#: ../../classification_dock.rst:135
 msgid ""
 "Classification previews are temporary classifications of part of the `input "
 "image` (every pixel has a value that represents a class). Also, a algorithm "
@@ -259,23 +291,23 @@ msgid ""
 " are deleted when the QGIS session is closed."
 msgstr ""
 
-#: ../../classification_dock.rst:110
+#: ../../classification_dock.rst:140
 msgid "< ``Show`` >: show/hide the temporary preview group on the map;"
 msgstr ""
 
-#: ../../classification_dock.rst:111
+#: ../../classification_dock.rst:141
 msgid ""
 "< ``Size`` >: size in pixel unit of a classification preview (i.e. the side "
 "length of a square, centred at the clicked pixel);"
 msgstr ""
 
-#: ../../classification_dock.rst:112
+#: ../../classification_dock.rst:142
 msgid ""
 "[ ``Redo`` ]: create a new classification preview centred at the same pixel "
 "of the previous one;"
 msgstr ""
 
-#: ../../classification_dock.rst:113
+#: ../../classification_dock.rst:143
 msgid ""
 "[+]: activate the pointer for the creation of a classification preview ; "
 "left click the map for starting the classification process and showing the "
@@ -283,49 +315,57 @@ msgid ""
 "and showing the algorithm raster of the preview."
 msgstr ""
 
-#: ../../classification_dock.rst:118
+#: ../../classification_dock.rst:148
 msgid "Classification style"
 msgstr ""
 
-#: ../../classification_dock.rst:120
+#: ../../classification_dock.rst:153
+msgid ":guilabel:`Classification style`"
+msgstr ""
+
+#: ../../classification_dock.rst:155
 msgid ""
 "**Class colors** (for classifications and previews) are defined in the "
 ":ref:`signature_list` ; in addition, a `classification style` can be loaded "
 "from a QGIS .qml file saved previously."
 msgstr ""
 
-#: ../../classification_dock.rst:122
+#: ../../classification_dock.rst:157
 msgid ""
 "[ ``Select qml`` ] [P]: select a .qml file overriding the colors defined in "
 "the :ref:`signature_list` ;"
 msgstr ""
 
-#: ../../classification_dock.rst:123
+#: ../../classification_dock.rst:158
 msgid ""
 "[ ``Reset`` ]: reset style to default (i.e. class colors are derived from "
 "the :ref:`signature_list`)."
 msgstr ""
 
-#: ../../classification_dock.rst:128
+#: ../../classification_dock.rst:163
 msgid "Classification output"
 msgstr ""
 
-#: ../../classification_dock.rst:130
+#: ../../classification_dock.rst:168
+msgid ":guilabel:`Classification output`"
+msgstr ""
+
+#: ../../classification_dock.rst:170
 msgid "The **classification output** is a .tif raster file."
 msgstr ""
 
-#: ../../classification_dock.rst:132
+#: ../../classification_dock.rst:172
 msgid ""
 "``Apply mask`` [optional]: if checked, a mask shapefile can be selected and "
 "used for masking the classification (i.e. the part of `input image` that is "
 "outside the mask shapefile will not be classified);"
 msgstr ""
 
-#: ../../classification_dock.rst:133
+#: ../../classification_dock.rst:173
 msgid "[ ``Reset`` ]: reset the shapefile mask;"
 msgstr ""
 
-#: ../../classification_dock.rst:134
+#: ../../classification_dock.rst:174
 msgid ""
 "``Create vector`` [optional]: if checked, when ``Perform classification`` is"
 " clicked,  a shapefile of the classification is saved inside the same folder"
@@ -333,7 +373,7 @@ msgid ""
 " vector can also be performed later in :ref:`classification_vector_tab`;"
 msgstr ""
 
-#: ../../classification_dock.rst:135
+#: ../../classification_dock.rst:175
 msgid ""
 "``Classification report`` [optional]: if checked, when ``Perform "
 "classification`` is clicked, a report about the land cover classification is"
@@ -343,8 +383,9 @@ msgid ""
 "in addition, the results are shown in the :ref:`classification_report_tab`;"
 msgstr ""
 
-#: ../../classification_dock.rst:136
+#: ../../classification_dock.rst:176
 msgid ""
 "[ ``Perform classification`` ]: define a classification output (a .tif file)"
-" and perform the image classification."
+" and perform the image classification (the .qml file of the QGIS style is "
+"saved along with the classification)."
 msgstr ""
