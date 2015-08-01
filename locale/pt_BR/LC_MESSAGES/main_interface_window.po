@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.5\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-25 10:57+0200\n"
+"POT-Creation-Date: 2015-08-01 15:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../main_interface_window.rst:68 ../../main_interface_window.rst:135
 #: ../../main_interface_window.rst:172 ../../main_interface_window.rst:256
-#: ../../main_interface_window.rst:349 ../../main_interface_window.rst:539
+#: ../../main_interface_window.rst:349 ../../main_interface_window.rst:540
 msgid "Table fields:"
 msgstr ""
 
@@ -875,9 +875,9 @@ msgstr ""
 msgid "Raster list"
 msgstr ""
 
-#: ../../main_interface_window.rst:373 ../../main_interface_window.rst:440
-#: ../../main_interface_window.rst:486 ../../main_interface_window.rst:510
-#: ../../main_interface_window.rst:533
+#: ../../main_interface_window.rst:373 ../../main_interface_window.rst:441
+#: ../../main_interface_window.rst:487 ../../main_interface_window.rst:511
+#: ../../main_interface_window.rst:534
 msgid "[ ``Refresh list`` ]: refresh layer list;"
 msgstr ""
 
@@ -967,19 +967,16 @@ msgstr ""
 
 #: ../../main_interface_window.rst:427
 msgid ""
-"The tab ``Accuracy`` allows for the validation of classification (read "
+"The tab ``Accuracy`` allows for the validation of a classification (read "
 ":ref:`accuracy_assessment_definition` ). Classification is compared to a "
-"reference shapefile. The reference shapefile must have two fields named the "
-"same as the Macroclass ID (i.e. ``MC_ID`` ) and Class ID (i.e. ``C_ID`` ) "
-"fields in the :ref:`training_shapefile` ; if ``Use Macroclass ID`` is "
-"checked in the :ref:`classification_alg`, then the Macroclass ID field of "
-"the shapefile is used as reference for the classes, otherwise the Class ID "
-"field is used; the output is an ``error raster`` (i.e. a .tif file showing "
-"the errors in the map, where each pixel represents a category of comparison "
-"(i.e. combinations) between the classification and reference shapefile, "
-"which is the ``ErrorMatrixCode`` in the error matrix) and a text file "
-"containing the error matrix (i.e. a .csv file separated by tab, with the "
-"same name defined for the .tif file)."
+"reference raster or reference shapefile (which is automatically converted to"
+" raster). If a shapefile is selected as reference, it is possible to choose "
+"a field describing class values. The output is an ``error raster`` that is a"
+" .tif file showing the errors in the map, where pixel values represent the "
+"categories of comparison (i.e. combinations identified by the "
+"``ErrorMatrixCode`` in the error matrix) between the classification and "
+"reference. Also, a text file containing the error matrix (i.e. a .csv file "
+"separated by tab) is created with the same name defined for the .tif file."
 msgstr ""
 
 #: ../../main_interface_window.rst:436
@@ -993,26 +990,33 @@ msgstr ""
 
 #: ../../main_interface_window.rst:439
 msgid ""
-"``Select the reference shapefile`` : select a shapefile, used as reference "
-"layer (ground truth) for the accuracy assessment;"
+"``Select the reference shapefile or raster`` : select a raster or a "
+"shapefile, used as reference layer (ground truth) for the accuracy "
+"assessment;"
 msgstr ""
 
-#: ../../main_interface_window.rst:441
+#: ../../main_interface_window.rst:440
+msgid ""
+"``Shapefile field`` : if a shapefile is selected as reference, select a "
+"shapefile field containing numeric class values;"
+msgstr ""
+
+#: ../../main_interface_window.rst:442
 msgid ""
 "[ ``Calculate error matrix`` ]: choose the output destination and start the "
 "calculation; the error matrix is displayed in the tab frame and the ``error "
 "raster`` is loaded in QGIS."
 msgstr ""
 
-#: ../../main_interface_window.rst:446
+#: ../../main_interface_window.rst:447
 msgid "Land cover change"
 msgstr ""
 
-#: ../../main_interface_window.rst:452
+#: ../../main_interface_window.rst:453
 msgid ":guilabel:`Land cover change`"
 msgstr ""
 
-#: ../../main_interface_window.rst:454
+#: ../../main_interface_window.rst:455
 msgid ""
 "The tab ``Land cover change`` allows for the comparison between two "
 "classifications in order to assess land cover changes. Output is a ``land "
@@ -1024,124 +1028,124 @@ msgid ""
 "for the .tif file)."
 msgstr ""
 
-#: ../../main_interface_window.rst:460 ../../main_interface_window.rst:483
-#: ../../main_interface_window.rst:507 ../../main_interface_window.rst:530
+#: ../../main_interface_window.rst:461 ../../main_interface_window.rst:484
+#: ../../main_interface_window.rst:508 ../../main_interface_window.rst:531
 msgid "Classification input"
 msgstr ""
 
-#: ../../main_interface_window.rst:462
+#: ../../main_interface_window.rst:463
 msgid ""
 "``Select the reference classification`` : select a reference classification "
 "raster (already loaded in QGIS);"
 msgstr ""
 
-#: ../../main_interface_window.rst:463
+#: ../../main_interface_window.rst:464
 msgid ""
 "``Select the new classification`` : select a new classification raster "
 "(already loaded in QGIS), to be compared with the reference classification;"
 msgstr ""
 
-#: ../../main_interface_window.rst:464
+#: ../../main_interface_window.rst:465
 msgid ""
 "``Report unchanged pixels``: if checked, report also unchanged pixels "
 "(having the same value in both classifications);"
 msgstr ""
 
-#: ../../main_interface_window.rst:465
+#: ../../main_interface_window.rst:466
 msgid ""
 "[ ``Calculate land cover change`` ]:  choose the output destination and "
 "start the calculation; the land cover change statistics are displayed in the"
 " tab frame and the ``land cover change raster`` is loaded in QGIS."
 msgstr ""
 
-#: ../../main_interface_window.rst:470
+#: ../../main_interface_window.rst:471
 msgid "Classification report"
 msgstr ""
 
-#: ../../main_interface_window.rst:476
+#: ../../main_interface_window.rst:477
 msgid ":guilabel:`Classification report`"
 msgstr ""
 
-#: ../../main_interface_window.rst:478
+#: ../../main_interface_window.rst:479
 msgid ""
 "The tab ``Classification report`` allows for the calculation of class "
 "statistics as number of pixels, percentage and area (area unit is defined "
 "from the image itself)."
 msgstr ""
 
-#: ../../main_interface_window.rst:485 ../../main_interface_window.rst:509
-#: ../../main_interface_window.rst:532
+#: ../../main_interface_window.rst:486 ../../main_interface_window.rst:510
+#: ../../main_interface_window.rst:533
 msgid ""
 "``Select the classification`` : select a classification raster (already "
 "loaded in QGIS);"
 msgstr ""
 
-#: ../../main_interface_window.rst:487
+#: ../../main_interface_window.rst:488
 msgid ""
 "``Use NoData value`` : if checked, 'NoData' value will be excluded from the "
 "report;"
 msgstr ""
 
-#: ../../main_interface_window.rst:488
+#: ../../main_interface_window.rst:489
 msgid ""
 "[ ``Calculate classification report`` ]: calculate the report and display it"
 " in the tab frame;"
 msgstr ""
 
-#: ../../main_interface_window.rst:489
+#: ../../main_interface_window.rst:490
 msgid "[ ``Save report to file`` ]: save the report to a .csv file."
 msgstr ""
 
-#: ../../main_interface_window.rst:494
+#: ../../main_interface_window.rst:495
 msgid "Classification to vector"
 msgstr ""
 
-#: ../../main_interface_window.rst:500
+#: ../../main_interface_window.rst:501
 msgid ":guilabel:`Classification to vector`"
 msgstr ""
 
-#: ../../main_interface_window.rst:502
+#: ../../main_interface_window.rst:503
 msgid ""
 "The ``Classification to vector`` allows for the conversion of a "
 "classification to shapefile."
 msgstr ""
 
-#: ../../main_interface_window.rst:511
+#: ../../main_interface_window.rst:512
 msgid ""
 "``Use code from Signature list`` : if checked, color and class information "
 "are defined from :ref:`signature_list`, according to the selection between "
 "``MC ID`` and ``C ID`` in the combobox;"
 msgstr ""
 
-#: ../../main_interface_window.rst:516
+#: ../../main_interface_window.rst:517
 msgid "Reclassification"
 msgstr ""
 
-#: ../../main_interface_window.rst:522
+#: ../../main_interface_window.rst:523
 msgid ":guilabel:`Reclassification`"
 msgstr ""
 
-#: ../../main_interface_window.rst:524
+#: ../../main_interface_window.rst:525
 msgid ""
 "The tab ``Reclassification`` allows for the reclassification (i.e. assigning"
 " a new class code to classification pixels). In particular, it is useful for"
 " converting C ID to MC ID values."
 msgstr ""
 
-#: ../../main_interface_window.rst:534
+#: ../../main_interface_window.rst:535
 msgid ""
 "[ ``Calculate unique values`` ]: calculate unique values in the "
 "classification and fill the reclassification table;"
 msgstr ""
 
-#: ../../main_interface_window.rst:535
+#: ../../main_interface_window.rst:536
 msgid ""
 "``automatic C ID to MC ID values using codes from Signature list``: if "
 "checked, the reclassification table is filled according to the "
 ":ref:`signature_list` when ``Calculate unique values`` is clicked;"
 msgstr ""
 
-#: ../../main_interface_window.rst:538
+#: ../../main_interface_window.rst:539
 msgid ""
 "``Old value`` : set the expression defining old values to be reclassified; "
 "``Old value`` can be a value or an expressions defined using the variable "
@@ -1152,43 +1156,43 @@ msgid ""
 " 5);"
 msgstr ""
 
-#: ../../main_interface_window.rst:539
+#: ../../main_interface_window.rst:540
 msgid ""
 "``New value`` : set the new value for the old values defined in ``Old "
 "value``;"
 msgstr ""
 
-#: ../../main_interface_window.rst:541
+#: ../../main_interface_window.rst:542
 msgid "[ ``Add value`` ]: add a row to the table;"
 msgstr ""
 
-#: ../../main_interface_window.rst:542
+#: ../../main_interface_window.rst:543
 msgid ""
 "[ ``Remove highlighted values`` ]: remove highlighted rows from the table;"
 msgstr ""
 
-#: ../../main_interface_window.rst:543
+#: ../../main_interface_window.rst:544
 msgid ""
 "[ ``Reclassify`` ]: choose the output destination and start the calculation;"
 " reclassified raster is loaded in QGIS;"
 msgstr ""
 
-#: ../../main_interface_window.rst:544
+#: ../../main_interface_window.rst:545
 msgid ""
 "``Apply symbology from Signature list`` : if checked, color and class "
 "information are defined from :ref:`signature_list`, according to the "
 "selection between ``MC ID`` and ``C ID`` in the combobox."
 msgstr ""
 
-#: ../../main_interface_window.rst:549
+#: ../../main_interface_window.rst:550
 msgid "Band calc"
 msgstr ""
 
-#: ../../main_interface_window.rst:555
+#: ../../main_interface_window.rst:556
 msgid ":guilabel:`Band calc tab`"
 msgstr ""
 
-#: ../../main_interface_window.rst:557
+#: ../../main_interface_window.rst:558
 msgid ""
 "The ``Band calc`` allows for the **raster calculation for bands** (i.e. "
 "calculation of pixel values) using `NumPy functions "
@@ -1196,36 +1200,36 @@ msgid ""
 "bands must be already loaded in QGIS."
 msgstr ""
 
-#: ../../main_interface_window.rst:563 ../../main_interface_window.rst:640
+#: ../../main_interface_window.rst:564 ../../main_interface_window.rst:641
 msgid "Band list"
 msgstr ""
 
-#: ../../main_interface_window.rst:565
+#: ../../main_interface_window.rst:566
 msgid "``Band list`` is a list of single band rasters loaded in QGIS."
 msgstr ""
 
-#: ../../main_interface_window.rst:569
+#: ../../main_interface_window.rst:570
 msgid "Fields of Raster bands table:"
 msgstr ""
 
-#: ../../main_interface_window.rst:568
+#: ../../main_interface_window.rst:569
 msgid ""
 "``Variable`` : automatic variable name for the specific band (e.g. raster1);"
 msgstr ""
 
-#: ../../main_interface_window.rst:569
+#: ../../main_interface_window.rst:570
 msgid "``Band name`` : band name (i.e. the layer name in QGIS);"
 msgstr ""
 
-#: ../../main_interface_window.rst:571
+#: ../../main_interface_window.rst:572
 msgid "[ ``Refresh list`` ]: refresh image list;"
 msgstr ""
 
-#: ../../main_interface_window.rst:576
+#: ../../main_interface_window.rst:577
 msgid "Expression"
 msgstr ""
 
-#: ../../main_interface_window.rst:578
+#: ../../main_interface_window.rst:579
 msgid ""
 "Enter a mathematical expression for bands. In particular, NumPy functions "
 "can be used with the prefix `np.` (e.g. ``np.log10(raster1)`` ). For a list "
@@ -1233,7 +1237,7 @@ msgid ""
 "<http://docs.scipy.org/doc/numpy/reference/routines.math.html>`_ ."
 msgstr ""
 
-#: ../../main_interface_window.rst:582
+#: ../../main_interface_window.rst:583
 msgid ""
 "The expression can work both with ``Variable`` and ``Band name`` between "
 "quotes. Also, bands in the :ref:`band_set_tab` can be referenced directly; "
@@ -1241,28 +1245,28 @@ msgid ""
 " any item in the :ref:`band_list2` for adding its name to the expression."
 msgstr ""
 
-#: ../../main_interface_window.rst:586
+#: ../../main_interface_window.rst:587
 msgid ""
 "If text in the ``Expression`` is green, then the syntax is correct; if text "
 "is red, then the syntax is incorrect and it is not possible to execute the "
 "calculation."
 msgstr ""
 
-#: ../../main_interface_window.rst:588
+#: ../../main_interface_window.rst:589
 msgid ""
 "It is possible to enter multiple expressions separated by newlines like in "
 "the following example:"
 msgstr ""
 
-#: ../../main_interface_window.rst:590
+#: ../../main_interface_window.rst:591
 msgid "``raster1 + raster2``"
 msgstr ""
 
-#: ../../main_interface_window.rst:592
+#: ../../main_interface_window.rst:593
 msgid "``raster3 - raster4``"
 msgstr ""
 
-#: ../../main_interface_window.rst:594
+#: ../../main_interface_window.rst:595
 msgid ""
 "The above example calculates two new rasters in the output directory with "
 "the suffix ``_1`` (e.g. ``output_1`` ) for the first expression and ``_2`` "
@@ -1270,87 +1274,87 @@ msgid ""
 "available:"
 msgstr ""
 
-#: ../../main_interface_window.rst:597
+#: ../../main_interface_window.rst:598
 msgid "[ ``+`` ]: plus;"
 msgstr ""
 
-#: ../../main_interface_window.rst:598
+#: ../../main_interface_window.rst:599
 msgid "[ ``-`` ]: minus;"
 msgstr ""
 
-#: ../../main_interface_window.rst:599
+#: ../../main_interface_window.rst:600
 msgid "[ ``*`` ]: product;"
 msgstr ""
 
-#: ../../main_interface_window.rst:600
+#: ../../main_interface_window.rst:601
 msgid "[ ``/`` ]: ratio;"
 msgstr ""
 
-#: ../../main_interface_window.rst:601
+#: ../../main_interface_window.rst:602
 msgid "[ ``^`` ]: power;"
 msgstr ""
 
-#: ../../main_interface_window.rst:602
+#: ../../main_interface_window.rst:603
 msgid "[ ``V`` ]: square-root;"
 msgstr ""
 
-#: ../../main_interface_window.rst:603
+#: ../../main_interface_window.rst:604
 msgid "[ ``(`` ]: open parenthesis;"
 msgstr ""
 
-#: ../../main_interface_window.rst:604
+#: ../../main_interface_window.rst:605
 msgid "[ ``)`` ]: close parenthesis;"
 msgstr ""
 
-#: ../../main_interface_window.rst:605
+#: ../../main_interface_window.rst:606
 msgid "[ ``exp`` ]: natural exponential;"
 msgstr ""
 
-#: ../../main_interface_window.rst:606
+#: ../../main_interface_window.rst:607
 msgid "[ ``sin`` ]: sine;"
 msgstr ""
 
-#: ../../main_interface_window.rst:607
+#: ../../main_interface_window.rst:608
 msgid "[ ``asin`` ]: inverse sine;"
 msgstr ""
 
-#: ../../main_interface_window.rst:608
+#: ../../main_interface_window.rst:609
 msgid "[ ``cos`` ]: cosine;"
 msgstr ""
 
-#: ../../main_interface_window.rst:609
+#: ../../main_interface_window.rst:610
 msgid "[ ``acos`` ]: inverse cosine;"
 msgstr ""
 
-#: ../../main_interface_window.rst:610
+#: ../../main_interface_window.rst:611
 msgid "[ ``tan`` ]: tangent;"
 msgstr ""
 
-#: ../../main_interface_window.rst:611
+#: ../../main_interface_window.rst:612
 msgid "[ ``atan`` ]: inverse tangent;"
 msgstr ""
 
-#: ../../main_interface_window.rst:612
+#: ../../main_interface_window.rst:613
 msgid "[ ``log`` ]: natural logarithm;"
 msgstr ""
 
-#: ../../main_interface_window.rst:613
+#: ../../main_interface_window.rst:614
 msgid "[ ``π`` ]: pi;"
 msgstr ""
 
-#: ../../main_interface_window.rst:614
+#: ../../main_interface_window.rst:615
 msgid ""
 "[ ``np.where`` ]: conditional expression with the syntax ``np.where( "
 "condition , value if true, value if false)`` ;"
 msgstr ""
 
-#: ../../main_interface_window.rst:615
+#: ../../main_interface_window.rst:616
 msgid ""
 "``Use NoData value`` : if checked, pixels equal to NoData value will be "
 "excluded from the output raster"
 msgstr ""
 
-#: ../../main_interface_window.rst:616
+#: ../../main_interface_window.rst:617
 msgid ""
 "[ ``Calculate`` ]: if ``Expression`` is green, choose the output destination"
 " and start the calculation; if multiple expressions are entered, then "
@@ -1358,21 +1362,21 @@ msgid ""
 "according to the numerical order of expressions;"
 msgstr ""
 
-#: ../../main_interface_window.rst:617
+#: ../../main_interface_window.rst:618
 msgid ""
 "``Intersection`` : if checked, extension of output raster equals the "
 "extensions of input rasters."
 msgstr ""
 
-#: ../../main_interface_window.rst:622
+#: ../../main_interface_window.rst:623
 msgid "Band set"
 msgstr ""
 
-#: ../../main_interface_window.rst:628
+#: ../../main_interface_window.rst:629
 msgid ":guilabel:`Band set`"
 msgstr ""
 
-#: ../../main_interface_window.rst:630
+#: ../../main_interface_window.rst:631
 msgid ""
 "The tab ``Band set`` allows for the definition of a set of single band "
 "rasters loaded in QGIS, used as ``Input image``. The ``Center wavelength`` "
@@ -1380,41 +1384,41 @@ msgid ""
 "the spectral signatures."
 msgstr ""
 
-#: ../../main_interface_window.rst:633
+#: ../../main_interface_window.rst:634
 msgid ""
 "If a band set of single band rasters is defined, then the item ``<< band set"
 " >>`` will be listed in the :ref:`toolbar` as ``Input image``."
 msgstr ""
 
-#: ../../main_interface_window.rst:635
+#: ../../main_interface_window.rst:636
 msgid "The ``Band set`` is stored in the QGIS project."
 msgstr ""
 
-#: ../../main_interface_window.rst:642
+#: ../../main_interface_window.rst:643
 msgid "List of single band rasters loaded in QGIS."
 msgstr ""
 
-#: ../../main_interface_window.rst:644
+#: ../../main_interface_window.rst:645
 msgid "[ ``Refresh list`` ]: refresh raster band list;"
 msgstr ""
 
-#: ../../main_interface_window.rst:645
+#: ../../main_interface_window.rst:646
 msgid "[ ``Select all`` ]: select all raster bands;"
 msgstr ""
 
-#: ../../main_interface_window.rst:646
+#: ../../main_interface_window.rst:647
 msgid "[ ``Add rasters to set`` ]: add selected rasters to the band set."
 msgstr ""
 
-#: ../../main_interface_window.rst:651
+#: ../../main_interface_window.rst:652
 msgid "Band set definition"
 msgstr ""
 
-#: ../../main_interface_window.rst:653
+#: ../../main_interface_window.rst:654
 msgid "Definition of bands composing the ``Input image`` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:655
+#: ../../main_interface_window.rst:656
 msgid ""
 "Although it is recommended to define the ``Center wavelength`` of bands, it "
 "is possible to assign the band number instead of the wavelength. Of course, "
@@ -1422,148 +1426,148 @@ msgid ""
 "and the classification process will still be working."
 msgstr ""
 
-#: ../../main_interface_window.rst:660
+#: ../../main_interface_window.rst:661
 msgid "``Wavelength unit`` [optional]: select the wavelength unit among:"
 msgstr ""
 
-#: ../../main_interface_window.rst:658
+#: ../../main_interface_window.rst:659
 msgid "[ ``Band number`` ]: no unit, only band number;"
 msgstr ""
 
-#: ../../main_interface_window.rst:659
+#: ../../main_interface_window.rst:660
 msgid "[ :math:`\\mu m`  ]: micrometres;"
 msgstr ""
 
-#: ../../main_interface_window.rst:660
+#: ../../main_interface_window.rst:661
 msgid "[ ``nm`` ]: nanometres;"
 msgstr ""
 
-#: ../../main_interface_window.rst:668
+#: ../../main_interface_window.rst:669
 msgid "``Control bands``:"
 msgstr ""
 
-#: ../../main_interface_window.rst:663
+#: ../../main_interface_window.rst:664
 msgid "[ :math:`\\uparrow` ]: move highlighted bands upward;"
 msgstr ""
 
-#: ../../main_interface_window.rst:664
+#: ../../main_interface_window.rst:665
 msgid "[ :math:`\\downarrow` ]: move highlighted bands downward;"
 msgstr ""
 
-#: ../../main_interface_window.rst:665
+#: ../../main_interface_window.rst:666
 msgid "[ ``Remove band`` ]: remove highlighted bands from the band set;"
 msgstr ""
 
-#: ../../main_interface_window.rst:666
+#: ../../main_interface_window.rst:667
 msgid "[ ``Clear all`` ]: clear all bands from band set;"
 msgstr ""
 
-#: ../../main_interface_window.rst:667
+#: ../../main_interface_window.rst:668
 msgid "[ ``Import`` ]: import a previously saved band set from file;"
 msgstr ""
 
-#: ../../main_interface_window.rst:668
+#: ../../main_interface_window.rst:669
 msgid "[ ``Export`` ]: export the band set to a file."
 msgstr ""
 
-#: ../../main_interface_window.rst:684
+#: ../../main_interface_window.rst:685
 msgid ""
 "``Quick wavelength settings`` [optional]: rapid definition of band center "
 "wavelength for the following satellite sensors:"
 msgstr ""
 
-#: ../../main_interface_window.rst:671
+#: ../../main_interface_window.rst:672
 msgid "GeoEye-1;"
 msgstr ""
 
-#: ../../main_interface_window.rst:672
+#: ../../main_interface_window.rst:673
 msgid "Landsat 8 OLI;"
 msgstr ""
 
-#: ../../main_interface_window.rst:673
+#: ../../main_interface_window.rst:674
 msgid "Landsat 7 ETM+;"
 msgstr ""
 
-#: ../../main_interface_window.rst:674
+#: ../../main_interface_window.rst:675
 msgid "Landsat 5 TM;"
 msgstr ""
 
-#: ../../main_interface_window.rst:675
+#: ../../main_interface_window.rst:676
 msgid "Landsat 4 TM;"
 msgstr ""
 
-#: ../../main_interface_window.rst:676
+#: ../../main_interface_window.rst:677
 msgid "Landsat 1, 2, and 3 MSS;"
 msgstr ""
 
-#: ../../main_interface_window.rst:677
+#: ../../main_interface_window.rst:678
 msgid "Pleiades;"
 msgstr ""
 
-#: ../../main_interface_window.rst:678
+#: ../../main_interface_window.rst:679
 msgid "QuickBird;"
 msgstr ""
 
-#: ../../main_interface_window.rst:679
+#: ../../main_interface_window.rst:680
 msgid "RapidEye;"
 msgstr ""
 
-#: ../../main_interface_window.rst:680
+#: ../../main_interface_window.rst:681
 msgid "SPOT 4;"
 msgstr ""
 
-#: ../../main_interface_window.rst:681
+#: ../../main_interface_window.rst:682
 msgid "SPOT 5;"
 msgstr ""
 
-#: ../../main_interface_window.rst:682
+#: ../../main_interface_window.rst:683
 msgid "SPOT 6;"
 msgstr ""
 
-#: ../../main_interface_window.rst:683
+#: ../../main_interface_window.rst:684
 msgid "WorldView-2;"
 msgstr ""
 
-#: ../../main_interface_window.rst:684
+#: ../../main_interface_window.rst:685
 msgid "WorldView-3."
 msgstr ""
 
-#: ../../main_interface_window.rst:686
+#: ../../main_interface_window.rst:687
 msgid ""
 "[ ``Create virtual raster of band set`` ]: create a virtual raster of bands;"
 msgstr ""
 
-#: ../../main_interface_window.rst:687
+#: ../../main_interface_window.rst:688
 msgid ""
 "[ ``Create raster of band set (stack bands)`` ]: create a .tif raster "
 "stacking bands;"
 msgstr ""
 
-#: ../../main_interface_window.rst:692
+#: ../../main_interface_window.rst:693
 msgid "Settings"
 msgstr ""
 
-#: ../../main_interface_window.rst:694
+#: ../../main_interface_window.rst:695
 msgid "The tab ``Settings`` allows for the customization of SCP settings."
 msgstr ""
 
-#: ../../main_interface_window.rst:699
+#: ../../main_interface_window.rst:700
 msgid "Settings: Interface"
 msgstr ""
 
-#: ../../main_interface_window.rst:701
+#: ../../main_interface_window.rst:702
 msgid "Customization of the interface."
 msgstr ""
 
-#: ../../main_interface_window.rst:707
+#: ../../main_interface_window.rst:708
 msgid ":guilabel:`Settings: Interface`"
 msgstr ""
 
-#: ../../main_interface_window.rst:712
+#: ../../main_interface_window.rst:713
 msgid "Field names of training shapefile"
 msgstr ""
 
-#: ../../main_interface_window.rst:714
+#: ../../main_interface_window.rst:715
 msgid ""
 "Set the names of fields in the :ref:`training_shapefile` . Changing field "
 "names according to the fields of an existing shapefile is effective for "
@@ -1571,118 +1575,118 @@ msgid ""
 "<http://youtu.be/4V4Fh_MWgSA?t=2m53s>`_ )."
 msgstr ""
 
-#: ../../main_interface_window.rst:717
+#: ../../main_interface_window.rst:718
 msgid ""
 "``MC ID field`` [Q]: name of the Macroclass ID field (default is ``MC_ID``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:718
+#: ../../main_interface_window.rst:719
 msgid ""
 "``MC Info field`` [Q]: name of the Macroclass Information field (default is "
 "``MC_info``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:719
+#: ../../main_interface_window.rst:720
 msgid "``C ID field`` [Q]: name of the Class ID field (default is ``C_ID``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:720
+#: ../../main_interface_window.rst:721
 msgid ""
 "``C Info field`` [Q]: name of the Class Information field (default is "
 "``C_info``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:721
+#: ../../main_interface_window.rst:722
 msgid "[ ``Reset field names`` ]: reset field names to default."
 msgstr ""
 
-#: ../../main_interface_window.rst:726
+#: ../../main_interface_window.rst:727
 msgid "ROI style"
 msgstr ""
 
-#: ../../main_interface_window.rst:728
+#: ../../main_interface_window.rst:729
 msgid ""
 "Change ROI colour and transparency for a better visualization of temporary "
 "ROIs on the map."
 msgstr ""
 
-#: ../../main_interface_window.rst:730
+#: ../../main_interface_window.rst:731
 msgid "[ ``Change colour`` ] [Q]: change ROI colour;"
 msgstr ""
 
-#: ../../main_interface_window.rst:731
+#: ../../main_interface_window.rst:732
 msgid "[ ``Reset ROI style`` ]: reset ROI colour and transparency to default;"
 msgstr ""
 
-#: ../../main_interface_window.rst:732
+#: ../../main_interface_window.rst:733
 msgid "[- ``Transparency`` -] [Q]: change ROI transparency."
 msgstr ""
 
-#: ../../main_interface_window.rst:737
+#: ../../main_interface_window.rst:738
 msgid "Spectral signature"
 msgstr ""
 
-#: ../../main_interface_window.rst:739
+#: ../../main_interface_window.rst:740
 msgid ""
 "< ``Plot legend Max number of characters`` >: limit the text length of names"
 " in the :ref:`signature_list_plot` legend."
 msgstr ""
 
-#: ../../main_interface_window.rst:744
+#: ../../main_interface_window.rst:745
 msgid "Variable name for expressions (tab Reclassification)"
 msgstr ""
 
-#: ../../main_interface_window.rst:746
+#: ../../main_interface_window.rst:747
 msgid ""
 "Set the variable name used in ``Old value`` expressions of the "
 ":ref:`reclassification_tab` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:748
+#: ../../main_interface_window.rst:749
 msgid "``Variable name`` [Q]: set variable name (default is ``raster``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:749
+#: ../../main_interface_window.rst:750
 msgid "[ ``Reset name`` ]: reset variable name to default."
 msgstr ""
 
-#: ../../main_interface_window.rst:754
+#: ../../main_interface_window.rst:755
 msgid "Temporary group name"
 msgstr ""
 
-#: ../../main_interface_window.rst:756
+#: ../../main_interface_window.rst:757
 msgid ""
 "Set the temporary group name in QGIS Layers used for "
 ":ref:`classification_preview` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:758
+#: ../../main_interface_window.rst:759
 msgid "``Group name`` [Q]: set group name (default is ``Class_temp_group``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:759
+#: ../../main_interface_window.rst:760
 msgid "[ ``Reset name`` ]: reset group name to default."
 msgstr ""
 
-#: ../../main_interface_window.rst:764
+#: ../../main_interface_window.rst:765
 msgid "Settings: Processing"
 msgstr ""
 
-#: ../../main_interface_window.rst:770
+#: ../../main_interface_window.rst:771
 msgid ":guilabel:`Settings: Processing`"
 msgstr ""
 
-#: ../../main_interface_window.rst:775
+#: ../../main_interface_window.rst:776
 msgid "Classification process"
 msgstr ""
 
-#: ../../main_interface_window.rst:777
+#: ../../main_interface_window.rst:778
 msgid ""
 "``Play sound when finished`` [Q]: if checked, play a sound when the "
 "classification process is completed;"
 msgstr ""
 
-#: ../../main_interface_window.rst:778
+#: ../../main_interface_window.rst:779
 msgid ""
 "``Save algorithm files`` [Q]: if checked, in addition to the classification "
 "output, save the intermediate files calculated by the classification "
@@ -1690,79 +1694,79 @@ msgid ""
 "`similarity` of each pixel to the class thereof);"
 msgstr ""
 
-#: ../../main_interface_window.rst:779
+#: ../../main_interface_window.rst:780
 msgid ""
 "``Use virtual rasters for temp files`` [Q]: if checked, create virtual "
 "rasters for certain temporary files, instead of creating real rasters; it is"
 " useful for reducing disk space usage during calculations."
 msgstr ""
 
-#: ../../main_interface_window.rst:784
+#: ../../main_interface_window.rst:785
 msgid "Image calculation"
 msgstr ""
 
-#: ../../main_interface_window.rst:785
+#: ../../main_interface_window.rst:786
 msgid ""
 "``Raster data type for image calculations`` [Q]: select the raster data type"
 " between Float32 (default) and Float64, which is used for the creation of "
 "raster outputs;"
 msgstr ""
 
-#: ../../main_interface_window.rst:790
+#: ../../main_interface_window.rst:791
 msgid "RAM"
 msgstr ""
 
-#: ../../main_interface_window.rst:792
+#: ../../main_interface_window.rst:793
 msgid ""
 "< ``Available RAM (MB)`` > [Q]: set the available RAM (in MB) that will be "
 "used during the processes; this value should be half of the system RAM (e.g."
 " 1024MB if system has 2GB of RAM)."
 msgstr ""
 
-#: ../../main_interface_window.rst:797
+#: ../../main_interface_window.rst:798
 msgid "Settings: Debug"
 msgstr ""
 
-#: ../../main_interface_window.rst:803
+#: ../../main_interface_window.rst:804
 msgid ":guilabel:`Settings: Debug`"
 msgstr ""
 
-#: ../../main_interface_window.rst:805
+#: ../../main_interface_window.rst:806
 msgid ""
 "Debugging utilities for the creation of a Log file (i.e. recording of SCP "
 "activities for reporting issues) and testing SCP dependencies."
 msgstr ""
 
-#: ../../main_interface_window.rst:807
+#: ../../main_interface_window.rst:808
 msgid ""
 "For reporting bugs or asking for help, please visit the `official page "
 "<http://fromgistors.blogspot.com/p/ask-for-help.html>`_ ."
 msgstr ""
 
-#: ../../main_interface_window.rst:812
+#: ../../main_interface_window.rst:813
 msgid "Log file"
 msgstr ""
 
-#: ../../main_interface_window.rst:814
+#: ../../main_interface_window.rst:815
 msgid ""
 "``Records events in a log file`` [Q]: start recording events in a Log file;"
 msgstr ""
 
-#: ../../main_interface_window.rst:815
+#: ../../main_interface_window.rst:816
 msgid ""
 "[ ``Export Log file`` ]: open a window for choosing where to save the Log "
 "file (i.e. a .txt file);"
 msgstr ""
 
-#: ../../main_interface_window.rst:816
+#: ../../main_interface_window.rst:817
 msgid "[ ``Clear Log file content`` ]: clear the content of Log file."
 msgstr ""
 
-#: ../../main_interface_window.rst:821
+#: ../../main_interface_window.rst:822
 msgid "Test"
 msgstr ""
 
-#: ../../main_interface_window.rst:823
+#: ../../main_interface_window.rst:824
 msgid ""
 "[ ``Test dependencies`` ]: test SCP dependencies (GDAL, GDAL subprocess, "
 "NumPy, SciPy, Matplotlib, Internet connection); a window displays the test "

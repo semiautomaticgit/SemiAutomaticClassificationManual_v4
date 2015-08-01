@@ -424,11 +424,11 @@ Accuracy
 	
 	:guilabel:`Accuracy`
 	
-The tab ``Accuracy`` allows for the validation of classification (read :ref:`accuracy_assessment_definition` ).
-Classification is compared to a reference shapefile.
-The reference shapefile must have two fields named the same as the Macroclass ID (i.e. ``MC_ID`` ) and Class ID (i.e. ``C_ID`` ) fields in the :ref:`training_shapefile` ;
-if ``Use Macroclass ID`` is checked in the :ref:`classification_alg`, then the Macroclass ID field of the shapefile is used as reference for the classes, otherwise the Class ID field is used;
-the output is an ``error raster`` (i.e. a .tif file showing the errors in the map, where each pixel represents a category of comparison (i.e. combinations) between the classification and reference shapefile, which is the ``ErrorMatrixCode`` in the error matrix) and a text file containing the error matrix (i.e. a .csv file separated by tab, with the same name defined for the .tif file).
+The tab ``Accuracy`` allows for the validation of a classification (read :ref:`accuracy_assessment_definition` ).
+Classification is compared to a reference raster or reference shapefile (which is automatically converted to raster).
+If a shapefile is selected as reference, it is possible to choose a field describing class values.
+The output is an ``error raster`` that is a .tif file showing the errors in the map, where pixel values represent the categories of comparison (i.e. combinations identified by the ``ErrorMatrixCode`` in the error matrix) between the classification and reference.
+Also, a text file containing the error matrix (i.e. a .csv file separated by tab) is created with the same name defined for the .tif file.
 
 .. _error_matrix_input:
 
@@ -436,7 +436,8 @@ Error Matrix Input
 ^^^^^^^^^^^^^^^^^^
 
 * ``Select the classification to assess`` : select a classification raster;
-* ``Select the reference shapefile`` : select a shapefile, used as reference layer (ground truth) for the accuracy assessment;
+* ``Select the reference shapefile or raster`` : select a raster or a shapefile, used as reference layer (ground truth) for the accuracy assessment;
+* ``Shapefile field`` : if a shapefile is selected as reference, select a shapefile field containing numeric class values;
 * [ ``Refresh list`` ]: refresh layer list;
 * [ ``Calculate error matrix`` ]: choose the output destination and start the calculation; the error matrix is displayed in the tab frame and the ``error raster`` is loaded in QGIS.
 	
