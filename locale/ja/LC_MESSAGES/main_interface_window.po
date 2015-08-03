@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-01 15:20+0200\n"
+"POT-Creation-Date: 2015-08-03 11:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1738,9 +1738,7 @@ msgid ""
 msgstr ""
 
 #: ../../main_interface_window.rst:808
-msgid ""
-"For reporting bugs or asking for help, please visit the `official page "
-"<http://fromgistors.blogspot.com/p/ask-for-help.html>`_ ."
+msgid "If you found a plugin error, please read :ref:`error_0` ."
 msgstr ""
 
 #: ../../main_interface_window.rst:813

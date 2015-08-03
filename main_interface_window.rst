@@ -805,7 +805,7 @@ Settings: Debug
 
 Debugging utilities for the creation of a Log file (i.e. recording of SCP activities for reporting issues) and testing SCP dependencies.
 
-For reporting bugs or asking for help, please visit the `official page <http://fromgistors.blogspot.com/p/ask-for-help.html>`_ .
+If you found a plugin error, please read :ref:`error_0` .
 
 .. _log_file:
 

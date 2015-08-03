@@ -115,20 +115,27 @@ Errors
 How can I report an error?
 -----------------------------------------------------------------------------------------
 
-If you found an error of the Semi-Automatic Classification Plugin please follow these steps:
+If you found an error of the Semi-Automatic Classification Plugin please follow these steps in order to collect the required information (log file):
 
-#. close QGIS;
-#. open QGIS and load the data or open a previously saved QGIS project;
-#. open the tab :ref:`settings_debug_tab` and check the checkbox ``Records events in a log file`` ;
+#. close QGIS if already open;
+#. open QGIS, open the Plugin tab :ref:`settings_debug_tab` and check the checkbox ``Records events in a log file`` ;
 
 .. figure:: _static/settings_debug_tab.jpg
 	:align: center
 	
 	:guilabel:`Debug`
 
-4. repeat the steps the cause the error in the Plugin;
-#. if an error message appears, copy the whole content of the message in a text file;
-#. open the tab :ref:`settings_debug_tab` and uncheck the checkbox ``Records events in a log file``, then click the button ``Export Log file`` and save the **log file** (which is a text file containing information about the Plugin processes);
+3. click the button ``Test dependencies`` in the tab :ref:`settings_debug_tab` ;
+#. load the data in QGIS (or open a previously saved QGIS project) and repeat all the steps that cause the error in the Plugin;
+	* if the issue could be related to the image data, please use `this sample dataset <https://docs.google.com/uc?id=0BysUrKXWIDwBc1llME4yRmpjMGc&export=download>`_ ;
+#. if an error message appears (like the one in the following image), copy the whole content of the message in a text file;
+
+.. figure:: _static/python_error.jpg
+	:align: center
+	
+	:guilabel:`Error message`
+	
+6. open the tab :ref:`settings_debug_tab` and uncheck the checkbox ``Records events in a log file``, then click the button ``Export Log file`` and save the **log file** (which is a text file containing information about the Plugin processes);
 #. open the **log file** and copy the whole content of the file;
 #. join the Facebook `group <https://www.facebook.com/groups/661271663969035/>`_ or the Google+ `community <https://plus.google.com/communities/107833394986612468374>`_ , create a new post and copy the error message and the **log file** (or attach them).
 

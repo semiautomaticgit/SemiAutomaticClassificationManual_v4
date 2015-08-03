@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-01 15:20+0200\n"
+"POT-Creation-Date: 2015-08-03 11:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,38 +204,54 @@ msgstr ""
 #: ../../FAQ.rst:118
 msgid ""
 "If you found an error of the Semi-Automatic Classification Plugin please "
-"follow these steps:"
+"follow these steps in order to collect the required information (log file):"
 msgstr ""
 
 #: ../../FAQ.rst:120
-msgid "close QGIS;"
+msgid "close QGIS if already open;"
 msgstr ""
 
 #: ../../FAQ.rst:121
-msgid "open QGIS and load the data or open a previously saved QGIS project;"
-msgstr ""
-
-#: ../../FAQ.rst:122
 msgid ""
-"open the tab :ref:`settings_debug_tab` and check the checkbox ``Records "
-"events in a log file`` ;"
+"open QGIS, open the Plugin tab :ref:`settings_debug_tab` and check the "
+"checkbox ``Records events in a log file`` ;"
 msgstr ""
 
-#: ../../FAQ.rst:127
+#: ../../FAQ.rst:126
 msgid ":guilabel:`Debug`"
 msgstr ""
 
+#: ../../FAQ.rst:128
+msgid ""
+"click the button ``Test dependencies`` in the tab :ref:`settings_debug_tab` "
+";"
+msgstr ""
+
 #: ../../FAQ.rst:129
-msgid "repeat the steps the cause the error in the Plugin;"
+msgid ""
+"load the data in QGIS (or open a previously saved QGIS project) and repeat "
+"all the steps that cause the error in the Plugin;"
 msgstr ""
 
 #: ../../FAQ.rst:130
 msgid ""
-"if an error message appears, copy the whole content of the message in a text"
-" file;"
+"if the issue could be related to the image data, please use `this sample "
+"dataset "
+"<https://docs.google.com/uc?id=0BysUrKXWIDwBc1llME4yRmpjMGc&export=download>`_"
+" ;"
 msgstr ""
 
 #: ../../FAQ.rst:131
+msgid ""
+"if an error message appears (like the one in the following image), copy the "
+"whole content of the message in a text file;"
+msgstr ""
+
+#: ../../FAQ.rst:136
+msgid ":guilabel:`Error message`"
+msgstr ""
+
+#: ../../FAQ.rst:138
 msgid ""
 "open the tab :ref:`settings_debug_tab` and uncheck the checkbox ``Records "
 "events in a log file``, then click the button ``Export Log file`` and save "
@@ -243,11 +259,11 @@ msgid ""
 "Plugin processes);"
 msgstr ""
 
-#: ../../FAQ.rst:132
+#: ../../FAQ.rst:139
 msgid "open the **log file** and copy the whole content of the file;"
 msgstr ""
 
-#: ../../FAQ.rst:133
+#: ../../FAQ.rst:140
 msgid ""
 "join the Facebook `group "
 "<https://www.facebook.com/groups/661271663969035/>`_ or the Google+ "
@@ -256,12 +272,12 @@ msgid ""
 " them)."
 msgstr ""
 
-#: ../../FAQ.rst:138
+#: ../../FAQ.rst:145
 msgid ""
 "Why am I having issues during the creation of the Landsat virtual raster?"
 msgstr ""
 
-#: ../../FAQ.rst:140
+#: ../../FAQ.rst:147
 msgid ""
 "The automatic creation of the virtual raster after Landsat conversion to "
 "reflectance is not required for the classification. Errors could happen if "
@@ -271,17 +287,17 @@ msgid ""
 "virtual raster manually."
 msgstr ""
 
-#: ../../FAQ.rst:146
+#: ../../FAQ.rst:153
 msgid "Error [26] 'The version of Numpy is outdated'. Why?"
 msgstr ""
 
-#: ../../FAQ.rst:148
+#: ../../FAQ.rst:155
 msgid ""
 "QGIS 32bit could have an older version of Numpy as default; in order to "
 "update Numpy:"
 msgstr ""
 
-#: ../../FAQ.rst:151
+#: ../../FAQ.rst:158
 msgid ""
 "download `this file "
 "<https://docs.google.com/uc?id=0BysUrKXWIDwBUmZaRGpXOF9nQ2M&export=download>`_"
@@ -291,11 +307,11 @@ msgid ""
 "<https://pypi.python.org/packages/source/p/pyparsing/pyparsing-1.5.7.zip>`_);"
 msgstr ""
 
-#: ../../FAQ.rst:152
+#: ../../FAQ.rst:159
 msgid "extract the file with `7-zip <http://www.7-zip.org/>`_;"
 msgstr ""
 
-#: ../../FAQ.rst:153
+#: ../../FAQ.rst:160
 msgid ""
 "copy the content of the extracted directory inside the directory "
 "``apps\\Python27\\Lib\\site-packages`` inside the QGIS installation "
@@ -304,18 +320,18 @@ msgid ""
 "``matplotlib``, and ``scipy``."
 msgstr ""
 
-#: ../../FAQ.rst:155
+#: ../../FAQ.rst:162
 msgid ""
 "Alternatively, you should be able to install QGIS and Numpy with the "
 "`OSGEO4W advanced installer <http://download.osgeo.org/osgeo4w/osgeo4w-"
 "setup-x86.exe>`_."
 msgstr ""
 
-#: ../../FAQ.rst:160
+#: ../../FAQ.rst:167
 msgid "Error 'Plugin is damaged. Python said: ascii'. Why?"
 msgstr ""
 
-#: ../../FAQ.rst:162
+#: ../../FAQ.rst:169
 msgid ""
 "It could be related to a wrong installation. Please, uninstall QGIS and "
 "install it again with administrative rights. Delete also the directory "
@@ -323,22 +339,22 @@ msgid ""
 " following the :ref:`installation` guide."
 msgstr ""
 
-#: ../../FAQ.rst:167
+#: ../../FAQ.rst:174
 msgid ""
 "Also, it could be related to the user name containing special characters. "
 "Please try the installation creating a new user without special characters "
 "(e.g. ``user``)."
 msgstr ""
 
-#: ../../FAQ.rst:171
+#: ../../FAQ.rst:178
 msgid "Also, if the error message contains something like:"
 msgstr ""
 
-#: ../../FAQ.rst:171 ../../FAQ.rst:177
+#: ../../FAQ.rst:178 ../../FAQ.rst:184
 msgid "``sfnt4 = sfnt4.decode('ascii').lower()``"
 msgstr ""
 
-#: ../../FAQ.rst:173
+#: ../../FAQ.rst:180
 msgid ""
 "it could be related to a known issue of Matplotlib (a Python library); in "
 "order to solve this, you should (as reported at `stackoverflow "
@@ -346,66 +362,66 @@ msgid ""
 "with-plot-function>`_):"
 msgstr ""
 
-#: ../../FAQ.rst:175
+#: ../../FAQ.rst:182
 msgid ""
 "open in a text editor the file font_manager.py which is inside the directory"
 " ``C:\\PROGRA~1\\QGISCH~1\\apps\\Python27\\lib\\site-"
 "packages\\matplotlib\\``"
 msgstr ""
 
-#: ../../FAQ.rst:176
+#: ../../FAQ.rst:183
 msgid "search for the line"
 msgstr ""
 
-#: ../../FAQ.rst:179
+#: ../../FAQ.rst:186
 msgid "and replace it with the line"
 msgstr ""
 
-#: ../../FAQ.rst:179
+#: ../../FAQ.rst:186
 msgid "``sfnt4 = sfnt4.decode('ascii', 'ignore').lower()``"
 msgstr ""
 
-#: ../../FAQ.rst:181
+#: ../../FAQ.rst:188
 msgid ""
 "Alternatively, try to install QGIS through the `OSGEO4W installer "
 "<http://trac.osgeo.org/osgeo4w/>`_, which includes an updated Matplotlib "
 "version."
 msgstr ""
 
-#: ../../FAQ.rst:186
+#: ../../FAQ.rst:193
 msgid "Other"
 msgstr ""
 
-#: ../../FAQ.rst:191
+#: ../../FAQ.rst:198
 msgid "What are free and valuable resources about remote sensing and GIS?"
 msgstr ""
 
-#: ../../FAQ.rst:193
+#: ../../FAQ.rst:200
 msgid "The following links are remote sensing and Landsat images:"
 msgstr ""
 
-#: ../../FAQ.rst:195
+#: ../../FAQ.rst:202
 msgid ""
 "`The Landsat 8 Data Users Handbook by USGS "
 "<http://landsat.usgs.gov/documents/Landsat8DataUsersHandbook.pdf>`_;"
 msgstr ""
 
-#: ../../FAQ.rst:196
+#: ../../FAQ.rst:203
 msgid ""
 "`The Landsat 7 Science Data Users Handbook by NASA "
 "<http://landsathandbook.gsfc.nasa.gov/pdfs/Landsat7_Handbook.pdf>`_;"
 msgstr ""
 
-#: ../../FAQ.rst:197
+#: ../../FAQ.rst:204
 msgid ""
 "`Remote Sensing Note by JARS <http://www.jars1974.net/pdf/rsnote_e.html>`_."
 msgstr ""
 
-#: ../../FAQ.rst:202
+#: ../../FAQ.rst:209
 msgid "Where can I ask a new question?"
 msgstr ""
 
-#: ../../FAQ.rst:204
+#: ../../FAQ.rst:211
 msgid ""
 "A `Facebook group <https://www.facebook.com/groups/661271663969035/>`_ and a"
 " `Google+ Community "
