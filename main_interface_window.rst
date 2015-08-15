@@ -149,8 +149,9 @@ Signature threshold
 	
 	:guilabel:`Signature threshold`
 
-The tab ``Signature threshold`` allows for the definition of a classification threshold for each signature.
+The tab ``Signature threshold`` allows for the definition of a classification threshold for each spectral signature.
 This is useful for improving the classification results, especially when spectral signatures are similar.
+Thresholds of signatures are saved in the :ref:`signature_list_file`.
 
 If threshold is 0 then no threshold is applied.
 Depending on the selected :ref:`classification_alg` the threshold value is considered differently:
@@ -173,7 +174,9 @@ Signature threshold
 	
 * [ ``Threshold value`` ]: value of threshold used with the button ``Set threshold value``;
 * [ ``Set threshold value`` ]: set the value defined in ``Threshold value`` for all the highlighted signatures in the table;
-* [ ``Reset thresholds`` ]: reset all signatures thresholds to 0.
+* [ ``Reset thresholds`` ]: reset all signatures thresholds to 0 (i.e. no threshold used);
+* [ ``Automatic thresholds`` ]: calculate automatically a threshold for each signature based on the variance thereof (currently works for Minimum Distance and Spectral Angle Mapping calculating a distance or an angle);
+* [ ``Multiplicative value`` ]: each threshold value calculated with ``Automatic thresholds`` is multiplied by this value.
 
 .. _Landsat_download_tab:
 
@@ -257,6 +260,7 @@ This table displays the results of the Landsat search.
 	
 * [ ``Display image preview`` ]: display image preview of highlighted images in the map; preview are roughly georeferenced on the fly;
 * [ ``Remove images from list`` ]: remove highlighted images from the list;
+* [ ``Clear table`` ]: remove all images from the list;
 
 .. _landsat_download_options:
 
@@ -427,6 +431,8 @@ Accuracy
 The tab ``Accuracy`` allows for the validation of a classification (read :ref:`accuracy_assessment_definition` ).
 Classification is compared to a reference raster or reference shapefile (which is automatically converted to raster).
 If a shapefile is selected as reference, it is possible to choose a field describing class values.
+
+Several statistics are calculated such as overall accuracy, user's accuracy, producer's accuracy, and Kappa hat.
 The output is an ``error raster`` that is a .tif file showing the errors in the map, where pixel values represent the categories of comparison (i.e. combinations identified by the ``ErrorMatrixCode`` in the error matrix) between the classification and reference.
 Also, a text file containing the error matrix (i.e. a .csv file separated by tab) is created with the same name defined for the .tif file.
 
@@ -557,6 +563,7 @@ Band calc
 		
 The ``Band calc`` allows for the **raster calculation for bands** (i.e. calculation of pixel values) using `NumPy functions <http://docs.scipy.org/doc/numpy/reference/routines.math.html>`_ .
 Raster bands must be already loaded in QGIS.
+Input rasters must be in the same projection.
 
 .. _band_list2:
 
@@ -613,9 +620,19 @@ The following buttons are available:
 * [ ``log`` ]: natural logarithm;
 * [ ``π`` ]: pi;
 * [ ``np.where`` ]: conditional expression with the syntax ``np.where( condition , value if true, value if false)`` ;
-* ``Use NoData value`` : if checked, pixels equal to NoData value will be excluded from the output raster
-* [ ``Calculate`` ]: if ``Expression`` is green, choose the output destination and start the calculation; if multiple expressions are entered, then multiple outputs are created with the same name and a numerical suffix according to the numerical order of expressions;
-* ``Intersection`` : if checked, extension of output raster equals the extensions of input rasters.
+
+.. _output_raster:
+
+Output raster
+--------------
+
+The output raster is a .tif file, with the same spatial resolution and projection of input rasters; if input rasters have different spatial resolutions, then the highest resolution (i.e. minimum pixel size) is used for output raster.
+
+* ``Use NoData value`` : if checked, pixels equal to NoData value will be excluded from the output raster;
+* Extent:
+	* ``Intersection`` : if checked, the extent of output raster equals the intersection of input raster extents (i.e. minimum extent); if unchecked, the output raster extent will include the extents of input rasters;
+	* ``Same as`` : if checked, the extent of output raster equals the extent of selected layer;
+* [ ``Calculate`` ]: if ``Expression`` is green, choose the output destination and start the calculation; if multiple expressions are entered, then multiple outputs are created with the same name and a numerical suffix according to the numerical order of expressions.
 
 .. _band_set_tab:
  
@@ -653,15 +670,24 @@ Band set definition
 
 Definition of bands composing the ``Input image`` .
 
-Although it is recommended to define the ``Center wavelength`` of bands, it is possible to assign the band number instead of the wavelength. Of course, the :ref:`USGS_spec_library_tab` will not be useful, but the ROI collection and the classification process will still be working.
+Although it is recommended to define the ``Center wavelength`` of bands, it is possible to assign the band number instead of the wavelength.
+Of course, the :ref:`USGS_spec_library_tab` will not be useful, but the ROI collection and the classification process will still be working.
+It is possible to define a multiplicative rescaling factor and additive rescaling factor for each band (for instance using the values in Landsat metadata), which allow for on the fly conversion to TOA while calculating spectral signatures or classifying.
 
-* ``Wavelength unit`` [optional]: select the wavelength unit among:
+* Table fields:
+	* ``Band name`` [P]: name of the band; this element cannot be edited;
+	* ``Center wavelength`` [P]: center of the wavelength of the band; enter a value;
+	* ``Multiplicative Factor`` [P]: multiplicative rescaling factor; enter a value;
+	* ``Additive Factor`` [P]: additive rescaling factor; enter a value;
+	
+* ``Wavelength unit`` [P]: select the wavelength unit among:
 	* [ ``Band number`` ]: no unit, only band number;
 	* [ :math:`\mu m`  ]: micrometres;
 	* [ ``nm`` ]: nanometres;
 	
 * ``Control bands``:
 	* [ :math:`\uparrow` ]: move highlighted bands upward;
+	* [ ``Sort by name`` ]: sort automatically bands by name, giving priority to the ending numbers of name;
 	* [ :math:`\downarrow` ]: move highlighted bands downward;
 	* [ ``Remove band`` ]: remove highlighted bands from the band set;
 	* [ ``Clear all`` ]: clear all bands from band set;
@@ -685,7 +711,7 @@ Although it is recommended to define the ``Center wavelength`` of bands, it is p
 	* WorldView-3.
 
 * [ ``Create virtual raster of band set`` ]: create a virtual raster of bands;
-* [ ``Create raster of band set (stack bands)`` ]: create a .tif raster stacking bands;
+* [ ``Create raster of band set (stack bands)`` ]: stack all the bands and create a unique .tif raster.
 	
 .. _settings_tab:
  

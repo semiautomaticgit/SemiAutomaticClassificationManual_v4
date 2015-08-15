@@ -125,6 +125,9 @@ Following the video of this tutorial.
 
 http://www.youtube.com/watch?v=vjKX00jML64
 
+Alternative video link
+https://archive.org/details/video_band_calc
+
 First, **download the sample dataset**, which is a Landsat 8 image already converted to reflectance (see :ref:`tutorial_2_1`) from `this link <https://docs.google.com/uc?id=0BysUrKXWIDwBZFFMMlJNZXJpS3c&export=download>`_ (data available from the U.S. Geological Survey).
 Also, **download the land cover classification** from `here <https://docs.google.com/uc?id=0BysUrKXWIDwBYVlTZ2ZQRVo2V1k&export=download>`_ .
 

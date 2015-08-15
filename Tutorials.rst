@@ -40,6 +40,9 @@ Following the video of this tutorial.
 
 http://www.youtube.com/watch?v=nZffzX_sMnk
 
+Alternative video link
+https://archive.org/details/video_basic_tutorial_1
+
 .. _tutorial_1_data:
 
 Data
@@ -258,6 +261,9 @@ Following the video of this tutorial.
 	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/ImbYhiIgl1g?rel=0" width="640"></iframe>
 
 http://www.youtube.com/watch?v=ImbYhiIgl1g
+
+Alternative video link
+https://archive.org/details/video_basic_tutorial_2
 
 .. _tutorial_2_data_download:
 

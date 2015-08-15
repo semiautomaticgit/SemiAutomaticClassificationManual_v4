@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.6\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-03 11:23+0200\n"
+"POT-Creation-Date: 2015-08-15 23:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,6 +149,10 @@ msgid "http://www.youtube.com/watch?v=vjKX00jML64"
 msgstr ""
 
 #: ../../thematic_tutorials.rst:128
+msgid "Alternative video link https://archive.org/details/video_band_calc"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:131
 msgid ""
 "First, **download the sample dataset**, which is a Landsat 8 image already "
 "converted to reflectance (see :ref:`tutorial_2_1`) from `this link "
@@ -159,27 +163,27 @@ msgid ""
 " ."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:134
+#: ../../thematic_tutorials.rst:137
 msgid "Application of a mask to multiple bands"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:136
+#: ../../thematic_tutorials.rst:139
 msgid "Unzip the downloaded dataset and load all the raster bands in QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:141
+#: ../../thematic_tutorials.rst:144
 msgid ":guilabel:`Bands loaded in QGIS`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:143
+#: ../../thematic_tutorials.rst:146
 msgid "Open the :ref:`band_calc_tab` and click the button ``Refresh list``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:148
+#: ../../thematic_tutorials.rst:151
 msgid ":guilabel:`The Band calc tool`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:150
+#: ../../thematic_tutorials.rst:153
 msgid ""
 "We are going to use conditional expressions (i.e. ``np.where``, for more "
 "information see `this page "
@@ -187,36 +191,36 @@ msgid ""
 "with the following structure: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:154
+#: ../../thematic_tutorials.rst:157
 msgid "Where:"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:156
+#: ../../thematic_tutorials.rst:159
 msgid "``condition`` is a logical condition between bands or values;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:157
+#: ../../thematic_tutorials.rst:160
 msgid ""
 "``value if true`` and ``value if false`` can be a numerical value, a band, "
 "or another expression."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:159
+#: ../../thematic_tutorials.rst:162
 msgid "In ``Expression`` enter the following block of expressions: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:172 ../../thematic_tutorials.rst:208
-#: ../../thematic_tutorials.rst:263
+#: ../../thematic_tutorials.rst:175 ../../thematic_tutorials.rst:211
+#: ../../thematic_tutorials.rst:266
 msgid ":guilabel:`The expression in Band calc`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:175
+#: ../../thematic_tutorials.rst:178
 msgid ""
 "**TIP** : If the text in ``Expression`` is green it means that the syntax is"
 " correct, otherwise it is red and the button ``Calculate`` is disabled."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:177
+#: ../../thematic_tutorials.rst:180
 msgid ""
 "Click the button ``Calculate``, select where to save the bands (e.g. a new "
 "directory named `masked_bands`) and write the output name (e.g. ``masked``)."
@@ -225,11 +229,11 @@ msgid ""
 " also added to QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:184
+#: ../../thematic_tutorials.rst:187
 msgid ":guilabel:`Masked bands`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:186
+#: ../../thematic_tutorials.rst:189
 msgid ""
 "According to the order of expressions, the file ``masked_1`` corresponds to "
 "the band ``RT_LC81910312015006LGN00_B2``,  the file ``masked_2`` corresponds"
@@ -237,31 +241,31 @@ msgid ""
 "NoData values (i.e. nan)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:192
+#: ../../thematic_tutorials.rst:195
 msgid "NDVI Calculation"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:194
+#: ../../thematic_tutorials.rst:197
 msgid ""
 "NDVI is an index calculated as ``( Near Infrared band - Red band ) / (Near "
 "Infrared band + Red band)`` which ranges from -1 to 1 . Green vegetation has"
 " the highest NDVI values tending to 1."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:197
+#: ../../thematic_tutorials.rst:200
 msgid ""
 "Open the :ref:`band_calc_tab` and click the button `Refresh list`. Clear the"
 " content of ``Expression`` and write the following expression for the "
 "calculation of NDVI: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:202
+#: ../../thematic_tutorials.rst:205
 msgid ""
 "where ``masked_4.tif`` is the Near Infrared band and ``masked_3.tif`` is the"
 " Red band."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:211
+#: ../../thematic_tutorials.rst:214
 msgid ""
 "**TIP** : The expression can work both with ``Variable`` and ``Band name`` "
 "between quotes. Also, bands in the :ref:`band_set_tab` can be referenced "
@@ -270,75 +274,75 @@ msgid ""
 " expression."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:215
+#: ../../thematic_tutorials.rst:218
 msgid ""
 "Click the button ``Calculate``, select where to save the NDVI (e.g. a new "
 "file named `NDVI`). The NDVI is added to QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:221
+#: ../../thematic_tutorials.rst:224
 msgid ":guilabel:`The NDVI calculated`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:227
+#: ../../thematic_tutorials.rst:230
 msgid "Classification refinement basing on NDVI values"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:229
+#: ../../thematic_tutorials.rst:232
 msgid "Load the downloaded classification in QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:234
+#: ../../thematic_tutorials.rst:237
 msgid ":guilabel:`The land cover classification`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:236
+#: ../../thematic_tutorials.rst:239
 msgid ""
 "The classification is the result of :ref:`tutorial_2` where the land cover "
 "classes described in the following table were identified."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:239
+#: ../../thematic_tutorials.rst:242
 msgid "Class name"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:239
+#: ../../thematic_tutorials.rst:242
 msgid "Pixel value"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:241
+#: ../../thematic_tutorials.rst:244
 msgid "Water"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:241
+#: ../../thematic_tutorials.rst:244
 msgid "1"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:243
+#: ../../thematic_tutorials.rst:246
 msgid "Built-up"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:243
+#: ../../thematic_tutorials.rst:246
 msgid "2"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:245
+#: ../../thematic_tutorials.rst:248
 msgid "Vegetation"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:245
+#: ../../thematic_tutorials.rst:248
 msgid "3"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:247
+#: ../../thematic_tutorials.rst:250
 msgid "Bare soil"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:247
+#: ../../thematic_tutorials.rst:250
 msgid "4"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:250
+#: ../../thematic_tutorials.rst:253
 msgid ""
 "We are going to refine this classification defining the following condition:"
 " pixels having NDVI > 0.5 are classified Vegetation. The value 0.5 is an "
@@ -346,30 +350,30 @@ msgid ""
 "(i.e. phenological state of vegetation)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:253
+#: ../../thematic_tutorials.rst:256
 msgid ""
 "Open the :ref:`band_calc_tab` and click the button `Refresh list`. Clear the"
 " content of ``Expression`` and write the following expression: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:258
+#: ../../thematic_tutorials.rst:261
 msgid ""
 "which means that if NDVI value is greater than 0.5, assign the pixel value 3"
 " (i.e. Vegetation), otherwise leave the original classification value."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:265
+#: ../../thematic_tutorials.rst:268
 msgid ""
 "Click the button ``Calculate``, select where to save the new classification "
 "(e.g. a new file named ``refined_classification``). The new classification "
 "is added to QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:271
+#: ../../thematic_tutorials.rst:274
 msgid ":guilabel:`The output land cover classification`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:273
+#: ../../thematic_tutorials.rst:276
 msgid ""
 "It is possible to copy the style from the original classification (in QGIS "
 "Layers right click on the layer name and select ``Copy style``) and paste it"
@@ -377,10 +381,10 @@ msgid ""
 " style``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:278
+#: ../../thematic_tutorials.rst:281
 msgid ":guilabel:`The output land cover classification with color style`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:280
+#: ../../thematic_tutorials.rst:283
 msgid "You can see that now a larger area is classified as vegetation."
 msgstr ""

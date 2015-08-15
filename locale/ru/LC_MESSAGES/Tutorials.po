@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.6\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-03 11:23+0200\n"
+"POT-Creation-Date: 2015-08-15 23:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,23 +40,23 @@ msgid ""
 "classes:"
 msgstr ""
 
-#: ../../Tutorials.rst:30 ../../Tutorials.rst:249
+#: ../../Tutorials.rst:30 ../../Tutorials.rst:252
 msgid "Water;"
 msgstr ""
 
-#: ../../Tutorials.rst:31 ../../Tutorials.rst:250
+#: ../../Tutorials.rst:31 ../../Tutorials.rst:253
 msgid "Built-up;"
 msgstr ""
 
-#: ../../Tutorials.rst:32 ../../Tutorials.rst:251
+#: ../../Tutorials.rst:32 ../../Tutorials.rst:254
 msgid "Vegetation;"
 msgstr ""
 
-#: ../../Tutorials.rst:33 ../../Tutorials.rst:252
+#: ../../Tutorials.rst:33 ../../Tutorials.rst:255
 msgid "Bare soil."
 msgstr ""
 
-#: ../../Tutorials.rst:35 ../../Tutorials.rst:254
+#: ../../Tutorials.rst:35 ../../Tutorials.rst:257
 msgid "Following the video of this tutorial."
 msgstr ""
 
@@ -64,11 +64,16 @@ msgstr ""
 msgid "http://www.youtube.com/watch?v=nZffzX_sMnk"
 msgstr ""
 
-#: ../../Tutorials.rst:46
+#: ../../Tutorials.rst:43
+msgid ""
+"Alternative video link https://archive.org/details/video_basic_tutorial_1"
+msgstr ""
+
+#: ../../Tutorials.rst:49
 msgid "Data"
 msgstr ""
 
-#: ../../Tutorials.rst:48
+#: ../../Tutorials.rst:51
 msgid ""
 "**Download the image data** from `here "
 "<https://docs.google.com/uc?id=0BysUrKXWIDwBUUdmWjJXZEVqbDg&export=download>`_"
@@ -77,84 +82,84 @@ msgid ""
 "For a specific tutorial about Landsat images read :ref:`tutorial_2` ."
 msgstr ""
 
-#: ../../Tutorials.rst:51
+#: ../../Tutorials.rst:54
 msgid ""
 "**Unzip** the downloaded file in a directory of your choice. The dataset is "
 "a multi-spectral raster (the file ``sample_image.tif`` ) that includes the "
 "following Landsat bands:"
 msgstr ""
 
-#: ../../Tutorials.rst:54
+#: ../../Tutorials.rst:57
 msgid "Blue;"
 msgstr ""
 
-#: ../../Tutorials.rst:55
+#: ../../Tutorials.rst:58
 msgid "Green;"
 msgstr ""
 
-#: ../../Tutorials.rst:56
+#: ../../Tutorials.rst:59
 msgid "Red;"
 msgstr ""
 
-#: ../../Tutorials.rst:57
+#: ../../Tutorials.rst:60
 msgid "Near-Infrared;"
 msgstr ""
 
-#: ../../Tutorials.rst:58
+#: ../../Tutorials.rst:61
 msgid "Short Wavelength Infrared 1;"
 msgstr ""
 
-#: ../../Tutorials.rst:59
+#: ../../Tutorials.rst:62
 msgid "Short Wavelength Infrared 2."
 msgstr ""
 
-#: ../../Tutorials.rst:64
+#: ../../Tutorials.rst:67
 msgid "Load Data"
 msgstr ""
 
-#: ../../Tutorials.rst:66
+#: ../../Tutorials.rst:69
 msgid ""
 "Start QGIS and load ``sample_image.tif`` in QGIS (from the QGIS menu ``Layer"
 " > Add Raster Layer`` ). The image is displayed in QGIS."
 msgstr ""
 
-#: ../../Tutorials.rst:71
+#: ../../Tutorials.rst:74
 msgid ":guilabel:`Image loaded in QGIS`"
 msgstr ""
 
-#: ../../Tutorials.rst:76
+#: ../../Tutorials.rst:79
 msgid "Set the Input Image in SCP"
 msgstr ""
 
-#: ../../Tutorials.rst:78
+#: ../../Tutorials.rst:81
 msgid ""
 "In the SCP :ref:`toolbar` click the button |refresh| for refreshing the list"
 " ``Input image`` . In the list ``Input image`` select ``sample_image`` ."
 msgstr ""
 
-#: ../../Tutorials.rst:80
+#: ../../Tutorials.rst:83
 msgid ""
 "In the list ``RGB`` select the item ``4-3-2`` for displaying a "
 ":ref:`color_composite_definition` of Near-Infrared, Red, and Green. The "
 "image in QGIS will be updated accordingly."
 msgstr ""
 
-#: ../../Tutorials.rst:85
+#: ../../Tutorials.rst:88
 msgid ":guilabel:`Color composite RGB=4-3-2 of Input image`"
 msgstr ""
 
-#: ../../Tutorials.rst:90
+#: ../../Tutorials.rst:93
 msgid "Create the Training Shapefile and Signature List File"
 msgstr ""
 
-#: ../../Tutorials.rst:92
+#: ../../Tutorials.rst:95
 msgid ""
 "In order to collect :ref:`ROI_definition` (ROIs) and calculate the "
 ":ref:`spectral_signature_definition` thereof, we need to create the "
 "``Training shapefile`` and ``Signature list file`` in SCP."
 msgstr ""
 
-#: ../../Tutorials.rst:94
+#: ../../Tutorials.rst:97
 msgid ""
 "In the :ref:`roi_dock` click the button ``New shp`` and define a name (e.g. "
 "``ROI.shp`` ) in order to create the ``Training shapefile`` that will store "
@@ -162,7 +167,7 @@ msgid ""
 "``Training shapefile`` is displayed in :ref:`training_shapefile` ."
 msgstr ""
 
-#: ../../Tutorials.rst:98
+#: ../../Tutorials.rst:101
 msgid ""
 "Also, click the button ``Save`` in the :ref:`classification_dock` and define"
 " a name (e.g. ``SIG.xml`` ) in order to create the ``Signature list file`` "
@@ -170,69 +175,69 @@ msgid ""
 " is displayed in :ref:`signature_list_file` ."
 msgstr ""
 
-#: ../../Tutorials.rst:104
+#: ../../Tutorials.rst:107
 msgid ""
 ":guilabel:`Definition of Training shapefile and Signature list file in SCP`"
 msgstr ""
 
-#: ../../Tutorials.rst:110 ../../Tutorials.rst:436
+#: ../../Tutorials.rst:113 ../../Tutorials.rst:442
 msgid "Create the ROIs"
 msgstr ""
 
-#: ../../Tutorials.rst:112
+#: ../../Tutorials.rst:115
 msgid ""
 "We are going to create ROIs defining the :ref:`classes_definition` . The "
 "Macroclass ID codes are illustrated in the following table (of course, one "
 "can define different codes and classes according to the needs)."
 msgstr ""
 
-#: ../../Tutorials.rst:116 ../../Tutorials.rst:441
+#: ../../Tutorials.rst:119 ../../Tutorials.rst:447
 msgid "Macroclass name"
 msgstr ""
 
-#: ../../Tutorials.rst:116 ../../Tutorials.rst:441
+#: ../../Tutorials.rst:119 ../../Tutorials.rst:447
 msgid "Macroclass ID"
 msgstr ""
 
-#: ../../Tutorials.rst:118 ../../Tutorials.rst:443
+#: ../../Tutorials.rst:121 ../../Tutorials.rst:449
 msgid "Water"
 msgstr ""
 
-#: ../../Tutorials.rst:118 ../../Tutorials.rst:443
+#: ../../Tutorials.rst:121 ../../Tutorials.rst:449
 msgid "1"
 msgstr ""
 
-#: ../../Tutorials.rst:120 ../../Tutorials.rst:445
+#: ../../Tutorials.rst:123 ../../Tutorials.rst:451
 msgid "Built-up"
 msgstr ""
 
-#: ../../Tutorials.rst:120 ../../Tutorials.rst:445
+#: ../../Tutorials.rst:123 ../../Tutorials.rst:451
 msgid "2"
 msgstr ""
 
-#: ../../Tutorials.rst:122 ../../Tutorials.rst:447
+#: ../../Tutorials.rst:125 ../../Tutorials.rst:453
 msgid "Vegetation"
 msgstr ""
 
-#: ../../Tutorials.rst:122 ../../Tutorials.rst:447
+#: ../../Tutorials.rst:125 ../../Tutorials.rst:453
 msgid "3"
 msgstr ""
 
-#: ../../Tutorials.rst:124 ../../Tutorials.rst:449
+#: ../../Tutorials.rst:127 ../../Tutorials.rst:455
 msgid "Bare soil"
 msgstr ""
 
-#: ../../Tutorials.rst:124 ../../Tutorials.rst:449
+#: ../../Tutorials.rst:127 ../../Tutorials.rst:455
 msgid "4"
 msgstr ""
 
-#: ../../Tutorials.rst:127
+#: ../../Tutorials.rst:130
 msgid ""
 "ROIs can be created by manually drawing a polygon or with an automatic "
 "region growing algorithm."
 msgstr ""
 
-#: ../../Tutorials.rst:129
+#: ../../Tutorials.rst:132
 msgid ""
 "Zoom in the map over the dark area (it is a lake) in the lower right region "
 "of the image. In order to create manually a ROI inside the dark area, click "
@@ -242,18 +247,18 @@ msgid ""
 " which is a temporary polygon (i.e. it is not a shapefile)."
 msgstr ""
 
-#: ../../Tutorials.rst:137
+#: ../../Tutorials.rst:140
 msgid ":guilabel:`A temporary ROI created manually`"
 msgstr ""
 
-#: ../../Tutorials.rst:139
+#: ../../Tutorials.rst:142
 msgid ""
 "It is required to define the :ref:`classes_definition` . In the "
 ":ref:`ROI_signature_definition` set ``MC ID`` = 1 and ``MC Info`` = "
 "\"Water\" ; also set ``C ID`` = 1 and ``C Info`` = \"Lake\"."
 msgstr ""
 
-#: ../../Tutorials.rst:142
+#: ../../Tutorials.rst:145
 msgid ""
 "In order to save the polygon in the ``Training shapefile`` click the button "
 "``Save ROI`` . After a few seconds, the ROI is listed in the :ref:`ROI_list`"
@@ -262,13 +267,13 @@ msgid ""
 ":ref:`classes_definition`)."
 msgstr ""
 
-#: ../../Tutorials.rst:149 ../../Tutorials.rst:168
+#: ../../Tutorials.rst:152 ../../Tutorials.rst:171
 msgid ""
 ":guilabel:`The ROI saved in the Training shapefile and the corresponding "
 "spectral signature displayed in the Signature list`"
 msgstr ""
 
-#: ../../Tutorials.rst:151
+#: ../../Tutorials.rst:154
 msgid ""
 "Now we have created the first ROI. Zoom in the map over the blue area (it is"
 " built-up) in the upper left region of the image. In order to create a ROI "
@@ -280,19 +285,19 @@ msgid ""
 "moments the orange semi-transparent polygon is displayed over the image."
 msgstr ""
 
-#: ../../Tutorials.rst:161
+#: ../../Tutorials.rst:164
 msgid ""
 ":guilabel:`A temporary ROI created with the automatic region growing "
 "algorithm`"
 msgstr ""
 
-#: ../../Tutorials.rst:163
+#: ../../Tutorials.rst:166
 msgid ""
 "In the :ref:`ROI_signature_definition` set ``MC ID`` = 2 and ``MC Info`` = "
 "\"Built-up\" ; also set ``C ID`` = 2 and ``C Info`` = \"Buildings\"."
 msgstr ""
 
-#: ../../Tutorials.rst:170
+#: ../../Tutorials.rst:173
 msgid ""
 "Create a ROI for the class ``Vegetation`` (red areas) and a ROI for the "
 "class ``Bare soil`` (green areas) following the same steps described "
@@ -300,15 +305,15 @@ msgid ""
 "identified in the map."
 msgstr ""
 
-#: ../../Tutorials.rst:176
+#: ../../Tutorials.rst:179
 msgid ":guilabel:`Vegetation`"
 msgstr ""
 
-#: ../../Tutorials.rst:181
+#: ../../Tutorials.rst:184
 msgid ":guilabel:`Bare soil`"
 msgstr ""
 
-#: ../../Tutorials.rst:183
+#: ../../Tutorials.rst:186
 msgid ""
 "**TIP** : The region growing algorithm can create more homogeneous spectral "
 "signatures than ROI created manually, which is good for the use of the "
@@ -318,17 +323,17 @@ msgid ""
 "Likelihood``."
 msgstr ""
 
-#: ../../Tutorials.rst:189 ../../Tutorials.rst:541
+#: ../../Tutorials.rst:192 ../../Tutorials.rst:547
 msgid "Create a Classification Preview"
 msgstr ""
 
-#: ../../Tutorials.rst:191
+#: ../../Tutorials.rst:194
 msgid ""
 "It is useful to create a :ref:`classification_preview` in order to assess "
 "the results before the final classification."
 msgstr ""
 
-#: ../../Tutorials.rst:193
+#: ../../Tutorials.rst:196
 msgid ""
 "Set the colors of the spectral signatures, which will represent classes in "
 "the classification output: in the :ref:`signature_list` double click the "
@@ -336,11 +341,11 @@ msgid ""
 "class."
 msgstr ""
 
-#: ../../Tutorials.rst:198
+#: ../../Tutorials.rst:201
 msgid ":guilabel:`Definition of class colors in the table Signature list`"
 msgstr ""
 
-#: ../../Tutorials.rst:200
+#: ../../Tutorials.rst:203
 msgid ""
 "In the :ref:`classification_alg` select the classification algorithm "
 "``Spectral Angle Mapping`` that we are going to use in this tutorial. In "
@@ -350,18 +355,18 @@ msgid ""
 "classification output."
 msgstr ""
 
-#: ../../Tutorials.rst:207
+#: ../../Tutorials.rst:210
 msgid ":guilabel:`Classification preview displayed over the image`"
 msgstr ""
 
-#: ../../Tutorials.rst:209
+#: ../../Tutorials.rst:212
 msgid ""
 "Previews are temporary classifications and are useful for assessing the "
 "effects of spectral signatures during the ROI collection. Previews are "
 "placed in a group named ``Class_temp_group`` in the QGIS panel Layers."
 msgstr ""
 
-#: ../../Tutorials.rst:212
+#: ../../Tutorials.rst:215
 msgid ""
 "In general, it is good to perform a classification preview every time a ROI "
 "(or a spectral signature) is added to the list. Therefore, the phases "
@@ -369,18 +374,18 @@ msgid ""
 "concurrent processes."
 msgstr ""
 
-#: ../../Tutorials.rst:217 ../../Tutorials.rst:591
+#: ../../Tutorials.rst:220 ../../Tutorials.rst:597
 msgid "Create the Classification Output"
 msgstr ""
 
-#: ../../Tutorials.rst:219
+#: ../../Tutorials.rst:222
 msgid ""
 "Assuming that the results of classification previews were good (i.e. classes"
 " were identified correctly), it is possible to perform the actual land cover"
 " classification of the whole image."
 msgstr ""
 
-#: ../../Tutorials.rst:221
+#: ../../Tutorials.rst:224
 msgid ""
 "In the :ref:`classification_output` click the button ``Perform "
 "classification`` and define the name of the classification output. The "
@@ -388,11 +393,11 @@ msgid ""
 "corresponds to a land cover class (defined in the :ref:`signature_list`)."
 msgstr ""
 
-#: ../../Tutorials.rst:227
+#: ../../Tutorials.rst:230
 msgid ":guilabel:`Result of the land cover classification`"
 msgstr ""
 
-#: ../../Tutorials.rst:229
+#: ../../Tutorials.rst:232
 msgid ""
 "Well done! You have just performed your first land cover classification. "
 "However, you can see that there are several classification errors "
@@ -400,43 +405,48 @@ msgid ""
 "of ROIs (spectral signatures) is insufficient."
 msgstr ""
 
-#: ../../Tutorials.rst:235
+#: ../../Tutorials.rst:238
 msgid ":guilabel:`Example of error: Bare soil classified as Built-up`"
 msgstr ""
 
-#: ../../Tutorials.rst:237
+#: ../../Tutorials.rst:240
 msgid ""
 "In the following :ref:`tutorial_2` we are going to create more ROIs and "
 "improve the classification results."
 msgstr ""
 
-#: ../../Tutorials.rst:242
+#: ../../Tutorials.rst:245
 msgid "Tutorial 2: Land Cover Classification of Landsat Images"
 msgstr ""
 
-#: ../../Tutorials.rst:244
+#: ../../Tutorials.rst:247
 msgid ""
 "This tutorial describes the main phases for the classification of images "
 "acquired by :ref:`Landsat_definition` . In addition, some of the SCP tools "
 "are illustrated."
 msgstr ""
 
-#: ../../Tutorials.rst:247
+#: ../../Tutorials.rst:250
 msgid ""
 "In this tutorial we are going to classify a Landsat 8 image acquired over "
 "Frascati (Rome, Italy) in order to identify the following land cover "
 "classes:"
 msgstr ""
 
-#: ../../Tutorials.rst:260
+#: ../../Tutorials.rst:263
 msgid "http://www.youtube.com/watch?v=ImbYhiIgl1g"
 msgstr ""
 
 #: ../../Tutorials.rst:265
+msgid ""
+"Alternative video link https://archive.org/details/video_basic_tutorial_2"
+msgstr ""
+
+#: ../../Tutorials.rst:271
 msgid "Data Download"
 msgstr ""
 
-#: ../../Tutorials.rst:267
+#: ../../Tutorials.rst:273
 msgid ""
 "We are going to **download the Landsat 8 image** using the SCP tool "
 ":ref:`Landsat_download_tab`. The dataset we are going to download is a "
@@ -445,43 +455,43 @@ msgid ""
 "information read :ref:`Landsat_definition` ) :"
 msgstr ""
 
-#: ../../Tutorials.rst:270
+#: ../../Tutorials.rst:276
 msgid "LC81910312015006LGN00_B2.tif = Blue;"
 msgstr ""
 
-#: ../../Tutorials.rst:271
+#: ../../Tutorials.rst:277
 msgid "LC81910312015006LGN00_B3.tif = Green;"
 msgstr ""
 
-#: ../../Tutorials.rst:272
+#: ../../Tutorials.rst:278
 msgid "LC81910312015006LGN00_B4.tif = Red;"
 msgstr ""
 
-#: ../../Tutorials.rst:273
+#: ../../Tutorials.rst:279
 msgid "LC81910312015006LGN00_B5.tif = Near-Infrared;"
 msgstr ""
 
-#: ../../Tutorials.rst:274
+#: ../../Tutorials.rst:280
 msgid "LC81910312015006LGN00_B6.tif = Short Wavelength Infrared 1;"
 msgstr ""
 
-#: ../../Tutorials.rst:275
+#: ../../Tutorials.rst:281
 msgid "LC81910312015006LGN00_B7.tif = Short Wavelength Infrared 2."
 msgstr ""
 
-#: ../../Tutorials.rst:277
+#: ../../Tutorials.rst:283
 msgid ""
 "Landsat images are available from the U.S. Geological Survey, and these "
 "bands are downloaded through the Amazon Web Services."
 msgstr ""
 
-#: ../../Tutorials.rst:279
+#: ../../Tutorials.rst:285
 msgid ""
 "Start a new QGIS project. Open the tab :ref:`Landsat_download_tab` clicking "
 "the button |tools| in the :ref:`SCP_menu` or the :ref:`toolbar`."
 msgstr ""
 
-#: ../../Tutorials.rst:281
+#: ../../Tutorials.rst:287
 msgid ""
 "First, we need to download the Landsat database. Click the button ``Select "
 "database directory`` in order to define where to save the database. It is "
@@ -491,30 +501,30 @@ msgid ""
 "``Yes`` in the following question about updating the image database."
 msgstr ""
 
-#: ../../Tutorials.rst:289
+#: ../../Tutorials.rst:295
 msgid ":guilabel:`Download Landsat 8 database`"
 msgstr ""
 
-#: ../../Tutorials.rst:291
+#: ../../Tutorials.rst:297
 msgid "The download should start (about 7 MB)."
 msgstr ""
 
-#: ../../Tutorials.rst:296
+#: ../../Tutorials.rst:302
 msgid ":guilabel:`Downloading Landsat 8 database`"
 msgstr ""
 
-#: ../../Tutorials.rst:298
+#: ../../Tutorials.rst:304
 msgid ""
 "When the download is completed, in the search box ``Image ID`` paste the "
 "Landsat ID: ``LC81910312015006LGN00`` . Now click the button ``Find images``"
 " and after a few seconds the image will be listed in the ``Image list``."
 msgstr ""
 
-#: ../../Tutorials.rst:304
+#: ../../Tutorials.rst:310
 msgid ":guilabel:`Search Landsat 8 image`"
 msgstr ""
 
-#: ../../Tutorials.rst:306
+#: ../../Tutorials.rst:312
 msgid ""
 "Click the tab ``Download options`` and leave checked only bands from 2 to 7 "
 "(we don't need the other bands for this tutorial). Also, uncheck all the "
@@ -522,11 +532,11 @@ msgid ""
 "bands in QGIS`` (we are going to see these functions in other tutorials)."
 msgstr ""
 
-#: ../../Tutorials.rst:312
+#: ../../Tutorials.rst:318
 msgid ":guilabel:`Select Landsat 8 bands for download`"
 msgstr ""
 
-#: ../../Tutorials.rst:314
+#: ../../Tutorials.rst:320
 msgid ""
 "In order to start the image download, click the button ``Download images "
 "from list`` and select a directory where bands are saved (i.e. ``Desktop``)."
@@ -537,15 +547,15 @@ msgid ""
 "Landsat ID) created automatically."
 msgstr ""
 
-#: ../../Tutorials.rst:322
+#: ../../Tutorials.rst:328
 msgid ":guilabel:`Download Landsat 8 bands`"
 msgstr ""
 
-#: ../../Tutorials.rst:327
+#: ../../Tutorials.rst:333
 msgid "Automatic Conversion to Surface Reflectance"
 msgstr ""
 
-#: ../../Tutorials.rst:329
+#: ../../Tutorials.rst:335
 msgid ""
 "The metadata file contains information that is useful for the automatic "
 "conversion of bands to :ref:`radiance_reflectance_definition` . Read "
@@ -553,14 +563,14 @@ msgid ""
 "calculation."
 msgstr ""
 
-#: ../../Tutorials.rst:332
+#: ../../Tutorials.rst:338
 msgid ""
 "In order to convert automatically Landsat bands to reflectance, open the tab"
 " :ref:`landsat_tab` clicking the button |preprocessing| in the "
 ":ref:`SCP_menu` or the :ref:`toolbar` ."
 msgstr ""
 
-#: ../../Tutorials.rst:334
+#: ../../Tutorials.rst:340
 msgid ""
 "Click the button ``Select directory`` and select the ``Directory containing "
 "Landsat bands`` (i.e. the directory ``LC81910312015006LGN00``). The list of "
@@ -569,7 +579,7 @@ msgid ""
 " file MTL.txt is inside the same directory)."
 msgstr ""
 
-#: ../../Tutorials.rst:338
+#: ../../Tutorials.rst:344
 msgid ""
 "**TIP** : If the metadata file MTL.txt was in a different directory, one can"
 " click the button ``Select MTL file`` and select the file. Also, it is "
@@ -577,44 +587,44 @@ msgid ""
 ":ref:`landsat_metadata` ."
 msgstr ""
 
-#: ../../Tutorials.rst:340
+#: ../../Tutorials.rst:346
 msgid ""
 "In order to calculate surface reflectance we are going to apply the "
 ":ref:`DOS1_correction` ; therefore, enable the option ``Apply DOS1 "
 "atmospheric correction`` ."
 msgstr ""
 
-#: ../../Tutorials.rst:342
+#: ../../Tutorials.rst:348
 msgid ""
 "**TIP** : It is recommended to perform the DOS1 atmospheric correction to "
 "the entire Landsat image (before clipping the image) in order to improve the"
 " calculation of parameters based on the image."
 msgstr ""
 
-#: ../../Tutorials.rst:344
+#: ../../Tutorials.rst:350
 msgid ""
 "Uncheck the option ``Create Band set`` (already enabled). In order to start "
 "the conversion process, click the button ``Perform conversion`` and select "
 "the directory where converted bands are saved (e.g. ``LandsatRT``)."
 msgstr ""
 
-#: ../../Tutorials.rst:350
+#: ../../Tutorials.rst:356
 msgid ":guilabel:`Landsat conversion to reflectance`"
 msgstr ""
 
-#: ../../Tutorials.rst:352
+#: ../../Tutorials.rst:358
 msgid "After a few minutes, converted bands are loaded in QGIS."
 msgstr ""
 
-#: ../../Tutorials.rst:357
+#: ../../Tutorials.rst:363
 msgid ":guilabel:`Converted Landsat bands`"
 msgstr ""
 
-#: ../../Tutorials.rst:362
+#: ../../Tutorials.rst:368
 msgid "Clip Data"
 msgstr ""
 
-#: ../../Tutorials.rst:364
+#: ../../Tutorials.rst:370
 msgid ""
 "We are going to clip Landsat bands to our study area (of course this is "
 "optional in case the study is focused on a certain area of the image). "
@@ -623,11 +633,11 @@ msgid ""
 " . Unzip the file and load the shapefile ``study_area_Frascati`` in QGIS."
 msgstr ""
 
-#: ../../Tutorials.rst:371
+#: ../../Tutorials.rst:377
 msgid ":guilabel:`The study area shapefile`"
 msgstr ""
 
-#: ../../Tutorials.rst:373
+#: ../../Tutorials.rst:379
 msgid ""
 "Open the tab :ref:`clip_multiple_rasters_tab` clicking the button "
 "|preprocessing| in the :ref:`SCP_menu` or the :ref:`toolbar` . Under "
@@ -640,25 +650,25 @@ msgid ""
 " (with the file name prefix ``clip_``)."
 msgstr ""
 
-#: ../../Tutorials.rst:382
+#: ../../Tutorials.rst:388
 msgid ":guilabel:`The tool for clipping the bands with the shapefile`"
 msgstr ""
 
-#: ../../Tutorials.rst:384
+#: ../../Tutorials.rst:390
 msgid ""
 "When the process is completed, clipped rasters are loaded in QGIS. We can "
 "remove the original Landsat bands from QGIS."
 msgstr ""
 
-#: ../../Tutorials.rst:390
+#: ../../Tutorials.rst:396
 msgid ":guilabel:`Clipped Landsat bands`"
 msgstr ""
 
-#: ../../Tutorials.rst:395
+#: ../../Tutorials.rst:401
 msgid "Create the Band Set"
 msgstr ""
 
-#: ../../Tutorials.rst:397
+#: ../../Tutorials.rst:403
 msgid ""
 "Now we need to define the ``Band set`` which is the input image for SCP. "
 "Open the tab :ref:`band_set_tab` clicking the button |band_set| in the "
@@ -670,46 +680,46 @@ msgid ""
 "signature calculation)."
 msgstr ""
 
-#: ../../Tutorials.rst:405
+#: ../../Tutorials.rst:411
 msgid ":guilabel:`Definition of a band set`"
 msgstr ""
 
-#: ../../Tutorials.rst:407
+#: ../../Tutorials.rst:413
 msgid ""
 "You can notice that the item ``<< band set >>`` is selected as ``Input "
 "image``  in the :ref:`toolbar`."
 msgstr ""
 
-#: ../../Tutorials.rst:412
+#: ../../Tutorials.rst:418
 msgid ":guilabel:`Band set defined`"
 msgstr ""
 
-#: ../../Tutorials.rst:417
+#: ../../Tutorials.rst:423
 msgid "Open the Training Shapefile and Signature List File"
 msgstr ""
 
-#: ../../Tutorials.rst:419
+#: ../../Tutorials.rst:425
 msgid ""
 "We are going to open the ``Training Shapefile`` and ``Signature list file`` "
 "already created in :ref:`tutorial_1`. If you don't have these files, follow "
 "the instructions :ref:`tutorial_1_3`."
 msgstr ""
 
-#: ../../Tutorials.rst:422
+#: ../../Tutorials.rst:428
 msgid ""
 "Load in QGIS the ``Training shapefile`` saved previously (e.g. ``ROI.shp``) "
 "from the QGIS menu ``Layer > Add Vector Layer``. The shapefile is displayed "
 "in QGIS."
 msgstr ""
 
-#: ../../Tutorials.rst:425
+#: ../../Tutorials.rst:431
 msgid ""
 "The name of the ``Training shapefile`` is displayed in "
 ":ref:`training_shapefile` of the :ref:`roi_dock` and ROIs are listed in the "
 ":ref:`ROI_list`."
 msgstr ""
 
-#: ../../Tutorials.rst:427
+#: ../../Tutorials.rst:433
 msgid ""
 "Also, click the button ``Open`` in the :ref:`classification_dock` and select"
 " the ``Signature list file`` previously created (e.g. ``SIG.xml`` ) . The "
@@ -718,13 +728,13 @@ msgid ""
 ":ref:`signature_list`."
 msgstr ""
 
-#: ../../Tutorials.rst:438
+#: ../../Tutorials.rst:444
 msgid ""
 "We are going to create several ROIs using the Macroclass ID defined in the "
 "following table."
 msgstr ""
 
-#: ../../Tutorials.rst:452
+#: ../../Tutorials.rst:458
 msgid ""
 "In the :ref:`toolbar` select the item ``3-2-1`` (which is natural color) in "
 "the list ``RGB=``. After a few seconds, the "
@@ -732,7 +742,7 @@ msgid ""
 "areas are white and vegetation is green."
 msgstr ""
 
-#: ../../Tutorials.rst:456
+#: ../../Tutorials.rst:462
 msgid ""
 "**TIP** : If a :ref:`band_set_tab` is defined, a temporary virtual raster "
 "(named ``band_set.vrt``) is created automatically, which allows for the "
@@ -741,11 +751,11 @@ msgid ""
 "band rasters from the QGIS Layers."
 msgstr ""
 
-#: ../../Tutorials.rst:461
+#: ../../Tutorials.rst:467
 msgid ":guilabel:`Color composite RGB = 3-2-1`"
 msgstr ""
 
-#: ../../Tutorials.rst:463
+#: ../../Tutorials.rst:469
 msgid ""
 "In the :ref:`toolbar` type ``3-4-6`` in the list ``RGB=``. Using this color "
 "composite, urban areas are purple and vegetation is green. You can notice "
@@ -753,17 +763,17 @@ msgid ""
 " 3-2-1``."
 msgstr ""
 
-#: ../../Tutorials.rst:470
+#: ../../Tutorials.rst:476
 msgid ":guilabel:`Color composite RGB = 3-4-6`"
 msgstr ""
 
-#: ../../Tutorials.rst:472
+#: ../../Tutorials.rst:478
 msgid ""
 "See :ref:`tutorial_1_4` for the details about the ROI creation by manually "
 "drawing a polygon or with an automatic region growing algorithm."
 msgstr ""
 
-#: ../../Tutorials.rst:474
+#: ../../Tutorials.rst:480
 msgid ""
 "**TIP** : Install the `OpenLayers Plugin "
 "<http://plugins.qgis.org/plugins/openlayers_plugin/>`_ in QGIS, and add a "
@@ -771,15 +781,15 @@ msgid ""
 "facilitate the identification of ROIs using high resolution data."
 msgstr ""
 
-#: ../../Tutorials.rst:479
+#: ../../Tutorials.rst:485
 msgid ":guilabel:`Creation of a ROI displaying OpenStreetMap`"
 msgstr ""
 
-#: ../../Tutorials.rst:484
+#: ../../Tutorials.rst:490
 msgid ":guilabel:`The same ROI displaying the color composite RGB = 3-2-1`"
 msgstr ""
 
-#: ../../Tutorials.rst:486
+#: ../../Tutorials.rst:492
 msgid ""
 "After clicking the button ``+`` in the :ref:`ROI_creation` you should notice"
 " that the cursor in the map displays a value changing over the image. This "
@@ -789,7 +799,7 @@ msgid ""
 "vegetation has higher NDVI values than soil."
 msgstr ""
 
-#: ../../Tutorials.rst:490
+#: ../../Tutorials.rst:496
 msgid ""
 "For instance, move the mouse over a vegetation area and left click to create"
 " a ROI when you see a local maximum value. This way, the created ROI and the"
@@ -797,11 +807,11 @@ msgid ""
 "vegetation."
 msgstr ""
 
-#: ../../Tutorials.rst:496
+#: ../../Tutorials.rst:502
 msgid ":guilabel:`Example of NDVI value of vegetation displayed in the map`"
 msgstr ""
 
-#: ../../Tutorials.rst:498
+#: ../../Tutorials.rst:504
 msgid ""
 "Create several ROIs (the more is the better). In general, you should create "
 "one ROI for each color that you can distinguish in the image. Therefore, "
@@ -809,55 +819,55 @@ msgid ""
 "cover."
 msgstr ""
 
-#: ../../Tutorials.rst:502
+#: ../../Tutorials.rst:508
 msgid ""
 "**TIP** : Change frequently the :ref:`color_composite_definition` in order "
 "to clearly identify the materials at the ground; use the mouse wheel on the "
 "list ``RGB=`` for changing the color composite rapidly."
 msgstr ""
 
-#: ../../Tutorials.rst:504
+#: ../../Tutorials.rst:510
 msgid "A few examples of ROIs are illustrated in the following figures."
 msgstr ""
 
-#: ../../Tutorials.rst:509
+#: ../../Tutorials.rst:515
 msgid ":guilabel:`Built-up ROI: large buildings`"
 msgstr ""
 
-#: ../../Tutorials.rst:514
+#: ../../Tutorials.rst:520
 msgid ":guilabel:`Built-up ROI: road`"
 msgstr ""
 
-#: ../../Tutorials.rst:519
+#: ../../Tutorials.rst:525
 msgid ":guilabel:`Built-up ROI: buildings and narrow roads`"
 msgstr ""
 
-#: ../../Tutorials.rst:524
+#: ../../Tutorials.rst:530
 msgid ":guilabel:`Bare soil ROI: uncultivated land`"
 msgstr ""
 
-#: ../../Tutorials.rst:529
+#: ../../Tutorials.rst:535
 msgid ":guilabel:`Vegetation ROI: deciduous trees`"
 msgstr ""
 
-#: ../../Tutorials.rst:534
+#: ../../Tutorials.rst:540
 msgid ":guilabel:`Vegetation ROI: crop`"
 msgstr ""
 
-#: ../../Tutorials.rst:536
+#: ../../Tutorials.rst:542
 msgid ""
 "It is worth mentioning that you can show or hide the temporary ROI by "
 "switching ``Show ROI`` in :ref:`ROI_creation`."
 msgstr ""
 
-#: ../../Tutorials.rst:543
+#: ../../Tutorials.rst:549
 msgid ""
 "As pointed out in :ref:`tutorial_1`, previews are temporary classifications "
 "that are useful for assessing the effects of spectral signatures during the "
 "ROI collection."
 msgstr ""
 
-#: ../../Tutorials.rst:545
+#: ../../Tutorials.rst:551
 msgid ""
 "Set the colors of the spectral signatures in the :ref:`signature_list`; "
 "then, in the :ref:`classification_alg` select the classification algorithm "
@@ -866,21 +876,21 @@ msgid ""
 "a classification preview."
 msgstr ""
 
-#: ../../Tutorials.rst:548
+#: ../../Tutorials.rst:554
 msgid ""
 "The preview result is displayed in the map. Previews are temporary rasters "
 "(deleted after QGIS is closed) placed in a group named ``Class_temp_group`` "
 "in the QGIS panel Layers."
 msgstr ""
 
-#: ../../Tutorials.rst:554
+#: ../../Tutorials.rst:560
 msgid ""
 "Place the ``Class_temp_group`` to the top of layers in order to display the "
 "preview over the image. Also, in :ref:`classification_preview` switch the "
 "button ``Show`` in order to show or hide the previews."
 msgstr ""
 
-#: ../../Tutorials.rst:557
+#: ../../Tutorials.rst:563
 msgid ""
 "In QGIS, you could notice one or more warnings similar to this ``Warning "
 "[9]: The following signature has wavelength different from band set. Macro: "
@@ -889,11 +899,11 @@ msgid ""
 ":ref:`tutorial_1` without defining the center wavelength of each band."
 msgstr ""
 
-#: ../../Tutorials.rst:565
+#: ../../Tutorials.rst:571
 msgid ":guilabel:`Warning [9]`"
 msgstr ""
 
-#: ../../Tutorials.rst:567
+#: ../../Tutorials.rst:573
 msgid ""
 "We need to delete the signatures created in :ref:`tutorial_1` from the "
 ":ref:`signature_list_file`: highlight (with mouse selection in the table) "
@@ -904,11 +914,11 @@ msgid ""
 ":ref:`signature_list_file`."
 msgstr ""
 
-#: ../../Tutorials.rst:574
+#: ../../Tutorials.rst:580
 msgid "Assess Spectral Signatures"
 msgstr ""
 
-#: ../../Tutorials.rst:576
+#: ../../Tutorials.rst:582
 msgid ""
 "The classification algorithm uses spectral signatures for classifying the "
 "image. In general, one should use spectral signatures that are not similar, "
@@ -916,7 +926,7 @@ msgid ""
 "signatures in order to find similar spectral signatures and delete them."
 msgstr ""
 
-#: ../../Tutorials.rst:580
+#: ../../Tutorials.rst:586
 msgid ""
 "Highlight (with mouse selection in the table) two or more spectral "
 "signatures in the :ref:`signature_list` then click the button |sign_plot| . "
@@ -927,79 +937,79 @@ msgid ""
 "close) or dissimilar (i.e. not very close)."
 msgstr ""
 
-#: ../../Tutorials.rst:593
+#: ../../Tutorials.rst:599
 msgid ""
 "Repeat iteratively the phases :ref:`tutorial_2_3` and :ref:`tutorial_2_4` "
 "until the classification previews are good."
 msgstr ""
 
-#: ../../Tutorials.rst:595
+#: ../../Tutorials.rst:601
 msgid ""
 "In order to create a classification output using only the Macroclass ID "
 "defined in :ref:`tutorial_2_3` activate the checkbox ``Use Macroclass ID`` "
 "in :ref:`classification_alg`."
 msgstr ""
 
-#: ../../Tutorials.rst:597
+#: ../../Tutorials.rst:603
 msgid ""
 "In order to classify the entire image, in the :ref:`classification_output` "
 "click the button ``Perform classification`` and define the name of the "
 "classification output."
 msgstr ""
 
-#: ../../Tutorials.rst:602
+#: ../../Tutorials.rst:608
 msgid ":guilabel:`Resulting classification`"
 msgstr ""
 
-#: ../../Tutorials.rst:604
+#: ../../Tutorials.rst:610
 msgid ""
 "You can notice that the resulting classification is better than the one "
 "created in :ref:`tutorial_1`. However, there are other tools and techniques "
 "that can improve the results which are described in :ref:`other_tutorials`."
 msgstr ""
 
-#: ../../Tutorials.rst:610
+#: ../../Tutorials.rst:616
 msgid "Other Tutorials"
 msgstr ""
 
-#: ../../Tutorials.rst:612
+#: ../../Tutorials.rst:618
 msgid "Other :ref:`thematic_tutorials` are available about SCP functions."
 msgstr ""
 
-#: ../../Tutorials.rst:614
+#: ../../Tutorials.rst:620
 msgid ""
 "Also, visit the blog `From GIS to Remote Sensing "
 "<http://fromgistors.blogspot.com/search/label/Tutorial>`_ for other "
 "tutorials such as:"
 msgstr ""
 
-#: ../../Tutorials.rst:616
+#: ../../Tutorials.rst:622
 msgid ""
 "`Supervised Classification of Hyperspectral Data "
 "<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
 "hyperspectral.html>`_;"
 msgstr ""
 
-#: ../../Tutorials.rst:618
+#: ../../Tutorials.rst:624
 msgid ""
 "`Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09"
 "/monitoring-changes-in-amazon-rainforest.html>`_;"
 msgstr ""
 
-#: ../../Tutorials.rst:620
+#: ../../Tutorials.rst:626
 msgid ""
 "`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
 "tutorial-using-semi.html>`_;"
 msgstr ""
 
-#: ../../Tutorials.rst:622
+#: ../../Tutorials.rst:628
 msgid ""
 "`Estimation of Land Surface Temperature with Landsat Thermal Infrared Band "
 "<http://fromgistors.blogspot.com/2014/01/estimation-of-land-surface-"
 "temperature.html>`_;"
 msgstr ""
 
-#: ../../Tutorials.rst:624
+#: ../../Tutorials.rst:630
 msgid ""
 "`Land Cover Classification of Cropland "
 "<http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-"
