@@ -711,7 +711,8 @@ It is possible to define a multiplicative rescaling factor and additive rescalin
 	* WorldView-3.
 
 * [ ``Create virtual raster of band set`` ]: create a virtual raster of bands;
-* [ ``Create raster of band set (stack bands)`` ]: stack all the bands and create a unique .tif raster.
+* [ ``Create raster of band set (stack bands)`` ]: stack all the bands and create a unique .tif raster;
+* [ ``Build band overviews`` ]: build raster overviews (i.e. pyramids) for improving display performance.
 	
 .. _settings_tab:
  

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-15 23:33+0200\n"
+"POT-Creation-Date: 2015-08-16 12:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1622,34 +1622,40 @@ msgstr ""
 #: ../../main_interface_window.rst:714
 msgid ""
 "[ ``Create raster of band set (stack bands)`` ]: stack all the bands and "
-"create a unique .tif raster."
+"create a unique .tif raster;"
 msgstr ""
 
-#: ../../main_interface_window.rst:719
+#: ../../main_interface_window.rst:715
+msgid ""
+"[ ``Build band overviews`` ]: build raster overviews (i.e. pyramids) for "
+"improving display performance."
+msgstr ""
+
+#: ../../main_interface_window.rst:720
 msgid "Settings"
 msgstr ""
 
-#: ../../main_interface_window.rst:721
+#: ../../main_interface_window.rst:722
 msgid "The tab ``Settings`` allows for the customization of SCP settings."
 msgstr ""
 
-#: ../../main_interface_window.rst:726
+#: ../../main_interface_window.rst:727
 msgid "Settings: Interface"
 msgstr ""
 
-#: ../../main_interface_window.rst:728
+#: ../../main_interface_window.rst:729
 msgid "Customization of the interface."
 msgstr ""
 
-#: ../../main_interface_window.rst:734
+#: ../../main_interface_window.rst:735
 msgid ":guilabel:`Settings: Interface`"
 msgstr ""
 
-#: ../../main_interface_window.rst:739
+#: ../../main_interface_window.rst:740
 msgid "Field names of training shapefile"
 msgstr ""
 
-#: ../../main_interface_window.rst:741
+#: ../../main_interface_window.rst:742
 msgid ""
 "Set the names of fields in the :ref:`training_shapefile` . Changing field "
 "names according to the fields of an existing shapefile is effective for "
@@ -1657,118 +1663,118 @@ msgid ""
 "<http://youtu.be/4V4Fh_MWgSA?t=2m53s>`_ )."
 msgstr ""
 
-#: ../../main_interface_window.rst:744
+#: ../../main_interface_window.rst:745
 msgid ""
 "``MC ID field`` [Q]: name of the Macroclass ID field (default is ``MC_ID``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:745
+#: ../../main_interface_window.rst:746
 msgid ""
 "``MC Info field`` [Q]: name of the Macroclass Information field (default is "
 "``MC_info``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:746
+#: ../../main_interface_window.rst:747
 msgid "``C ID field`` [Q]: name of the Class ID field (default is ``C_ID``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:747
+#: ../../main_interface_window.rst:748
 msgid ""
 "``C Info field`` [Q]: name of the Class Information field (default is "
 "``C_info``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:748
+#: ../../main_interface_window.rst:749
 msgid "[ ``Reset field names`` ]: reset field names to default."
 msgstr ""
 
-#: ../../main_interface_window.rst:753
+#: ../../main_interface_window.rst:754
 msgid "ROI style"
 msgstr ""
 
-#: ../../main_interface_window.rst:755
+#: ../../main_interface_window.rst:756
 msgid ""
 "Change ROI colour and transparency for a better visualization of temporary "
 "ROIs on the map."
 msgstr ""
 
-#: ../../main_interface_window.rst:757
+#: ../../main_interface_window.rst:758
 msgid "[ ``Change colour`` ] [Q]: change ROI colour;"
 msgstr ""
 
-#: ../../main_interface_window.rst:758
+#: ../../main_interface_window.rst:759
 msgid "[ ``Reset ROI style`` ]: reset ROI colour and transparency to default;"
 msgstr ""
 
-#: ../../main_interface_window.rst:759
+#: ../../main_interface_window.rst:760
 msgid "[- ``Transparency`` -] [Q]: change ROI transparency."
 msgstr ""
 
-#: ../../main_interface_window.rst:764
+#: ../../main_interface_window.rst:765
 msgid "Spectral signature"
 msgstr ""
 
-#: ../../main_interface_window.rst:766
+#: ../../main_interface_window.rst:767
 msgid ""
 "< ``Plot legend Max number of characters`` >: limit the text length of names"
 " in the :ref:`signature_list_plot` legend."
 msgstr ""
 
-#: ../../main_interface_window.rst:771
+#: ../../main_interface_window.rst:772
 msgid "Variable name for expressions (tab Reclassification)"
 msgstr ""
 
-#: ../../main_interface_window.rst:773
+#: ../../main_interface_window.rst:774
 msgid ""
 "Set the variable name used in ``Old value`` expressions of the "
 ":ref:`reclassification_tab` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:775
+#: ../../main_interface_window.rst:776
 msgid "``Variable name`` [Q]: set variable name (default is ``raster``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:776
+#: ../../main_interface_window.rst:777
 msgid "[ ``Reset name`` ]: reset variable name to default."
 msgstr ""
 
-#: ../../main_interface_window.rst:781
+#: ../../main_interface_window.rst:782
 msgid "Temporary group name"
 msgstr ""
 
-#: ../../main_interface_window.rst:783
+#: ../../main_interface_window.rst:784
 msgid ""
 "Set the temporary group name in QGIS Layers used for "
 ":ref:`classification_preview` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:785
+#: ../../main_interface_window.rst:786
 msgid "``Group name`` [Q]: set group name (default is ``Class_temp_group``);"
 msgstr ""
 
-#: ../../main_interface_window.rst:786
+#: ../../main_interface_window.rst:787
 msgid "[ ``Reset name`` ]: reset group name to default."
 msgstr ""
 
-#: ../../main_interface_window.rst:791
+#: ../../main_interface_window.rst:792
 msgid "Settings: Processing"
 msgstr ""
 
-#: ../../main_interface_window.rst:797
+#: ../../main_interface_window.rst:798
 msgid ":guilabel:`Settings: Processing`"
 msgstr ""
 
-#: ../../main_interface_window.rst:802
+#: ../../main_interface_window.rst:803
 msgid "Classification process"
 msgstr ""
 
-#: ../../main_interface_window.rst:804
+#: ../../main_interface_window.rst:805
 msgid ""
 "``Play sound when finished`` [Q]: if checked, play a sound when the "
 "classification process is completed;"
 msgstr ""
 
-#: ../../main_interface_window.rst:805
+#: ../../main_interface_window.rst:806
 msgid ""
 "``Save algorithm files`` [Q]: if checked, in addition to the classification "
 "output, save the intermediate files calculated by the classification "
@@ -1776,77 +1782,77 @@ msgid ""
 "`similarity` of each pixel to the class thereof);"
 msgstr ""
 
-#: ../../main_interface_window.rst:806
+#: ../../main_interface_window.rst:807
 msgid ""
 "``Use virtual rasters for temp files`` [Q]: if checked, create virtual "
 "rasters for certain temporary files, instead of creating real rasters; it is"
 " useful for reducing disk space usage during calculations."
 msgstr ""
 
-#: ../../main_interface_window.rst:811
+#: ../../main_interface_window.rst:812
 msgid "Image calculation"
 msgstr ""
 
-#: ../../main_interface_window.rst:812
+#: ../../main_interface_window.rst:813
 msgid ""
 "``Raster data type for image calculations`` [Q]: select the raster data type"
 " between Float32 (default) and Float64, which is used for the creation of "
 "raster outputs;"
 msgstr ""
 
-#: ../../main_interface_window.rst:817
+#: ../../main_interface_window.rst:818
 msgid "RAM"
 msgstr ""
 
-#: ../../main_interface_window.rst:819
+#: ../../main_interface_window.rst:820
 msgid ""
 "< ``Available RAM (MB)`` > [Q]: set the available RAM (in MB) that will be "
 "used during the processes; this value should be half of the system RAM (e.g."
 " 1024MB if system has 2GB of RAM)."
 msgstr ""
 
-#: ../../main_interface_window.rst:824
+#: ../../main_interface_window.rst:825
 msgid "Settings: Debug"
 msgstr ""
 
-#: ../../main_interface_window.rst:830
+#: ../../main_interface_window.rst:831
 msgid ":guilabel:`Settings: Debug`"
 msgstr ""
 
-#: ../../main_interface_window.rst:832
+#: ../../main_interface_window.rst:833
 msgid ""
 "Debugging utilities for the creation of a Log file (i.e. recording of SCP "
 "activities for reporting issues) and testing SCP dependencies."
 msgstr ""
 
-#: ../../main_interface_window.rst:834
+#: ../../main_interface_window.rst:835
 msgid "If you found a plugin error, please read :ref:`error_0` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:839
+#: ../../main_interface_window.rst:840
 msgid "Log file"
 msgstr ""
 
-#: ../../main_interface_window.rst:841
+#: ../../main_interface_window.rst:842
 msgid ""
 "``Records events in a log file`` [Q]: start recording events in a Log file;"
 msgstr ""
 
-#: ../../main_interface_window.rst:842
+#: ../../main_interface_window.rst:843
 msgid ""
 "[ ``Export Log file`` ]: open a window for choosing where to save the Log "
 "file (i.e. a .txt file);"
 msgstr ""
 
-#: ../../main_interface_window.rst:843
+#: ../../main_interface_window.rst:844
 msgid "[ ``Clear Log file content`` ]: clear the content of Log file."
 msgstr ""
 
-#: ../../main_interface_window.rst:848
+#: ../../main_interface_window.rst:849
 msgid "Test"
 msgstr ""
 
-#: ../../main_interface_window.rst:850
+#: ../../main_interface_window.rst:851
 msgid ""
 "[ ``Test dependencies`` ]: test SCP dependencies (GDAL, GDAL subprocess, "
 "NumPy, SciPy, Matplotlib, Internet connection); a window displays the test "
