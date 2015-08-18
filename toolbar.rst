@@ -22,10 +22,13 @@ The ``Toolbar`` allows for the selection of the ``Input image``, and includes se
 [Q] = Configuration stored in QGIS registry
 
 * |plugin|: show the :ref:`main_interface_window` and display the :ref:`roi_dock` and the :ref:`classification_dock`;
+* |band_set|: open the :ref:`band_set_tab`;
 * ``Input image`` [P]: select the input image from a list of multi-spectral images loaded in QGIS; input image can be a multi-spectral raster or a set of single bands defined in the :ref:`band_set_tab` (if the :ref:`band_set_tab` is defined, then this list will contain the item `<< band set >>`;
 * |refresh|: refresh image list;
-* ``RGB=`` [P]: select a color composites that is applied to the ``Input image`` ; new color composites can be defined typing the band numbers separated by ``-`` or ``;`` or ``,`` (e.g. RGB = 4-3-2 or RGB = 4;3;2 or RGB = 4,3,2); 
-* |band_set|: open the :ref:`band_set_tab`;
+* ``RGB=`` [P]: select a color composites that is applied to the ``Input image`` ; new color composites can be defined typing the band numbers separated by ``-`` or ``;`` or ``,`` (e.g. RGB = 4-3-2 or RGB = 4;3;2 or RGB = 4,3,2);
+* < ``Show`` >: show/hide the input image in the map;
+* |cumulative_stretch|: display the input image stretching the minimum and maximum values according to cumulative count of current extent;
+* |std_dev_stretch|: display the input image stretching the minimum and maximum values according to standard deviation of current extent;
 * |sign_plot|: open the :ref:`spectral_signature_plot`;
 * |tools|: open the :ref:`tools_tab`;
 * |preprocessing|: open the :ref:`pre_processing_tab`;
@@ -42,6 +45,12 @@ The ``Toolbar`` allows for the selection of the ``Input image``, and includes se
 	:width: 20pt
 	
 .. |band_set| image:: _static/semiautomaticclassificationplugin_bandset_tool.png
+	:width: 20pt
+
+.. |cumulative_stretch| image:: _static/semiautomaticclassificationplugin_bandset_cumulative_stretch_tool.png
+	:width: 20pt
+
+.. |std_dev_stretch| image:: _static/semiautomaticclassificationplugin_bandset_std_dev_stretch_tool.png
 	:width: 20pt
 
 .. |sign_plot| image:: _static/semiautomaticclassificationplugin_sign_tool.png

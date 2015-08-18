@@ -130,12 +130,16 @@ ROI creation is used for creating ROI polygons; these ROIs are **temporary** unt
 * |manual|: create a ROI by manual drawing a polygon on the map; after clicking the button, left click on the map to define the ROI vertices and right click to define the last vertex closing the polygon;
 * |multiple|: open the :ref:`multiple_rois_tab`;
 * < ``Display cursor for`` > [P]: if the ROI creation pointer is active, display vegetation index values on the map; vegetation indices available in the combo box are NDVI (Normalized Difference Vegetation Index) and EVI (Enhanced Vegetation Index); NDVI requires the near-infrared and red bands; EVI requires the blue, near-infrared and red bands converted to reflectance; wavelengths must be defined in the :ref:`band_set_tab`;
-* < ``Show ROI`` >: show/hide the temporary ROI on the map.
+* < ``Show`` >: show/hide the temporary ROI in the map;
+* |zoom_to_ROI|: zoom to the last temporary ROI.
 
 .. |manual| image:: _static/semiautomaticclassificationplugin_manual_ROI.jpg
 	:width: 24pt
 
 .. |multiple| image:: _static/semiautomaticclassificationplugin_roi_multiple.png
+	:width: 24pt
+
+.. |zoom_to_ROI| image:: _static/semiautomaticclassificationplugin_zoom_to.png
 	:width: 24pt
 
 .. _ROI_signature_definition:

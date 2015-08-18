@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-16 12:16+0200\n"
+"POT-Creation-Date: 2015-08-18 11:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -326,18 +326,22 @@ msgid ""
 msgstr ""
 
 #: ../../roi_dock.rst:133
-msgid "< ``Show ROI`` >: show/hide the temporary ROI on the map."
+msgid "< ``Show`` >: show/hide the temporary ROI in the map;"
 msgstr ""
 
-#: ../../roi_dock.rst:144
+#: ../../roi_dock.rst:134
+msgid "|zoom_to_ROI|: zoom to the last temporary ROI."
+msgstr ""
+
+#: ../../roi_dock.rst:148
 msgid "ROI Signature definition"
 msgstr ""
 
-#: ../../roi_dock.rst:149
+#: ../../roi_dock.rst:153
 msgid ":guilabel:`ROI Signature definition`"
 msgstr ""
 
-#: ../../roi_dock.rst:151
+#: ../../roi_dock.rst:155
 msgid ""
 "This allows for the definition of ROI's class and saving the temporary ROI "
 "to the :ref:`training_shapefile` ; in addition, it is possible to "
@@ -345,28 +349,28 @@ msgid ""
 ":ref:`signature_list` ."
 msgstr ""
 
-#: ../../roi_dock.rst:153
+#: ../../roi_dock.rst:157
 msgid "``MC ID`` [P]: ROI Macroclass ID [int];"
 msgstr ""
 
-#: ../../roi_dock.rst:154
+#: ../../roi_dock.rst:158
 msgid "``MC Info`` [P]: ROI Macroclass information [text];"
 msgstr ""
 
-#: ../../roi_dock.rst:155
+#: ../../roi_dock.rst:159
 msgid "``C ID`` [P]: ROI Class ID [int];"
 msgstr ""
 
-#: ../../roi_dock.rst:156
+#: ../../roi_dock.rst:160
 msgid "``C Info`` [P]: ROI Class information [text];"
 msgstr ""
 
-#: ../../roi_dock.rst:157
+#: ../../roi_dock.rst:161
 msgid ""
 "[ ``Save ROI`` ]: save the temporary ROI to the :ref:`training_shapefile` ;"
 msgstr ""
 
-#: ../../roi_dock.rst:158
+#: ../../roi_dock.rst:162
 msgid ""
 "``Add sig. list`` [P]: if checked, the spectral signature is calculated (the"
 " ROI mean value, and standard deviation for each raster band, and the "
@@ -374,7 +378,7 @@ msgid ""
 "depending on the number of ``Input image`` bands);"
 msgstr ""
 
-#: ../../roi_dock.rst:159
+#: ../../roi_dock.rst:163
 msgid ""
 "[ ``Undo`` ]: delete the last saved ROI from the :ref:`training_shapefile` ."
 msgstr ""

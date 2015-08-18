@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-16 12:16+0200\n"
+"POT-Creation-Date: 2015-08-18 11:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,10 @@ msgid ""
 msgstr ""
 
 #: ../../toolbar.rst:25
+msgid "|band_set|: open the :ref:`band_set_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:26
 msgid ""
 "``Input image`` [P]: select the input image from a list of multi-spectral "
 "images loaded in QGIS; input image can be a multi-spectral raster or a set "
@@ -53,11 +57,11 @@ msgid ""
 "band set >>`;"
 msgstr ""
 
-#: ../../toolbar.rst:26
+#: ../../toolbar.rst:27
 msgid "|refresh|: refresh image list;"
 msgstr ""
 
-#: ../../toolbar.rst:27
+#: ../../toolbar.rst:28
 msgid ""
 "``RGB=`` [P]: select a color composites that is applied to the ``Input "
 "image`` ; new color composites can be defined typing the band numbers "
@@ -65,39 +69,51 @@ msgid ""
 " = 4,3,2);"
 msgstr ""
 
-#: ../../toolbar.rst:28
-msgid "|band_set|: open the :ref:`band_set_tab`;"
-msgstr ""
-
 #: ../../toolbar.rst:29
-msgid "|sign_plot|: open the :ref:`spectral_signature_plot`;"
+msgid "< ``Show`` >: show/hide the input image in the map;"
 msgstr ""
 
 #: ../../toolbar.rst:30
-msgid "|tools|: open the :ref:`tools_tab`;"
+msgid ""
+"|cumulative_stretch|: display the input image stretching the minimum and "
+"maximum values according to cumulative count of current extent;"
 msgstr ""
 
 #: ../../toolbar.rst:31
-msgid "|preprocessing|: open the :ref:`pre_processing_tab`;"
+msgid ""
+"|std_dev_stretch|: display the input image stretching the minimum and "
+"maximum values according to standard deviation of current extent;"
 msgstr ""
 
 #: ../../toolbar.rst:32
-msgid "|postprocessing|: open the :ref:`post_processing_tab`;"
+msgid "|sign_plot|: open the :ref:`spectral_signature_plot`;"
 msgstr ""
 
 #: ../../toolbar.rst:33
-msgid "|bandcalc|: open the :ref:`band_calc_tab`;"
+msgid "|tools|: open the :ref:`tools_tab`;"
 msgstr ""
 
 #: ../../toolbar.rst:34
-msgid "|settings|: open the :ref:`settings_tab`;"
+msgid "|preprocessing|: open the :ref:`pre_processing_tab`;"
 msgstr ""
 
 #: ../../toolbar.rst:35
-msgid "|guide|: open the online user manual in a web browser;"
+msgid "|postprocessing|: open the :ref:`post_processing_tab`;"
 msgstr ""
 
 #: ../../toolbar.rst:36
+msgid "|bandcalc|: open the :ref:`band_calc_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:37
+msgid "|settings|: open the :ref:`settings_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:38
+msgid "|guide|: open the online user manual in a web browser;"
+msgstr ""
+
+#: ../../toolbar.rst:39
 msgid ""
 "|help|: open the `Online help <http://fromgistors.blogspot.com/p/ask-for-"
 "help.html>`_ in a web browser; also, a `Facebook group "

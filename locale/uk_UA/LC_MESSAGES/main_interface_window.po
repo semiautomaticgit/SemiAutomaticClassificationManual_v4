@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-16 12:16+0200\n"
+"POT-Creation-Date: 2015-08-18 11:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -406,9 +406,11 @@ msgstr ""
 
 #: ../../main_interface_window.rst:178
 msgid ""
-"[ ``Automatic thresholds`` ]: calculate automatically a threshold for each "
-"signature based on the variance thereof (currently works for Minimum "
-"Distance and Spectral Angle Mapping calculating a distance or an angle);"
+"[ ``Automatic thresholds`` ]: calculate automatically a threshold for all "
+"the highlighted signatures based on the standard deviation thereof "
+"(currently works for Minimum Distance and Spectral Angle Mapping calculating"
+" the distance or angle between mean signature and mean + standard deviation "
+"signature);"
 msgstr ""
 
 #: ../../main_interface_window.rst:179

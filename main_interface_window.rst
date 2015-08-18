@@ -175,7 +175,7 @@ Signature threshold
 * [ ``Threshold value`` ]: value of threshold used with the button ``Set threshold value``;
 * [ ``Set threshold value`` ]: set the value defined in ``Threshold value`` for all the highlighted signatures in the table;
 * [ ``Reset thresholds`` ]: reset all signatures thresholds to 0 (i.e. no threshold used);
-* [ ``Automatic thresholds`` ]: calculate automatically a threshold for each signature based on the variance thereof (currently works for Minimum Distance and Spectral Angle Mapping calculating a distance or an angle);
+* [ ``Automatic thresholds`` ]: calculate automatically a threshold for all the highlighted signatures based on the standard deviation thereof (currently works for Minimum Distance and Spectral Angle Mapping calculating the distance or angle between mean signature and mean + standard deviation signature);
 * [ ``Multiplicative value`` ]: each threshold value calculated with ``Automatic thresholds`` is multiplied by this value.
 
 .. _Landsat_download_tab:

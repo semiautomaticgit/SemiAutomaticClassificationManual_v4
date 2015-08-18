@@ -135,12 +135,17 @@ Classification preview
 Classification previews are temporary classifications of part of the `input image` (every pixel has a value that represents a class).
 Also, a algorithm raster can be displayed with a click on the map; algorithm raster represents the distance of the classified pixel to the corresponding signature (every pixel has a value calculated by the algorithm with the spectral signature);
 algorithm raster is useful for assessing how much a pixel classified as class `X` is distant from the corresponding spectral signature `X` (black pixels are distant from the spectral signature and white pixels are closer).
-Previews are temporarily placed in QGIS Layers inside a layer group named ``Class_temp_group`` (custom name can be defined in  :ref:`group_name` ) and are deleted when the QGIS session is closed.
+After the creation of a new preview, old previews are placed in QGIS Layers inside a layer group named ``Class_temp_group`` (custom name can be defined in  :ref:`group_name` ) and are deleted when the QGIS session is closed.
 
-* < ``Show`` >: show/hide the temporary preview group on the map;
 * < ``Size`` >: size in pixel unit of a classification preview (i.e. the side length of a square, centred at the clicked pixel);
 * [ ``Redo`` ]: create a new classification preview centred at the same pixel of the previous one;
-* [+]: activate the pointer for the creation of a classification preview ; left click the map for starting the classification process and showing the classification preview; right click for starting the classification process and showing the algorithm raster of the preview.
+* [+]: activate the pointer for the creation of a classification preview ; left click the map for starting the classification process and showing the classification preview; right click for starting the classification process and showing the algorithm raster of the preview;
+* |zoom_to_preview|: zoom to the last temporary preview in the map;
+* < ``Show`` >: show/hide the temporary preview in the map;
+* [- ``Transparency`` -]: change temporary preview transparency on the fly, which is useful for comparing the results to input image.
+
+.. |zoom_to_preview| image:: _static/semiautomaticclassificationplugin_zoom_to.png
+	:width: 24pt
 
 .. _classification_style:
 
