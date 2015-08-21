@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-18 11:16+0200\n"
+"POT-Creation-Date: 2015-08-21 22:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1788,73 +1788,79 @@ msgstr ""
 msgid ""
 "``Use virtual rasters for temp files`` [Q]: if checked, create virtual "
 "rasters for certain temporary files, instead of creating real rasters; it is"
-" useful for reducing disk space usage during calculations."
+" useful for reducing disk space usage during calculations;"
 msgstr ""
 
-#: ../../main_interface_window.rst:812
-msgid "Image calculation"
+#: ../../main_interface_window.rst:808
+msgid ""
+"``Raster compression`` [Q]: if checked, a lossless compression (LZW) is "
+"applied to raster outputs in order to save disk space."
 msgstr ""
 
 #: ../../main_interface_window.rst:813
+msgid "Image calculation"
+msgstr ""
+
+#: ../../main_interface_window.rst:814
 msgid ""
 "``Raster data type for image calculations`` [Q]: select the raster data type"
 " between Float32 (default) and Float64, which is used for the creation of "
 "raster outputs;"
 msgstr ""
 
-#: ../../main_interface_window.rst:818
+#: ../../main_interface_window.rst:819
 msgid "RAM"
 msgstr ""
 
-#: ../../main_interface_window.rst:820
+#: ../../main_interface_window.rst:821
 msgid ""
 "< ``Available RAM (MB)`` > [Q]: set the available RAM (in MB) that will be "
 "used during the processes; this value should be half of the system RAM (e.g."
 " 1024MB if system has 2GB of RAM)."
 msgstr ""
 
-#: ../../main_interface_window.rst:825
+#: ../../main_interface_window.rst:826
 msgid "Settings: Debug"
 msgstr ""
 
-#: ../../main_interface_window.rst:831
+#: ../../main_interface_window.rst:832
 msgid ":guilabel:`Settings: Debug`"
 msgstr ""
 
-#: ../../main_interface_window.rst:833
+#: ../../main_interface_window.rst:834
 msgid ""
 "Debugging utilities for the creation of a Log file (i.e. recording of SCP "
 "activities for reporting issues) and testing SCP dependencies."
 msgstr ""
 
-#: ../../main_interface_window.rst:835
+#: ../../main_interface_window.rst:836
 msgid "If you found a plugin error, please read :ref:`error_0` ."
 msgstr ""
 
-#: ../../main_interface_window.rst:840
+#: ../../main_interface_window.rst:841
 msgid "Log file"
 msgstr ""
 
-#: ../../main_interface_window.rst:842
+#: ../../main_interface_window.rst:843
 msgid ""
 "``Records events in a log file`` [Q]: start recording events in a Log file;"
 msgstr ""
 
-#: ../../main_interface_window.rst:843
+#: ../../main_interface_window.rst:844
 msgid ""
 "[ ``Export Log file`` ]: open a window for choosing where to save the Log "
 "file (i.e. a .txt file);"
 msgstr ""
 
-#: ../../main_interface_window.rst:844
+#: ../../main_interface_window.rst:845
 msgid "[ ``Clear Log file content`` ]: clear the content of Log file."
 msgstr ""
 
-#: ../../main_interface_window.rst:849
+#: ../../main_interface_window.rst:850
 msgid "Test"
 msgstr ""
 
-#: ../../main_interface_window.rst:851
+#: ../../main_interface_window.rst:852
 msgid ""
 "[ ``Test dependencies`` ]: test SCP dependencies (GDAL, GDAL subprocess, "
 "NumPy, SciPy, Matplotlib, Internet connection); a window displays the test "

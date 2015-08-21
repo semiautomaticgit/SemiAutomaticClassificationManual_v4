@@ -804,7 +804,8 @@ Classification process
 
 * ``Play sound when finished`` [Q]: if checked, play a sound when the classification process is completed;
 * ``Save algorithm files`` [Q]: if checked, in addition to the classification output, save the intermediate files calculated by the classification algorithm (one .tif file for each land cover class representing the `similarity` of each pixel to the class thereof);
-* ``Use virtual rasters for temp files`` [Q]: if checked, create virtual rasters for certain temporary files, instead of creating real rasters; it is useful for reducing disk space usage during calculations.
+* ``Use virtual rasters for temp files`` [Q]: if checked, create virtual rasters for certain temporary files, instead of creating real rasters; it is useful for reducing disk space usage during calculations;
+* ``Raster compression`` [Q]: if checked, a lossless compression (LZW) is applied to raster outputs in order to save disk space.
 
 .. _image_calculation:
 
