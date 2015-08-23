@@ -312,6 +312,8 @@ Landsat
 	
 The tab ``Landsat`` allows for the conversion of **Landsat 1, 2, and 3 MSS** and **Landsat 4, 5, 7, and 8** images from DN (i.e. Digital Numbers) to the physical measure of Top Of Atmosphere reflectance (TOA), or the application of a simple atmospheric correction using the DOS1 method (Dark Object Subtraction 1), which is an image-based technique (for more information about the Landsat conversion to TOA and DOS1 correction, see :ref:`landsat_conversion_to_reflectance`).
 
+Pan-sharpening is also available; for more information read :ref:`pan_sharpening_definition`.
+
 .. _landsat_conversion:
 
 Landsat conversion to TOA reflectance and brightness temperature
@@ -322,6 +324,7 @@ Landsat conversion to TOA reflectance and brightness temperature
 * ``Brightness temperature in Celsius`` : if checked, convert brightness temperature to Celsius (if a Landsat thermal band is listed in :ref:`landsat_metadata`); if unchecked temperature is in Kelvin;
 * ``Apply DOS1 atmospheric correction`` : if checked, the :ref:`DOS1_correction` is applied to all the bands (thermal bands excluded);
 * ``Use NoData value (image has black border)`` : if checked, pixels having 'NoData' value are not counted during the DOS1 calculation of DNmin; it is useful when Landsat image has a black border (usually pixel value = 0).
+* ``Perform pan-sharpening`` : if checked, a Brovey Transform is applied for the :ref:`pan_sharpening_definition` of Landsat bands.
 
 .. _landsat_metadata:
 
@@ -704,6 +707,7 @@ It is possible to define a multiplicative rescaling factor and additive rescalin
 	* Pleiades;
 	* QuickBird;
 	* RapidEye;
+	* Sentinel-2;
 	* SPOT 4;
 	* SPOT 5;
 	* SPOT 6;
@@ -805,7 +809,7 @@ Classification process
 * ``Play sound when finished`` [Q]: if checked, play a sound when the classification process is completed;
 * ``Save algorithm files`` [Q]: if checked, in addition to the classification output, save the intermediate files calculated by the classification algorithm (one .tif file for each land cover class representing the `similarity` of each pixel to the class thereof);
 * ``Use virtual rasters for temp files`` [Q]: if checked, create virtual rasters for certain temporary files, instead of creating real rasters; it is useful for reducing disk space usage during calculations;
-* ``Raster compression`` [Q]: if checked, a lossless compression (LZW) is applied to raster outputs in order to save disk space.
+* ``Raster compression`` [Q]: if checked, a lossless compression (DEFLATE OR PACKBITS) is applied to raster outputs in order to save disk space; however, using raster compression sometimes can produce files larger than rasters without compression.
 
 .. _image_calculation:
 

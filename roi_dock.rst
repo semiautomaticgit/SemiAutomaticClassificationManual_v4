@@ -57,6 +57,8 @@ Training shapefile
 * ``Training shapefile`` [P]: select a shapefile from a list of shapefiles (containing the required fields) loaded in QGIS; ; ROIs polygons are saved in this shapefile;
 * |refresh|: refresh layer list;
 * [ ``New shp`` ]: create a new shapefile containing the required fields Macroclass ID, Macroclass Information , Class ID, and Class Information.
+
+	**WARNING**: In order to avoid data loss, do not edit the ``Training shapefile`` in QGIS while it is loaded in the :ref:`training_shapefile`.
 		
 .. |refresh| image:: _static/refresh_button.jpg
 	:width: 20pt

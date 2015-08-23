@@ -224,7 +224,39 @@ The following Figure :ref:`figCC` shows a color composite "R G B = 4 3 2" of a L
 	
 	``Data available from the U.S. Geological Survey``
 
+.. _pan_sharpening_definition:
 
+Pan-sharpening
+-------------------------
+
+Pan-sharpening is the combination of the spectral information of multispectral bands (MS), which have lower spatial resolution (for Landsat bands, spatial resolution is 30m), with the spatial resolution of a panchromatic band (PAN), which for Landsat 7 and 8 it is 15m.
+The result is a multispectral image with the spatial resolution of the panchromatic band (e.g. 15m).
+In SCP, a Brovey Transform is applied, where the pan-sharpened values of each multispectral band are calculated as (Johnson, Tateishi and Hoan, 2012):
+
+.. math::
+	MSpan = MS * PAN / I
+
+where :math:`I` is Intensity, which is a function of multispectral bands.
+
+The following weights for I are defined, basing on several tests performed using the SCP. For Landsat 8, Intensity is calculated as:
+
+.. math::
+	I = (0.42 * Blue band + 0.98 * Green band + 0.6 *  Red band ) / 2
+
+For Landsat 7, Intensity is calculated as:
+
+.. math::
+	I = (0.42 * Blue band + 0.98 * Green band + 0.6 * Red band + NIR band) / 3
+
+.. _figPanSharpening:
+
+.. figure:: _static/pan_sharpening_comparison.jpg
+	:align: center
+	
+	:guilabel:`Example of pan-sharpening of a Landsat 8 image. Left, original multispectral bands (30m); right, pan-sharpened bands (15m)`
+	
+	``Data available from the U.S. Geological Survey``
+	
 .. _semiautomatic_classification_definition:
  
 Supervised Classification Definitions
@@ -558,6 +590,8 @@ For further information, the following documentation is freely available: `Lands
 * Fisher, P. F. and Unwin, D. J., eds. 2005. Representing GIS. Chichester, England: John Wiley & Sons.
 
 * JARS, 1993. Remote Sensing Note. Japan Association on Remote Sensing. Available at http://www.jars1974.net/pdf/rsnote_e.html
+
+* Johnson, B. A., Tateishi, R. and Hoan, N. T., 2012. Satellite Image Pansharpening Using a Hybrid Approach for Object-Based Image Analysis ISPRS International Journal of Geo-Information, 1, 228. Available at  http://www.mdpi.com/2220-9964/1/3/228)
 
 * Kruse, F. A., et al., 1993. The Spectral Image Processing System (SIPS) - Interactive Visualization and Analysis of Imaging spectrometer. Data Remote Sensing of Environment.
 
