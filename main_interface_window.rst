@@ -822,7 +822,16 @@ Image calculation
 RAM
 ^^^^^^^^^^^^^^^^^^
 
-* < ``Available RAM (MB)`` > [Q]: set the available RAM (in MB) that will be used during the processes; this value should be half of the system RAM (e.g. 1024MB if system has 2GB of RAM).
+* < ``Available RAM (MB)`` > [Q]: set the available RAM (in MB) that will be used during the processes; this value should be half of the system RAM (e.g. 1024MB if system has 2GB of RAM);
+
+.. _temporary_directory:
+
+Temporary directory
+^^^^^^^^^^^^^^^^^^^^^^
+
+* ``temporary directory`` [Q]: path to the temporary directory;
+* [ ``Change directory`` ]: select a new temporary directory where temporary files are saved during processing;
+* [ ``Reset to default`` ]: reset to system default temporary directory.
 
 .. _settings_debug_tab:
 
