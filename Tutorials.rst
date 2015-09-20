@@ -80,7 +80,8 @@ Set the Input Image in SCP
 
 In the SCP :ref:`toolbar` click the button |refresh| for refreshing the list ``Input image`` . In the list ``Input image`` select ``sample_image`` .
 
-In the list ``RGB`` select the item ``4-3-2`` for displaying a :ref:`color_composite_definition` of Near-Infrared, Red, and Green. The image in QGIS will be updated accordingly.
+In the list ``RGB`` select the item ``4-3-2`` for displaying a :ref:`color_composite_definition` of Near-Infrared, Red, and Green.
+The image in QGIS will be updated accordingly.
 
 .. figure:: _static/tutorial_1_2.jpg
 	:align: center

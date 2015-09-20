@@ -790,7 +790,7 @@ Set the temporary group name in QGIS Layers used for :ref:`classification_previe
 * ``Group name`` [Q]: set group name (default is ``Class_temp_group``);
 * [ ``Reset name`` ]: reset group name to default.
 
-.. settings_processing_tab:
+.. _settings_processing_tab:
 
 Settings: Processing
 -------------------------
