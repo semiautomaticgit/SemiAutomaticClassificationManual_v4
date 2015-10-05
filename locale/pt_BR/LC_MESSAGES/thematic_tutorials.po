@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-20 23:24+0200\n"
+"POT-Creation-Date: 2015-10-05 21:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,36 +60,50 @@ msgstr ""
 msgid "Water."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:40
+#: ../../thematic_tutorials.rst:38 ../../thematic_tutorials.rst:671
+msgid "Following the video of this tutorial."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:44
+msgid "http://www.youtube.com/watch?v=acxmIrM-Qns"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:46
+msgid ""
+"Alternative video link "
+"https://archive.org/details/video_tutorial_Landsat_mosaic_ENG"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:52
 msgid "Plugin installation"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:42
+#: ../../thematic_tutorials.rst:54
 msgid ""
 "First, install the SCP. For information about the installation of QGIS in "
 "various systems see :ref:`installation`."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:45
+#: ../../thematic_tutorials.rst:57
 msgid ""
 "Open QGIS; from the main menu, select ``Plugins`` > ``Manage and Install "
 "Plugins``;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:50
+#: ../../thematic_tutorials.rst:62
 msgid ""
 "From the menu ``All``, select the Semi-Automatic Classification Plugin and "
 "click the button ``Install plugin``;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:55
+#: ../../thematic_tutorials.rst:67
 msgid ""
 "The SCP should be automatically activated; however, be sure that the Semi-"
 "Automatic Classification Plugin is checked in the menu ``Installed`` (the "
 "restart of QGIS could be necessary to complete the SCP installation);"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:60
+#: ../../thematic_tutorials.rst:72
 msgid ""
 "We are going to set some of the SCP options in order to optimize the "
 "following processes. Open the :ref:`settings_tab` clicking the button "
@@ -99,7 +113,7 @@ msgid ""
 "the processing."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:64
+#: ../../thematic_tutorials.rst:76
 msgid ""
 "In :ref:`ram` set the available RAM (in MB) for processing entering half of "
 "the system RAM; for instance it your system has 2GB of RAM enter 1024. If "
@@ -107,11 +121,11 @@ msgid ""
 "higher than 512MB."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:70
+#: ../../thematic_tutorials.rst:82
 msgid ":guilabel:`SCP settings`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:72
+#: ../../thematic_tutorials.rst:84
 msgid ""
 "In order to ease the photo interpretation in the following steps, we are "
 "going to use also the OpenLayers Plugin which allows for the display of "
@@ -119,11 +133,11 @@ msgid ""
 "previously described and install the OpenLayers Plugin in QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:78
+#: ../../thematic_tutorials.rst:90
 msgid "Download and Pre processing of Landsat images"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:80
+#: ../../thematic_tutorials.rst:92
 msgid ""
 "We are going to **download Landsat 7 and 8 images** using the SCP tool "
 ":ref:`Landsat_download_tab`. Landsat images are available from the U.S. "
@@ -133,7 +147,7 @@ msgid ""
 ":ref:`landsat_conversion_to_reflectance`)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:84
+#: ../../thematic_tutorials.rst:96
 msgid ""
 "First, we need to download the Landsat database in SCP. Open the tab "
 ":ref:`Landsat_download_tab` clicking the button |tools| in the "
@@ -144,18 +158,18 @@ msgid ""
 "about updating the image database."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:90
+#: ../../thematic_tutorials.rst:102
 msgid ""
 "**TIP** : Landsat databases are updated daily, therefore when you need up to"
 " date images you should click the button ``Update database`` in order to the"
 " get the latest Landsat images."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:95
+#: ../../thematic_tutorials.rst:107
 msgid ":guilabel:`Landsat database download`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:97
+#: ../../thematic_tutorials.rst:109
 msgid ""
 "Now we could define the :ref:`area_coordinates_Landsat` of the study area, "
 "click ``Find images`` and browse Landsat images. Each Landsat image has a "
@@ -166,24 +180,24 @@ msgid ""
 "classification of the whole Country."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:101
+#: ../../thematic_tutorials.rst:113
 msgid ""
 "With SCP, it is possible to find an image basing on the ID thereof using the"
 " :ref:`search_Landsat` options. In particular, in ``Image ID`` paste the "
 "following IDs and click ``Find images``::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:106
+#: ../../thematic_tutorials.rst:118
 msgid ""
 "After a few seconds, the three images are listed in the "
 ":ref:`landsat_images`."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:111
+#: ../../thematic_tutorials.rst:123
 msgid ":guilabel:`Landsat image search`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:113
+#: ../../thematic_tutorials.rst:125
 msgid ""
 "Before downloading the images, we need to define the options for the "
 "conversion to reflectance which will be performed automatically to "
@@ -193,7 +207,7 @@ msgid ""
 "leave checked ``Use NoData value (image has black border)``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:117
+#: ../../thematic_tutorials.rst:129
 msgid ""
 "**TIP** : check ``Perform pan-sharpening`` in order to perform the "
 ":ref:`pan_sharpening_definition` of Landsat images producing bands with 15m "
@@ -202,11 +216,11 @@ msgid ""
 "processed) and can increase the spectral variability."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:122
+#: ../../thematic_tutorials.rst:134
 msgid ":guilabel:`Landsat pre processing`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:124
+#: ../../thematic_tutorials.rst:136
 msgid ""
 "Now, open the tab :ref:`Landsat_download_tab` and uncheck the options ``only"
 " if preview in Layers`` and ``Load bands in QGIS`` (leave checked ``Pre "
@@ -215,57 +229,57 @@ msgid ""
 " and start the download process (this may take a while)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:130
+#: ../../thematic_tutorials.rst:142
 msgid ":guilabel:`Landsat download`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:132
+#: ../../thematic_tutorials.rst:144
 msgid ""
 "When the download process is finished, several directories are created in "
 "the output directory with the name like Landsat ID, containing the original "
 "Landsat bands and the converted bands (with the suffix ``_converted``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:137
+#: ../../thematic_tutorials.rst:149
 msgid "Classification of Landsat Images"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:139
+#: ../../thematic_tutorials.rst:151
 msgid ""
 "We are going to start the classification of the Landsat 8 image "
 "``LC80150532014050LGN00`` converted to reflectance. Open the directory "
 "``LC80150532014050LGN00_converted``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:142
+#: ../../thematic_tutorials.rst:154
 msgid "In QGIS, open the following bands (also with drag and drop):"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:144
+#: ../../thematic_tutorials.rst:156
 msgid "RT_LC80150532014050LGN00_B2.tif = Blue;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:145
+#: ../../thematic_tutorials.rst:157
 msgid "RT_LC80150532014050LGN00_B3.tif = Green;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:146
+#: ../../thematic_tutorials.rst:158
 msgid "RT_LC80150532014050LGN00_B4.tif = Red;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:147
+#: ../../thematic_tutorials.rst:159
 msgid "RT_LC80150532014050LGN00_B5.tif = Near-Infrared;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:148
+#: ../../thematic_tutorials.rst:160
 msgid "RT_LC80150532014050LGN00_B6.tif = Short Wavelength Infrared 1;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:149
+#: ../../thematic_tutorials.rst:161
 msgid "RT_LC80150532014050LGN00_B7.tif = Short Wavelength Infrared 2."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:151
+#: ../../thematic_tutorials.rst:163
 msgid ""
 "Open the tab :ref:`band_set_tab` clicking the button |band_set| in the "
 ":ref:`SCP_menu` or the :ref:`toolbar`. Click the button ``Select All``, then"
@@ -275,17 +289,17 @@ msgid ""
 "of each band (this is required for the spectral signature calculation)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:155
+#: ../../thematic_tutorials.rst:167
 msgid ""
 "**TIP** : click the button ``Build band overviews`` in order to improve "
 "display performance of bands."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:160
+#: ../../thematic_tutorials.rst:172
 msgid ":guilabel:`Definition of Band set`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:162
+#: ../../thematic_tutorials.rst:174
 msgid ""
 "In the list ``RGB`` select the item ``4-3-2`` for displaying a "
 ":ref:`color_composite_definition` of Near-Infrared, Red, and Green. A "
@@ -293,7 +307,7 @@ msgid ""
 "for the photo interpretation of the image."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:165
+#: ../../thematic_tutorials.rst:177
 msgid ""
 "Now we need to create ``Training shapefile`` and ``Signature list file`` in "
 "order to collect :ref:`ROI_definition` (ROIs) and calculate the "
@@ -301,7 +315,7 @@ msgid ""
 " :ref:`tutorial_1`)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:167
+#: ../../thematic_tutorials.rst:179
 msgid ""
 "In the :ref:`roi_dock` click the button ``New shp`` and define a name (e.g. "
 "``ROI.shp`` ) in order to create the ``Training shapefile`` that will store "
@@ -309,7 +323,7 @@ msgid ""
 "``Training shapefile`` is displayed in :ref:`training_shapefile` ."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:171
+#: ../../thematic_tutorials.rst:183
 msgid ""
 "Also, click the button ``Save`` in the :ref:`classification_dock` and define"
 " a name (e.g. ``SIG.xml`` ) in order to create the ``Signature list file`` "
@@ -317,59 +331,59 @@ msgid ""
 " is displayed in :ref:`signature_list_file` ."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:177
+#: ../../thematic_tutorials.rst:189
 msgid ""
 ":guilabel:`Definition of SCP input for the Landsat image "
 "LC80150532014050LGN00`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:179
+#: ../../thematic_tutorials.rst:191
 msgid ""
 "Now we are ready for the creation of ROIs. We are going to use the same "
 "codes for ROIs in all the Landsat images, according to the following table."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:183
+#: ../../thematic_tutorials.rst:195
 msgid "Macroclass name"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:183
+#: ../../thematic_tutorials.rst:195
 msgid "Macroclass ID"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:185 ../../thematic_tutorials.rst:785
+#: ../../thematic_tutorials.rst:197 ../../thematic_tutorials.rst:797
 msgid "Built-up"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:185 ../../thematic_tutorials.rst:783
+#: ../../thematic_tutorials.rst:197 ../../thematic_tutorials.rst:795
 msgid "1"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:187 ../../thematic_tutorials.rst:787
+#: ../../thematic_tutorials.rst:199 ../../thematic_tutorials.rst:799
 msgid "Vegetation"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:187 ../../thematic_tutorials.rst:785
+#: ../../thematic_tutorials.rst:199 ../../thematic_tutorials.rst:797
 msgid "2"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:189
+#: ../../thematic_tutorials.rst:201
 msgid "Soil"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:189 ../../thematic_tutorials.rst:787
+#: ../../thematic_tutorials.rst:201 ../../thematic_tutorials.rst:799
 msgid "3"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:191 ../../thematic_tutorials.rst:783
+#: ../../thematic_tutorials.rst:203 ../../thematic_tutorials.rst:795
 msgid "Water"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:191 ../../thematic_tutorials.rst:789
+#: ../../thematic_tutorials.rst:203 ../../thematic_tutorials.rst:801
 msgid "4"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:194
+#: ../../thematic_tutorials.rst:206
 msgid ""
 "About the basics of ROI creation see :ref:`tutorial_1_4`. It is possible to "
 "create ROIs by drawing manually a polygon using the button |manual| or with "
@@ -378,23 +392,23 @@ msgid ""
 "extent of the ROI, and ``Show`` for showing or hiding the temporary ROI."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:201
+#: ../../thematic_tutorials.rst:213
 msgid ":guilabel:`Example of Built-up ROI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:206
+#: ../../thematic_tutorials.rst:218
 msgid ":guilabel:`Example of Vegetation ROI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:211
+#: ../../thematic_tutorials.rst:223
 msgid ":guilabel:`Example of Soil ROI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:216
+#: ../../thematic_tutorials.rst:228
 msgid ":guilabel:`Example of Water ROI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:218
+#: ../../thematic_tutorials.rst:230
 msgid ""
 "With the :ref:`roi_dock` create as many ROIs as possible, assigning a unique"
 " Class ID (C_ID) to each ROI, and the Macroclass ID (MC_ID) of the "
@@ -404,7 +418,7 @@ msgid ""
 "(characterized by high NDVI values)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:221
+#: ../../thematic_tutorials.rst:233
 msgid ""
 "**TIP** : change frequently the :ref:`color_composite_definition` and use "
 "the buttons |cumulative_stretch| and |std_dev_stretch| in the :ref:`toolbar`"
@@ -412,14 +426,14 @@ msgid ""
 " use the button ``Show`` for hiding and showing the image."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:223
+#: ../../thematic_tutorials.rst:235
 msgid ""
 "ROIs are used for the calculation of spectral signatures that are used by "
 "the classification algorithm in order to classify the entire image. In this "
 "tutorial we are going to use the :ref:`max_likelihood_algorithm` algorithm."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:226
+#: ../../thematic_tutorials.rst:238
 msgid ""
 "After the creation of each ROI it is useful to check the "
 ":ref:`spectral_distance_definition` in order to assess the separability of "
@@ -428,24 +442,24 @@ msgid ""
 "classification results."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:228
+#: ../../thematic_tutorials.rst:240
 msgid ""
 "In the :ref:`signature_list` highlight the ROIs and click the button "
 "|sign_plot|. Spectral signature are added to the "
 ":ref:`spectral_signature_plot`."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:234
+#: ../../thematic_tutorials.rst:246
 msgid ":guilabel:`Plot of spectral signatures`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:236
+#: ../../thematic_tutorials.rst:248
 msgid ""
 "Now click the tab :ref:`spectral_distances`. Each table represent the "
 ":ref:`spectral_distance_definition` of each ROI combination."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:239
+#: ../../thematic_tutorials.rst:251
 msgid ""
 "As shown in the following figure, the comparison of the Built-up ROI and the"
 " Soil ROI highlights very low :ref:`spectral_angle` and "
@@ -456,24 +470,24 @@ msgid ""
 "are separable for the :ref:`max_likelihood_algorithm` algorithm."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:242
+#: ../../thematic_tutorials.rst:254
 msgid ""
 "Since we are using the :ref:`max_likelihood_algorithm` algorithm, it is "
 "important that the :ref:`Jeffries_Matusita_distance` is near 2 for each ROI "
 "combination."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:247
+#: ../../thematic_tutorials.rst:259
 msgid ":guilabel:`Spectral distances`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:249
+#: ../../thematic_tutorials.rst:261
 msgid ""
 "Now we can create a classification preview (see :ref:`tutorial_1_5` for the "
 "basics of classification previews)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:251
+#: ../../thematic_tutorials.rst:263
 msgid ""
 "In the :ref:`classification_alg` select the classification algorithm "
 "``Maximum Likelihood``. In :ref:`classification_preview` set ``Size`` = 500 "
@@ -482,11 +496,11 @@ msgid ""
 "the preview transparency and display the classification over the image."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:258
+#: ../../thematic_tutorials.rst:270
 msgid ":guilabel:`Classification preview`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:260
+#: ../../thematic_tutorials.rst:272
 msgid ""
 "In the :ref:`classification_alg`, click the button ``+`` and then **right "
 "click** in the map for calculating the ``algorithm raster``. The ``algorithm"
@@ -495,7 +509,7 @@ msgid ""
 "we need to create new ROIs."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:263
+#: ../../thematic_tutorials.rst:275
 msgid ""
 "As shown in the following figure, the ``algorithm raster`` has a grey scale "
 "symbology, where dark areas represent pixels that the algorithm found "
@@ -505,17 +519,17 @@ msgid ""
 "to improve the classification results."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:269
+#: ../../thematic_tutorials.rst:281
 msgid ":guilabel:`Preview of the algorithm raster`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:271
+#: ../../thematic_tutorials.rst:283
 msgid ""
 "We can notice the presence of clouds in the image. In order to avoid "
 "classification errors, we need to mask clouds."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:274
+#: ../../thematic_tutorials.rst:286
 msgid ""
 "There are several methods for masking clouds; during the classification "
 "step, a simple method for masking clouds is the creation of ROIs. Create a "
@@ -525,11 +539,11 @@ msgid ""
 "(i.e. masked)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:281
+#: ../../thematic_tutorials.rst:293
 msgid ":guilabel:`ROI created for cloud masking`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:283
+#: ../../thematic_tutorials.rst:295
 msgid ""
 "In the following image, we can see that clouds are now masked. However, "
 "pixels near the border of clouds are classified incorrectly as Built-up. In "
@@ -537,21 +551,21 @@ msgid ""
 " after the classification process (see :ref:`thematic_tutorial_3_5`)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:290
+#: ../../thematic_tutorials.rst:302
 msgid ":guilabel:`Classification preview over clouds`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:293
+#: ../../thematic_tutorials.rst:305
 msgid ""
 "**TIP** : load a service such as OpenStreetMap using the OpenLayers Plugin, "
 "which can ease the photo interpretation and the ROI creation."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:298
+#: ../../thematic_tutorials.rst:310
 msgid ":guilabel:`OpenStreetMap loaded in QGIS`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:300
+#: ../../thematic_tutorials.rst:312
 msgid ""
 "When we are happy with the results of the previews, we can perform the "
 "classification of the whole image. In :ref:`classification_alg`, activate "
@@ -560,13 +574,13 @@ msgid ""
 "classification output (e.g. ``classification_1.tif``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:307
+#: ../../thematic_tutorials.rst:319
 msgid ""
 ":guilabel:`Land cover classification 1 of the Landsat image "
 "LC80150532014050LGN00`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:309
+#: ../../thematic_tutorials.rst:321
 msgid ""
 "We can see that part of the clouds are black (i.e. unclassified), however "
 "several cloud pixels are classified as Built-up. Also, the black border of "
@@ -574,96 +588,96 @@ msgid ""
 "errors and refine the classification in the next steps."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:313
+#: ../../thematic_tutorials.rst:325
 msgid ""
 "Now, in QGIS open the following Landsat 8 bands that are inside the "
 "directory ``LC80160532014057LGN00_converted``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:315
+#: ../../thematic_tutorials.rst:327
 msgid "RT_LC80160532014057LGN00_B2.tif = Blue;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:316
+#: ../../thematic_tutorials.rst:328
 msgid "RT_LC80160532014057LGN00_B3.tif = Green;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:317
+#: ../../thematic_tutorials.rst:329
 msgid "RT_LC80160532014057LGN00_B4.tif = Red;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:318
+#: ../../thematic_tutorials.rst:330
 msgid "RT_LC80160532014057LGN00_B5.tif = Near-Infrared;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:319
+#: ../../thematic_tutorials.rst:331
 msgid "RT_LC80160532014057LGN00_B6.tif = Short Wavelength Infrared 1;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:320
+#: ../../thematic_tutorials.rst:332
 msgid "RT_LC80160532014057LGN00_B7.tif = Short Wavelength Infrared 2."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:322
+#: ../../thematic_tutorials.rst:334
 msgid ""
 "Repeat the above steps for the creation of the Band set, the ``Training "
 "shapefile`` and ``Signature list file``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:324
+#: ../../thematic_tutorials.rst:336
 msgid ""
 "**TIP** : close QGIS and create a new QGIS project for each Landsat image, "
 "in order to delete temporary files and free disk space."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:329
+#: ../../thematic_tutorials.rst:341
 msgid ""
 ":guilabel:`Definition of SCP input for the Landsat image "
 "LC80160532014057LGN00`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:331
+#: ../../thematic_tutorials.rst:343
 msgid ""
 "Create a land cover classification repeating the steps previously described."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:336
+#: ../../thematic_tutorials.rst:348
 msgid ""
 ":guilabel:`Land cover classification 2 of the Landsat image "
 "LC80160532014057LGN00`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:338
+#: ../../thematic_tutorials.rst:350
 msgid ""
 "In a new QGIS project, open the Landsat 7 bands inside the directory "
 "``LE70150532014090EDC00_converted``:"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:340
+#: ../../thematic_tutorials.rst:352
 msgid "RT_LE70150532014090EDC00_B1.tif = Blue;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:341
+#: ../../thematic_tutorials.rst:353
 msgid "RT_LE70150532014090EDC00_B2.tif = Green;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:342
+#: ../../thematic_tutorials.rst:354
 msgid "RT_LE70150532014090EDC00_B3.tif = Red;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:343
+#: ../../thematic_tutorials.rst:355
 msgid "RT_LE70150532014090EDC00_B4.tif = Near-Infrared;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:344
+#: ../../thematic_tutorials.rst:356
 msgid "RT_LE70150532014090EDC00_B5.tif = Short Wavelength Infrared 1;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:345
+#: ../../thematic_tutorials.rst:357
 msgid "RT_LE70150532014090EDC00_B7.tif = Short Wavelength Infrared 2."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:347
+#: ../../thematic_tutorials.rst:359
 msgid ""
 "You can see that this image covers the same area as the Landsat 8 image "
 "``LC80150532014050LGN00``. In fact, we are going to use the classification "
@@ -671,35 +685,35 @@ msgid ""
 "Landsat 8 image."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:353
+#: ../../thematic_tutorials.rst:365
 msgid ""
 ":guilabel:`Definition of SCP input for the Landsat image "
 "LE70150532014090EDC00`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:355
+#: ../../thematic_tutorials.rst:367
 msgid ""
 "Again, create a land cover classification following the steps previously "
 "described."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:360
+#: ../../thematic_tutorials.rst:372
 msgid ""
 ":guilabel:`Land cover classification 3 of the Landsat image "
 "LE70150532014090EDC00`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:362
+#: ../../thematic_tutorials.rst:374
 msgid ""
 "Now, we have 3 land cover classifications that we can enhance in several "
 "ways."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:367
+#: ../../thematic_tutorials.rst:379
 msgid "Enhancement of Classification Using NDVI"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:369
+#: ../../thematic_tutorials.rst:381
 msgid ""
 "We are going to calculate NDVI for enhancing the classification using the "
 ":ref:`band_calc_tab` (see :ref:`thematic_tutorial_6`). In particular, pixels"
@@ -708,14 +722,14 @@ msgid ""
 "classification is untouched."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:373
+#: ../../thematic_tutorials.rst:385
 msgid ""
 "Of course, this is an example of integration of ancillary data; we could use"
 " other data such as other vegetation indices or the result of other "
 "classifications (e.g. using :ref:`spectra_angle_mapping_algorithm`)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:375
+#: ../../thematic_tutorials.rst:387
 msgid ""
 "Now, in QGIS load the bands of the Landsat 8 image ``LC80150532014050LGN00``"
 " and the respective land cover classification. Open the :ref:`band_calc_tab`"
@@ -723,77 +737,77 @@ msgid ""
 "calculate the NDVI copying the following :ref:`expression`::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:381
+#: ../../thematic_tutorials.rst:393
 msgid ""
 "Click the button ``Calculate``, select where to save the NDVI (e.g. a new "
 "file named ``NDVI_1.tif``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:386
+#: ../../thematic_tutorials.rst:398
 msgid ":guilabel:`NDVI calculation`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:388
+#: ../../thematic_tutorials.rst:400
 msgid ""
 "Then, calculate the following :ref:`expression` for enhancing the "
 "classification basing on the NDVI::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:392
+#: ../../thematic_tutorials.rst:404
 msgid ""
 "Click the button ``Calculate``, and select where to save the new "
 "classification (e.g. ``classification_1_NDVI.tif``). We can see in the "
 "following figure that the area classified as vegetation has increased."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:398
+#: ../../thematic_tutorials.rst:410
 msgid ":guilabel:`Classification 1 refined with NDVI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:400
+#: ../../thematic_tutorials.rst:412
 msgid ""
 "In this case we have used a NDVI threshold equals to 0.6 . However, the "
 "threshold value has to be chosen for every image, because NDVI can vary from"
 " image to image."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:403
+#: ../../thematic_tutorials.rst:415
 msgid ""
 "Now we perform the same enhancement for the other land cover "
 "classifications. For the Landsat 8 image ``LC80160532014057LGN00`` calculate"
 " NDVI with the following expression::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:408 ../../thematic_tutorials.rst:421
+#: ../../thematic_tutorials.rst:420 ../../thematic_tutorials.rst:433
 msgid "and the following expression for enhancing the classification::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:415
+#: ../../thematic_tutorials.rst:427
 msgid ":guilabel:`Classification 2 refined with NDVI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:417
+#: ../../thematic_tutorials.rst:429
 msgid ""
 "For the Landsat 7 image ``LE70150532014090EDC00`` calculate NDVI with the "
 "following expression::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:428
+#: ../../thematic_tutorials.rst:440
 msgid ":guilabel:`Classification 3 refined with NDVI`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:430
+#: ../../thematic_tutorials.rst:442
 msgid ""
 "Now that the classification of vegetation has been enhanced for the three "
 "images, we are going to mask clouds and border pixels in order to avoid "
 "classification errors."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:435
+#: ../../thematic_tutorials.rst:447
 msgid "Cloud Masking"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:437
+#: ../../thematic_tutorials.rst:449
 msgid ""
 "Landsat 8 images include Quality Assessment bands (QA) that are useful for "
 "identifying clouds. Pixel values of QA bands are codes that represent "
@@ -803,7 +817,7 @@ msgid ""
 ")."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:441
+#: ../../thematic_tutorials.rst:453
 msgid ""
 "The QA band of the Landsat 8 image ``LC80150532014050LGN00`` includes mainly"
 " the values 53248 and 61440 indicating clouds, and the value 36864 "
@@ -812,7 +826,7 @@ msgid ""
 "of the QA band are equal to one of these values."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:444
+#: ../../thematic_tutorials.rst:456
 msgid ""
 "In QGIS, open the band ``LC80150532014050LGN00_BQA`` that is inside the "
 "directory ``LC80150532014050LGN00`` of the downloaded Landsat image and the "
@@ -820,17 +834,17 @@ msgid ""
 ":ref:`band_calc_tab`::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:449
+#: ../../thematic_tutorials.rst:461
 msgid ""
 "Click the button ``Calculate``, and select where to save the new "
 "classification (e.g. ``classification_1_clouds.tif``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:454
+#: ../../thematic_tutorials.rst:466
 msgid ":guilabel:`Classification 1 with masked clouds`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:456
+#: ../../thematic_tutorials.rst:468
 msgid ""
 "Clouds are almost completely masked (i.e. Unclassified); however, some "
 "pixels are still classified as Built-up (in red). We can do the same for the"
@@ -838,7 +852,7 @@ msgid ""
 "the :ref:`band_calc_tab`::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:461
+#: ../../thematic_tutorials.rst:473
 msgid ""
 "The Landsat 7 image does not have the QA band. Another method for masking "
 "clouds uses the Blue and the Thermal Infrared (converted to temperature) "
@@ -847,21 +861,21 @@ msgid ""
 " black stripes (i.e. SLC-off) that we are going to mask as well."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:465
+#: ../../thematic_tutorials.rst:477
 msgid ""
 "We are going to create an expression that identifies pixel values below a "
 "certain temperature threshold for the Thermal band (band 6 for Landsat 7), "
 "and above a certain reflectance threshold for the Blue band (band 1)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:467
+#: ../../thematic_tutorials.rst:479
 msgid ""
 "In QGIS load all the Landsat bands inside the directory "
 "``LE70150532014090EDC00_converted``. Use the following expression in the "
 ":ref:`band_calc_tab`::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:472
+#: ../../thematic_tutorials.rst:484
 msgid ""
 "The first part (``(\"RT_LE70150532014090EDC00_B6_VCID_1\"<23) & "
 "(\"RT_LE70150532014090EDC00_B1\">0.1)``) means that we are going to mask "
@@ -870,7 +884,7 @@ msgid ""
 " using the tool ``Identify`` of QGIS for cloud pixels in band 1 and band 6."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:475
+#: ../../thematic_tutorials.rst:487
 msgid ""
 "The character ``|`` means ``or`` , so that the other expressions (e.g. "
 "``\"RT_LE70150532014090EDC00_B1\" == 0``) identify pixel values equal to 0 "
@@ -878,11 +892,11 @@ msgid ""
 "stripes due to SLC-off and the black border."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:480
+#: ../../thematic_tutorials.rst:492
 msgid ":guilabel:`Classification 3 with masked clouds`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:482
+#: ../../thematic_tutorials.rst:494
 msgid ""
 "We could use the same method of cloud masking also for Landsat 8 images. For"
 " the image ``LC80150532014050LGN00`` load the bands "
@@ -890,18 +904,18 @@ msgid ""
 "use the following :ref:`expression` in the :ref:`band_calc_tab`::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:487
+#: ../../thematic_tutorials.rst:499
 msgid ""
 "The condition ``\"RT_LC80160532014057LGN00_B2\" == 0`` allows for the "
 "masking of the image black border."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:492
+#: ../../thematic_tutorials.rst:504
 msgid ""
 ":guilabel:`Classification 1 with clouds masked using the alternative method`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:494
+#: ../../thematic_tutorials.rst:506
 msgid ""
 "As you can see, there are still gaps (Unclassified pixels) in the "
 "classification; we would require the classification of other Landsat images "
@@ -910,18 +924,18 @@ msgid ""
 "whole study area."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:497
+#: ../../thematic_tutorials.rst:509
 msgid ""
 "Part of the unclassified gaps has been filled with the Landsat 7 "
 "classification. Of course, we would require more classifications in order to"
 " fill all the gaps."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:503
+#: ../../thematic_tutorials.rst:515
 msgid "Mosaic of Classifications"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:505
+#: ../../thematic_tutorials.rst:517
 msgid ""
 "In order to create a mosaic of classifications, we are going to write an "
 "expression that will fill Unclassified pixels of the Landsat 8 image (ID "
@@ -931,34 +945,34 @@ msgid ""
 "``LC80160532014057LGN00``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:508
+#: ../../thematic_tutorials.rst:520
 msgid ""
 "In QGIS open the three cloud masked classifications. Copy the following "
 ":ref:`expression` in :ref:`band_calc_tab`::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:513
+#: ../../thematic_tutorials.rst:525
 msgid ""
 "Uncheck the checkbox ``Intersection`` in :ref:`output_raster` and click "
 "``Calculate``. The result (e.g. ``classification_mosaic``) is shown in the "
 "following image."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:519
+#: ../../thematic_tutorials.rst:531
 msgid ":guilabel:`Classification mosaic`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:521
+#: ../../thematic_tutorials.rst:533
 msgid ""
 "In the following steps we are going to perform the accuracy assessment and "
 "the estimation of land cover area."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:526
+#: ../../thematic_tutorials.rst:538
 msgid "Accuracy Assessment"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:528
+#: ../../thematic_tutorials.rst:540
 msgid ""
 ":ref:`accuracy_assessment_definition` is an important step of a land cover "
 "classification. In this tutorial we are going to use the ``Training "
@@ -968,7 +982,7 @@ msgid ""
 "points.html )."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:532
+#: ../../thematic_tutorials.rst:544
 msgid ""
 "In QGIS, load the classification mosaic and the ``Training shapefile`` used "
 "for the image ``LC80150532014050LGN00``. In SCP open the tab "
@@ -979,27 +993,27 @@ msgid ""
 "(e.g. ``accuracy.tif``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:538
+#: ../../thematic_tutorials.rst:550
 msgid ""
 "The process produces an ``error matrix`` and an ``error raster`` which are "
 "useful for assessing the quality of our classification."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:543
+#: ../../thematic_tutorials.rst:555
 msgid ":guilabel:`Accuracy assessment`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:548
+#: ../../thematic_tutorials.rst:560
 msgid "Clip of the Classification"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:550
+#: ../../thematic_tutorials.rst:562
 msgid ""
 "Before calculating the area of each land cover class, we need to clip the "
 "classification to the extent of the study area, which is Costa Rica."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:552
+#: ../../thematic_tutorials.rst:564
 msgid ""
 "Download the Shapefile of Sub-National Administrative Units of Costa Rica "
 "from http://data.fao.org/map?entryId=c7a0f990-88fd-11da-a88f-"
@@ -1007,17 +1021,17 @@ msgid ""
 "<http://www.fao.org>`_ ."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:554
+#: ../../thematic_tutorials.rst:566
 msgid ""
 "Extract the downloaded file (``1173.zip``) and load the shapefile ``costa "
 "rica.shp`` in QGIS (select WGS84 as projection)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:559
+#: ../../thematic_tutorials.rst:571
 msgid ":guilabel:`The shapefile of Costa Rica by FAO`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:561
+#: ../../thematic_tutorials.rst:573
 msgid ""
 "In this case, we need to define the projection of this shapefile. In QGIS, "
 "open the command ``Vector > Data management tool > Define current "
@@ -1025,11 +1039,11 @@ msgid ""
 "and choose ``EPSG:4326 - WGS 84`` as spatial reference, and click ``OK``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:567
+#: ../../thematic_tutorials.rst:579
 msgid ":guilabel:`Define the shapefile projection`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:569
+#: ../../thematic_tutorials.rst:581
 msgid ""
 "Now we can clip the ``classification_mosaic.tif``. Load the classification "
 "in QGIS. Open the command ``Raster > Extraction > Clipper``. Select the "
@@ -1039,26 +1053,26 @@ msgid ""
 "click ``OK``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:578
+#: ../../thematic_tutorials.rst:590
 msgid ":guilabel:`Clipping the classification`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:580
+#: ../../thematic_tutorials.rst:592
 msgid ""
 "Finally, we have a classification clipped to the extent of Costa Rica (as "
 "you can see we would need other classifications for covering the whole "
 "extent of Costa Rica), and we can calculate the classification report."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:585
+#: ../../thematic_tutorials.rst:597
 msgid ":guilabel:`The clipped classification`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:590
+#: ../../thematic_tutorials.rst:602
 msgid "Classification Report"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:592
+#: ../../thematic_tutorials.rst:604
 msgid ""
 "In SCP open the tab :ref:`classification_report_tab` and click the buttons "
 "``Refresh list``. Check ``Use NoData value`` setting the value equals to 0 "
@@ -1068,11 +1082,11 @@ msgid ""
 "button ``Save report to file``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:600
+#: ../../thematic_tutorials.rst:612
 msgid ":guilabel:`Classification report`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:603
+#: ../../thematic_tutorials.rst:615
 msgid ""
 "We have completed this tutorial about the land cover classification of a "
 "large area, using multiple Landsat images and creating a classification "
@@ -1082,11 +1096,11 @@ msgid ""
 "phenological state of vegetation or occurred land cover change."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:637
+#: ../../thematic_tutorials.rst:649
 msgid "Tutorial: Using the tool Band calc"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:639
+#: ../../thematic_tutorials.rst:651
 msgid ""
 "This is a tutorial about the use of the tool :ref:`band_calc_tab` that "
 "allows for the **raster calculation for bands**. In particular, we are going"
@@ -1096,7 +1110,7 @@ msgid ""
 "Decision Tree Classifier)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:642
+#: ../../thematic_tutorials.rst:654
 msgid ""
 "The :ref:`band_calc_tab` can perform multiple calculations in sequence. We "
 "are going to apply a mask to every Landsat bands in order to exclude cirrus "
@@ -1106,42 +1120,42 @@ msgid ""
 "for masking cirrus and cloud pixels."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:646
+#: ../../thematic_tutorials.rst:658
 msgid ""
 "The values that indicate with high confidence cirrus or clouds pixels are "
 "(for the description of these codes see the table at "
 "http://landsat.usgs.gov/L8QualityAssessmentBand.php ):"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:648
+#: ../../thematic_tutorials.rst:660
 msgid "61440;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:649
+#: ../../thematic_tutorials.rst:661
 msgid "59424;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:650
+#: ../../thematic_tutorials.rst:662
 msgid "57344;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:651
+#: ../../thematic_tutorials.rst:663
 msgid "56320;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:652
+#: ../../thematic_tutorials.rst:664
 msgid "53248;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:653
+#: ../../thematic_tutorials.rst:665
 msgid "31744;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:654
+#: ../../thematic_tutorials.rst:666
 msgid "28672 ."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:656
+#: ../../thematic_tutorials.rst:668
 msgid ""
 "In particular, the Quality Assessment Band of the sample dataset includes "
 "mainly the value 53248 indicating clouds. Therefore, in this tutorial we are"
@@ -1149,19 +1163,15 @@ msgid ""
 "bands."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:659
-msgid "Following the video of this tutorial."
-msgstr ""
-
-#: ../../thematic_tutorials.rst:665
+#: ../../thematic_tutorials.rst:677
 msgid "http://www.youtube.com/watch?v=vjKX00jML64"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:667
+#: ../../thematic_tutorials.rst:679
 msgid "Alternative video link https://archive.org/details/video_band_calc"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:670
+#: ../../thematic_tutorials.rst:682
 msgid ""
 "First, **download the sample dataset**, which is a Landsat 8 image already "
 "converted to reflectance (see :ref:`tutorial_2_1`) from `this link "
@@ -1172,27 +1182,27 @@ msgid ""
 " ."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:676
+#: ../../thematic_tutorials.rst:688
 msgid "Application of a mask to multiple bands"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:678
+#: ../../thematic_tutorials.rst:690
 msgid "Unzip the downloaded dataset and load all the raster bands in QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:683
+#: ../../thematic_tutorials.rst:695
 msgid ":guilabel:`Bands loaded in QGIS`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:685
+#: ../../thematic_tutorials.rst:697
 msgid "Open the :ref:`band_calc_tab` and click the button ``Refresh list``."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:690
+#: ../../thematic_tutorials.rst:702
 msgid ":guilabel:`The Band calc tool`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:692
+#: ../../thematic_tutorials.rst:704
 msgid ""
 "We are going to use conditional expressions (i.e. ``np.where``, for more "
 "information see `this page "
@@ -1200,36 +1210,36 @@ msgid ""
 "with the following structure: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:696
+#: ../../thematic_tutorials.rst:708
 msgid "Where:"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:698
+#: ../../thematic_tutorials.rst:710
 msgid "``condition`` is a logical condition between bands or values;"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:699
+#: ../../thematic_tutorials.rst:711
 msgid ""
 "``value if true`` and ``value if false`` can be a numerical value, a band, "
 "or another expression."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:701
+#: ../../thematic_tutorials.rst:713
 msgid "In ``Expression`` enter the following block of expressions: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:714 ../../thematic_tutorials.rst:750
-#: ../../thematic_tutorials.rst:805
+#: ../../thematic_tutorials.rst:726 ../../thematic_tutorials.rst:762
+#: ../../thematic_tutorials.rst:817
 msgid ":guilabel:`The expression in Band calc`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:717
+#: ../../thematic_tutorials.rst:729
 msgid ""
 "**TIP** : If the text in ``Expression`` is green it means that the syntax is"
 " correct, otherwise it is red and the button ``Calculate`` is disabled."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:719
+#: ../../thematic_tutorials.rst:731
 msgid ""
 "Click the button ``Calculate``, select where to save the bands (e.g. a new "
 "directory named `masked_bands`) and write the output name (e.g. ``masked``)."
@@ -1238,11 +1248,11 @@ msgid ""
 " also added to QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:726
+#: ../../thematic_tutorials.rst:738
 msgid ":guilabel:`Masked bands`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:728
+#: ../../thematic_tutorials.rst:740
 msgid ""
 "According to the order of expressions, the file ``masked_1`` corresponds to "
 "the band ``RT_LC81910312015006LGN00_B2``,  the file ``masked_2`` corresponds"
@@ -1250,31 +1260,31 @@ msgid ""
 "NoData values (i.e. nan)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:734
+#: ../../thematic_tutorials.rst:746
 msgid "NDVI Calculation"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:736
+#: ../../thematic_tutorials.rst:748
 msgid ""
 "NDVI is an index calculated as ``( Near Infrared band - Red band ) / (Near "
 "Infrared band + Red band)`` which ranges from -1 to 1 . Green vegetation has"
 " the highest NDVI values tending to 1."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:739
+#: ../../thematic_tutorials.rst:751
 msgid ""
 "Open the :ref:`band_calc_tab` and click the button `Refresh list`. Clear the"
 " content of ``Expression`` and write the following expression for the "
 "calculation of NDVI: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:744
+#: ../../thematic_tutorials.rst:756
 msgid ""
 "where ``masked_4.tif`` is the Near Infrared band and ``masked_3.tif`` is the"
 " Red band."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:753
+#: ../../thematic_tutorials.rst:765
 msgid ""
 "**TIP** : The expression can work both with ``Variable`` and ``Band name`` "
 "between quotes. Also, bands in the :ref:`band_set_tab` can be referenced "
@@ -1283,47 +1293,47 @@ msgid ""
 " expression."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:757
+#: ../../thematic_tutorials.rst:769
 msgid ""
 "Click the button ``Calculate``, select where to save the NDVI (e.g. a new "
 "file named `NDVI`). The NDVI is added to QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:763
+#: ../../thematic_tutorials.rst:775
 msgid ":guilabel:`The NDVI calculated`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:769
+#: ../../thematic_tutorials.rst:781
 msgid "Classification refinement basing on NDVI values"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:771
+#: ../../thematic_tutorials.rst:783
 msgid "Load the downloaded classification in QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:776
+#: ../../thematic_tutorials.rst:788
 msgid ":guilabel:`The land cover classification`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:778
+#: ../../thematic_tutorials.rst:790
 msgid ""
 "The classification is the result of :ref:`tutorial_2` where the land cover "
 "classes described in the following table were identified."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:781
+#: ../../thematic_tutorials.rst:793
 msgid "Class name"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:781
+#: ../../thematic_tutorials.rst:793
 msgid "Pixel value"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:789
+#: ../../thematic_tutorials.rst:801
 msgid "Bare soil"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:792
+#: ../../thematic_tutorials.rst:804
 msgid ""
 "We are going to refine this classification defining the following condition:"
 " pixels having NDVI > 0.5 are classified Vegetation. The value 0.5 is an "
@@ -1331,30 +1341,30 @@ msgid ""
 "(i.e. phenological state of vegetation)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:795
+#: ../../thematic_tutorials.rst:807
 msgid ""
 "Open the :ref:`band_calc_tab` and click the button `Refresh list`. Clear the"
 " content of ``Expression`` and write the following expression: ::"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:800
+#: ../../thematic_tutorials.rst:812
 msgid ""
 "which means that if NDVI value is greater than 0.5, assign the pixel value 3"
 " (i.e. Vegetation), otherwise leave the original classification value."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:807
+#: ../../thematic_tutorials.rst:819
 msgid ""
 "Click the button ``Calculate``, select where to save the new classification "
 "(e.g. a new file named ``refined_classification``). The new classification "
 "is added to QGIS."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:813
+#: ../../thematic_tutorials.rst:825
 msgid ":guilabel:`The output land cover classification`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:815
+#: ../../thematic_tutorials.rst:827
 msgid ""
 "It is possible to copy the style from the original classification (in QGIS "
 "Layers right click on the layer name and select ``Copy style``) and paste it"
@@ -1362,10 +1372,60 @@ msgid ""
 " style``)."
 msgstr ""
 
-#: ../../thematic_tutorials.rst:820
+#: ../../thematic_tutorials.rst:832
 msgid ":guilabel:`The output land cover classification with color style`"
 msgstr ""
 
-#: ../../thematic_tutorials.rst:822
+#: ../../thematic_tutorials.rst:834
 msgid "You can see that now a larger area is classified as vegetation."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:840
+msgid "Other Tutorials"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:842
+msgid ""
+"Visit the blog `From GIS to Remote Sensing "
+"<http://fromgistors.blogspot.com/search/label/Tutorial>`_ for other "
+"tutorials such as:"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:844
+msgid ""
+"`Supervised Classification of Hyperspectral Data "
+"<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
+"hyperspectral.html>`_;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:846
+msgid ""
+"`Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09"
+"/monitoring-changes-in-amazon-rainforest.html>`_;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:848
+msgid ""
+"`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
+"tutorial-using-semi.html>`_;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:850
+msgid ""
+"`Estimation of Land Surface Temperature with Landsat Thermal Infrared Band "
+"<http://fromgistors.blogspot.com/2014/01/estimation-of-land-surface-"
+"temperature.html>`_;"
+msgstr ""
+
+#: ../../thematic_tutorials.rst:852
+msgid ""
+"`Land Cover Classification of Cropland "
+"<http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-"
+"cropland.html>`_."
+msgstr ""
+
+#: ../../thematic_tutorials.rst:854
+msgid ""
+"For other unofficial tutorials, also in languages other than English, see "
+":ref:`other_3`."
 msgstr ""

@@ -34,6 +34,18 @@ We are going to identify the following land cover classes:
 #. Soil;
 #. Water.
 
+
+Following the video of this tutorial.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/acxmIrM-Qns?rel=0" width="640"></iframe>
+
+http://www.youtube.com/watch?v=acxmIrM-Qns
+
+Alternative video link
+https://archive.org/details/video_tutorial_Landsat_mosaic_ENG
+
 .. _thematic_tutorial_3_1:
 
 Plugin installation
@@ -820,3 +832,23 @@ It is possible to copy the style from the original classification (in QGIS Layer
 	:guilabel:`The output land cover classification with color style`
 	
 You can see that now a larger area is classified as vegetation.
+
+
+.. _other_tutorials_2:
+ 
+Other Tutorials
+========================================================
+
+Visit the blog `From GIS to Remote Sensing <http://fromgistors.blogspot.com/search/label/Tutorial>`_ for other tutorials such as:
+
+* `Supervised Classification of Hyperspectral Data <http://fromgistors.blogspot.com/2014/10/supervised-classification-of-hyperspectral.html>`_;
+
+* `Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09/monitoring-changes-in-amazon-rainforest.html>`_;
+
+* `Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-tutorial-using-semi.html>`_;
+
+* `Estimation of Land Surface Temperature with Landsat Thermal Infrared Band <http://fromgistors.blogspot.com/2014/01/estimation-of-land-surface-temperature.html>`_;
+
+* `Land Cover Classification of Cropland <http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-cropland.html>`_.
+
+For other unofficial tutorials, also in languages other than English, see :ref:`other_3`.

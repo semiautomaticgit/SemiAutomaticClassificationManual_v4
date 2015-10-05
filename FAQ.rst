@@ -80,6 +80,8 @@ You can use this band for the creation of a mask.
 
 For other Landsat satellites, clouds can be masked using the approach described `this paper <http://www.planning4adaptation.eu/Docs/papers/08_NWP-DoM_for_LCC_in_Dar_using_Landsat_Imagery.pdf>`_.
 
+Also, see the following `video-tutorial <https://youtu.be/acxmIrM-Qns?t=37m08s>`_.
+
 .. _pre_processing_6:
 
 How do I create a virtual raster manually in QGIS?
@@ -209,3 +211,26 @@ Where can I ask a new question?
 -----------------------------------------------------------------------------------------
 
 A `Facebook group <https://www.facebook.com/groups/661271663969035/>`_ and a `Google+ Community <https://plus.google.com/communities/107833394986612468374>`_ are available for sharing information and asking for help.
+
+
+.. _other_3:
+
+Where can I find more tutorials about SCP, also in languages other than English?
+-----------------------------------------------------------------------------------------
+
+There are several tutorials about SCP on the internet.
+Following an incomplete list of these resources:
+
+	* `French: Suivre l’impact des feux de forêts par imagerie satellite avec le plugin Qgis SCP <http://blog.martzluff.net/suivre-limpact-des-feux-de-forets-par-imagerie-satellite-avec-le-plugin-qgis-scp-semi-automatic-classification-plugin-exemple-de-lincendie-de-fin-mars-2015-en-ukraine-a-proximite-de-la/>`_;
+	* `German: 2015 Jakob Erfassung von Landnutzungsveränderungen mit FOSS Image Processing Tools <https://www.youtube.com/watch?v=vIsHFvLS5_Q>`_;
+	* `Italian: Classificazione e Mosaico di Varie Immagini Landsat <http://fromgistors.blogspot.com/2015/09/tutorial-classificazione-mosaico-landsat.html>`_;
+	* `Korean: QGIS Semi-Automatic Classification Plugin <http://blog.daum.net/geoscience/715>`_;
+	* `Portuguese: Classificação Supervisionada de Imagens Orbitais com o Semi-Automatic Classification Plugin <http://qgisbrasil.org/blog/wp-content/uploads/2015/08/tutorial_scp_01.pdf>`_;
+	* `Portuguese: Tutorial Classificação e caracterização de imagens de satélites <https://www.youtube.com/watch?v=Wab1UVmVl0k>`_;
+	* `Portuguese: Aprendizagem Supervisionada usando o SCP no QGIS <https://www.youtube.com/watch?v=FDYQrDb4qYY>`_;
+	* `Portuguese: Classificação supervisionada utilizando o QGIS e SCP <https://www.youtube.com/watch?v=TOMfdalS_U4>`_;
+	* `Spanish: Ejercicio Clasificación Semiautomática Plugin (SCP) <https://sernanpqgis.wordpress.com/2015/09/25/ejercicio-clasificacion-semiautomatica-plugin-scp/>`_;
+	* `Spanish: Aplicaciones de Teledetección con el QGIS y el plugin Semi-Automatic Classification <http://carbajallosa.blogspot.it/2015/04/aplicaciones-de-teledeteccion-con-el.html>`_;
+	* `Spanish: Descarga de Landsat 8, 7, 5 y 4 Semi Automatic Classification Plugin Qgis 2.8 <http://sistemasdeinformaciongeografica911.blogspot.mx/2015/04/descarga-de-landsat-5-7-y-8-qgis-semi.html>`_;
+	* `Swedish: Landsat 8 och fjärranalys med QGIS <https://geosupportsystem.wordpress.com/2015/04/02/landsat-8-och-fjarranalys-med-qgis/>`_;
+	* `Ukrainian: Посібник користувача модуля Напівавтоматичної класифікації <http://semiautomaticclassificationmanual.readthedocs.org/uk_UA/latest/>`_;

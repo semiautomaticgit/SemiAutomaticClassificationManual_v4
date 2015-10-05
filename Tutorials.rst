@@ -630,6 +630,7 @@ Also, visit the blog `From GIS to Remote Sensing <http://fromgistors.blogspot.co
 
 * `Land Cover Classification of Cropland <http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-cropland.html>`_.
 
+For other unofficial tutorials, also in languages other than English, see :ref:`other_3`.
 	
 .. |refresh| image:: _static/refresh_button.jpg
 	:width: 20pt
