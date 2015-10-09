@@ -13,7 +13,7 @@ SCP allows for the rapid creation of **ROIs** (training areas), through **region
 Spectral signatures of training areas are calculated automatically, and can be displayed in a **spectral signature plot** along with the values thereof. Spectral distances among signatures (e.g. Jeffries Matusita distance, or spectral angle) can be calculated for assessing **spectral separability**.
 Spectral signatures can be exported and imported from external sources. Also, a tool allows for the selection and **download of spectral signatures** from the `USGS Spectral Library <http://speclab.cr.usgs.gov/spectral-lib.html>`_ .
 
-SCP implements a tool for **searching and downloading Landsat** images.
+SCP implements a tool for **searching and downloading Landsat and Sentinel** images.
 The following tools are available for the **pre processing** of images: **automatic Landsat conversion to surface reflectance**, **clipping** multiple rasters, and **splitting** multi-band rasters.
 
 The **classification algorithms** available are: Minimum Distance, Maximum Likelihood, Spectral Angle Mapping. SCP allows for interactive **preview of classification**.

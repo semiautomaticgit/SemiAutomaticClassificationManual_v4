@@ -18,6 +18,17 @@ Only signatures checked in the :ref:`signature_list_plot` are displayed (which i
 	
 	:guilabel:`Spectral Signature Plot`
 
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/acxmIrM-Qns?start=900&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=900&v=acxmIrM-Qns
+
+Alternative video link
+https://archive.org/details/video_tutorial_Landsat_mosaic_ENG?start=900
+	
 .. _signature_list_plot:
 
 Plot Signature list

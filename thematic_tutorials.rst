@@ -39,7 +39,7 @@ Following the video of this tutorial.
 
 .. raw:: html
 
-	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/acxmIrM-Qns?rel=0" width="640"></iframe>
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/acxmIrM-Qns?rel=0" width="100%"></iframe>
 
 http://www.youtube.com/watch?v=acxmIrM-Qns
 
@@ -672,7 +672,7 @@ Following the video of this tutorial.
 
 .. raw:: html
 
-	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/vjKX00jML64?rel=0" width="640"></iframe>
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/vjKX00jML64?rel=0" width="100%"></iframe>
 
 http://www.youtube.com/watch?v=vjKX00jML64
 

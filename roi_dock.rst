@@ -38,6 +38,17 @@ Training shapefiles (which can be created by SCP) must contain at least four fie
 | Class Information                   | C_info                   |  string                |
 +-------------------------------------+--------------------------+------------------------+
 	
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/nZffzX_sMnk?start=230&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=230&v=nZffzX_sMnk
+
+Alternative video link
+https://archive.org/details/video_basic_tutorial_1?start=230
+
 |br|
 
 [P] = Configuration stored in the active project of QGIS

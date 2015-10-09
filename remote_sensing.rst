@@ -190,6 +190,47 @@ The resolutions of Landsat 8 sensor are reported in the following table (from ht
 
 A vast archive of images is freely available from the `U.S. Geological Survey <http://www.usgs.gov/>`_ . For more information about how to freely download Landsat images read `this  <http://fromgistors.blogspot.com/2014/11/landsat-images-overview-of-worldwide.html>`_ .
 
+
+.. _Sentinel2_definition:
+
+Sentinel-2 Satellite
+-------------------------
+
+**Sentinel-2** is a multispectral satellite developed by the European Space Agency (ESA) in the frame of `Copernicus <http://copernicus.eu/>`_ land monitoring services.
+Sentinel-2 acquires 13 spectral bands with the spatial resolution of 10m, 20m and 60m depending on the band, as illustrated in the following table (ESA, 2015).
+
++-------------------------------------+-------------------------------------+------------------------+
+| Sentinel-2 Bands                    | Central Wavelength  [micrometers]   |  Resolution [meters]   |
++=====================================+=====================================+========================+
+| Band 1 - Coastal aerosol            | 0.443                               |  60                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 2 - Blue                       | 0.490                               |  10                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 3 - Green                      |  0.560                              |  10                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 4 - Red                        | 0.665                               |  10                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 5 - Vegetation Red Edge        | 0.705                               |  20                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 6 - Vegetation Red Edge        | 0.740                               |  20                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 7 - Vegetation Red Edge        | 0.783                               |  20                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 8 - NIR                        | 0.842                               |  10                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 8B - Vegetation Red Edge       | 0.865                               |  20                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 9 - Water vapour               | 0.945                               |  60                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 10 - SWIR - Cirrus             | 1.375                               |  60                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 11 - SWIR                      | 1.610                               |  20                    |
++-------------------------------------+-------------------------------------+------------------------+
+| Band 12 - SWIR                      | 2.190                               |  20                    |
++-------------------------------------+-------------------------------------+------------------------+
+
+Sentinel-2 images are freely available from the ESA website https://scihub.esa.int/dhus/ .
+
 .. _color_composite_definition:
 
 Color Composite
@@ -586,6 +627,8 @@ For further information, the following documentation is freely available: `Lands
 **References**
 
 * Congalton, R. and Green, K., 2009. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices. Boca Raton, FL: CRC Press.
+
+* ESA, 2015. Sentinel-2 User Handbook. Available at https://sentinel.esa.int/documents/247904/685211/Sentinel-2_User_Handbook
 
 * Fisher, P. F. and Unwin, D. J., eds. 2005. Representing GIS. Chichester, England: John Wiley & Sons.
 

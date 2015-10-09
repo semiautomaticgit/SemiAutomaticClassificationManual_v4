@@ -23,7 +23,18 @@ Spectral signatures are saved in **signature list file** (.xml).
 
 The use of the ``Macroclass ID`` or ``Class ID`` for classifications is defined with the option ``Use Macroclass ID`` in the :ref:`classification_alg`.
 
-The **classification** can be performed for the entire image ( :ref:`classification_output` ) or a part of it, creating a :ref:`classification_preview`. 
+The **classification** can be performed for the entire image ( :ref:`classification_output` ) or a part of it, creating a :ref:`classification_preview`.
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/nZffzX_sMnk?start=718&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=718&v=nZffzX_sMnk
+
+Alternative video link
+https://archive.org/details/video_basic_tutorial_1?start=718
 
 |br|
 

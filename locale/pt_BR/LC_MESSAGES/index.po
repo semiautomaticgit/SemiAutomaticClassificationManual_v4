@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Semi-Automatic Classification Plugin 4.7\n"
+"Project-Id-Version: Semi-Automatic Classification Plugin 4.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 21:35+0200\n"
+"POT-Creation-Date: 2015-10-09 21:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,10 +42,10 @@ msgstr ""
 
 #: ../../index.rst:16
 msgid ""
-"SCP implements a tool for **searching and downloading Landsat** images. The "
-"following tools are available for the **pre processing** of images: "
-"**automatic Landsat conversion to surface reflectance**, **clipping** "
-"multiple rasters, and **splitting** multi-band rasters."
+"SCP implements a tool for **searching and downloading Landsat and Sentinel**"
+" images. The following tools are available for the **pre processing** of "
+"images: **automatic Landsat conversion to surface reflectance**, "
+"**clipping** multiple rasters, and **splitting** multi-band rasters."
 msgstr ""
 
 #: ../../index.rst:19

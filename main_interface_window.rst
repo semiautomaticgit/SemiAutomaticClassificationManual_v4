@@ -51,6 +51,14 @@ Multiple ROI Creation
 The tab ``Multiple ROI Creation`` allows for the automatic creation of ROIs, useful for the rapid classification of multi-temporal images, or for accuracy assessment (see `this tutorial <http://fromgistors.blogspot.com/2014/09/accuracy-assessment-using-random-points.html>`_ ).
 It performs the region growing of ROIs at user defined points, requiring a list of point coordinates and class definitions. Created ROIs are automatically saved to the :ref:`training_shapefile`.
 
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/MxBwMQnyZKw?rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?v=MxBwMQnyZKw
+
 .. _point_coordinates:
 
 Point coordinates and ROI definition
@@ -203,6 +211,15 @@ Before the use of this tool, the download of the Landsat image dabatase (about 5
 
 Images from the Amazon Web Services allows for the download of single bands.
 
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/sI6Rz0BHW8I?rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?v=sI6Rz0BHW8I
+
 .. _database_landsat:
 
 Database
@@ -290,7 +307,107 @@ During the download it is recommended not to interact with QGIS.
 * [ ``Download images from list`` ]: start the download process of all the images listed in :ref:`landsat_images`;
 * ``only if preview in Layers`` : if checked, the download is performed only for the images listed in :ref:`landsat_images` that are also displayed as previews in the map;
 * ``Pre process images`` : if checked, bands are converted to reflectance (and temperature) after the download, according to the settings defined in :ref:`landsat_tab`;
-* ``Load bands in QGIS`` : if checked, bands are loaded in QGIS after the download;
+* ``Load bands in QGIS`` : if checked, bands are loaded in QGIS after the download.
+	
+.. _Sentinel_download_tab:
+
+Download Sentinel
+-------------------------
+
+.. figure:: _static/download_sentinel.jpg
+	:align: center
+	:width: 500pt
+	
+	:guilabel:`Download Sentinel`
+
+The tab ``Download Sentinel`` allows for searching and downloading the free **Sentinel-2 images** from the ESA (European Space Agency) website https://scihub.esa.int/dhus/ .
+Sentinel-2 is a new European satellite developed in the frame of Copernicus land monitoring services, which acquires 13 spectral bands with the spatial resolution of 10m, 20m and 60m depending on the band (see :ref:`Sentinel2_definition`).
+
+A free registration is required in order to access to ESA data, see https://scihub.esa.int/userguide/1SelfRegistration .
+The search is performed using the `Data Hub API <https://scihub.esa.int/twiki/do/view/SciHubUserGuide/5APIsAndBatchScripting>`_ .
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/fVS2Ls2bUbk?rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?v=fVS2Ls2bUbk
+
+Alternative video link
+https://archive.org/details/video_tutorial_download_sentinel_SCP
+
+.. _login_Sentinel:
+
+Login Sentinels https://scihub.esa.int/dhus/
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In order to access to Sentinel data a free registration is required at https://scihub.esa.int/userguide/1SelfRegistration .
+After the registration, enter the user name and password for searching and accessing data.
+	
+* ``User`` : enter the user name;
+* ``Password`` : enter the password;
+* ``remember`` : remember user name and password in QGIS.
+	
+.. _area_coordinates_Sentinel:
+
+Area coordinates
+^^^^^^^^^^^^^^^^^
+	
+Define the search area.
+
+* [+]: click the map for the definition of the Upper Left (UL) and Lower Right (LR) point coordinates (X and Y) of the rectangle defining the search area; it is possible to enter the coordinates manually;
+
+.. _search_Sentinel:
+
+Search
+^^^^^^^^^^^^^^^^^
+	
+Define search settings such as the date of acquisition or search for specific Sentinel images using the Image ID or name.
+
+* ``Acquisition date from to`` : define the range of acquisition dates;
+* ``Image ID`` : search only the Image ID or name of Sentinel images;
+* [ ``Find images`` ]: start searching Sentinel images; results are displayed inside the table in :ref:`Sentinel_images`.
+
+.. _Sentinel_images:
+
+Sentinel images
+^^^^^^^^^^^^^^^^^
+
+**Image list**
+
+This table displays the results of the Sentinel search.
+		
+* Table fields:
+	* ``ImageName`` : the Sentinel image name;
+	* ``AcquisitionDate`` : date of acquisition of Sentinel image;
+	* ``CloudCover`` : percentage of cloud cover in the image (not used);
+	* ``Path`` : path of the image (not used);
+	* ``Row`` : row of the image (not used);
+	* ``min_lat`` : minimum latitude of the image;
+	* ``min_lon`` : minimum longitude of the image;
+	* ``max_lat`` : maximum latitude of the image;
+	* ``max_lon`` : maximum longitude of the image;
+	* ``Size`` : the size of the image;
+	* ``Preview`` : URL of the image preview;
+	* ``ImageID`` : the Sentinel Image ID;
+		
+* [ ``Display image preview`` ]: display image preview of highlighted images in the map; preview are roughly georeferenced on the fly;
+* [ ``Remove images from list`` ]: remove highlighted images from the list;
+* [ ``Clear table`` ]: remove all images from the list;
+
+.. _Sentinel_download:
+
+Download
+^^^^^^^^^^^^^^^^^
+
+It is possible to download multiple images (i.e. all the images in the image list table).
+During the download it is recommended not to interact with QGIS.
+
+* [ ``Export links`` ]: export the download links to a text file;
+* [ ``Download images from list`` ]: start the download process of all the images listed in :ref:`Sentinel_images`;
+* ``only if preview in Layers`` : if checked, the download is performed only for the images listed in :ref:`Sentinel_images` that are also displayed as previews in the map;
+* ``Load bands in QGIS`` : if checked, bands are loaded in QGIS after the download.
 	
 .. _pre_processing_tab:
  
@@ -313,6 +430,17 @@ Landsat
 The tab ``Landsat`` allows for the conversion of **Landsat 1, 2, and 3 MSS** and **Landsat 4, 5, 7, and 8** images from DN (i.e. Digital Numbers) to the physical measure of Top Of Atmosphere reflectance (TOA), or the application of a simple atmospheric correction using the DOS1 method (Dark Object Subtraction 1), which is an image-based technique (for more information about the Landsat conversion to TOA and DOS1 correction, see :ref:`landsat_conversion_to_reflectance`).
 
 Pan-sharpening is also available; for more information read :ref:`pan_sharpening_definition`.
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/ImbYhiIgl1g?start=430&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=430&v=ImbYhiIgl1g
+
+Alternative video link
+https://archive.org/details/video_basic_tutorial_2?start=430
 
 .. _landsat_conversion:
 
@@ -371,6 +499,17 @@ Clip multiple rasters
 	:guilabel:`Clip multiple rasters`
 
 The tab ``Clip multiple rasters`` allows for cutting several image bands at once, using a rectangle defined with point coordinates or a boundary defined with a shapefile.
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/ImbYhiIgl1g?start=650&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=650&v=ImbYhiIgl1g
+
+Alternative video link
+https://archive.org/details/video_basic_tutorial_2?start=650
 
 .. _raster_list:
 
@@ -439,6 +578,17 @@ Several statistics are calculated such as overall accuracy, user's accuracy, pro
 The output is an ``error raster`` that is a .tif file showing the errors in the map, where pixel values represent the categories of comparison (i.e. combinations identified by the ``ErrorMatrixCode`` in the error matrix) between the classification and reference.
 Also, a text file containing the error matrix (i.e. a .csv file separated by tab) is created with the same name defined for the .tif file.
 
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/acxmIrM-Qns?start=2780&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=2780&v=acxmIrM-Qns
+
+Alternative video link
+https://archive.org/details/video_tutorial_Landsat_mosaic_ENG?start=2780
+
 .. _error_matrix_input:
 
 Error Matrix Input
@@ -464,6 +614,14 @@ Land cover change
 The tab ``Land cover change`` allows for the comparison between two classifications in order to assess land cover changes.
 Output is a ``land cover change raster`` (i.e. a .tif file showing the changes in the map, where each pixel represents a category of comparison (i.e. combinations) between the two classifications, which is the ``ChangeCode`` in the land cover change statistics) and a text file containing the land cover change statistics (i.e. a .csv file separated by tab, with the same name defined for the .tif file).
 
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/TCBpKvr3AI8?start=834&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=834&v=TCBpKvr3AI8
+
 .. _classification_input:
 
 Classification input
@@ -486,6 +644,17 @@ Classification report
 	:guilabel:`Classification report`
 	
 The tab ``Classification report`` allows for the calculation of class statistics as number of pixels, percentage and area (area unit is defined from the image itself).
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/acxmIrM-Qns?start=3070&rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?t=3070&v=acxmIrM-Qns
+
+Alternative video link
+https://archive.org/details/video_tutorial_Landsat_mosaic_ENG?start=3070
 
 .. _classification_input2:
 
@@ -567,6 +736,17 @@ Band calc
 The ``Band calc`` allows for the **raster calculation for bands** (i.e. calculation of pixel values) using `NumPy functions <http://docs.scipy.org/doc/numpy/reference/routines.math.html>`_ .
 Raster bands must be already loaded in QGIS.
 Input rasters must be in the same projection.
+
+The following video shows this tool.
+
+.. raw:: html
+
+	<iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/vjKX00jML64?rel=0" width="100%"></iframe>
+
+http://www.youtube.com/watch?v=vjKX00jML64
+
+Alternative video link
+https://archive.org/details/video_band_calc
 
 .. _band_list2:
 
