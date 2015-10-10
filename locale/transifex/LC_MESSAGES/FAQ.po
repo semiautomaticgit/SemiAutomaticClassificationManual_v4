@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 4.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-10 22:31+0200\n"
+"POT-Creation-Date: 2015-10-11 00:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -533,4 +533,108 @@ msgstr ""
 msgid ""
 "`Ukrainian: Посібник користувача модуля Напівавтоматичної класифікації "
 "<http://semiautomaticclassificationmanual.readthedocs.org/uk_UA/latest/>`_;"
+msgstr ""
+
+#: ../../FAQ.rst:242
+msgid "How can I translate this user manual to another language?"
+msgstr ""
+
+#: ../../FAQ.rst:244
+msgid ""
+"It is possible to easily translate the user manual to any language, because "
+"it is written in reStructuredText as markup language (using Sphinx). "
+"Therefore, your contribution is fundamental for the translation of the "
+"manual to your language. The following guide illustrates the main steps for "
+"the translation, which can be performed:"
+msgstr ""
+
+#: ../../FAQ.rst:248
+msgid "using the free online service Transifex;"
+msgstr ""
+
+#: ../../FAQ.rst:249
+msgid "using the gettext .po files."
+msgstr ""
+
+#: ../../FAQ.rst:251
+msgid "**Method 1. Translation using the free online service Transifex**"
+msgstr ""
+
+#: ../../FAQ.rst:253
+msgid ""
+"This is probably the easiest way to translate the manual using an online "
+"service."
+msgstr ""
+
+#: ../../FAQ.rst:255
+msgid "Transifex free registration"
+msgstr ""
+
+#: ../../FAQ.rst:257
+msgid ""
+"Go to the Transifex login page (https://www.transifex.com/signin/). You can "
+"sign in using your Google or Facebook account, or with a free registration."
+msgstr ""
+
+#: ../../FAQ.rst:260
+msgid "Join the Semi-automatic Classification Manual project"
+msgstr ""
+
+#: ../../FAQ.rst:262
+msgid ""
+"Go to the page https://www.transifex.com/semi-automatic-classification/semi-"
+"automatic-classification-plugin-4-manual/ . Select your language and click "
+"the button Join team. If your language is not listed, click the button "
+"Request language."
+msgstr ""
+
+#: ../../FAQ.rst:265
+msgid "Translation"
+msgstr ""
+
+#: ../../FAQ.rst:267
+msgid ""
+"There are several files to be translated, which refer to the sections of the"
+" SCP manual. The translation is performed through an online application, "
+"which shows you each sentence in the original English version, and a text "
+"editor allows for the translation to your language. This should make the "
+"translation process very rapid and easy."
+msgstr ""
+
+#: ../../FAQ.rst:271
+msgid "**Method 2. Translation using the gettext .po files**"
+msgstr ""
+
+#: ../../FAQ.rst:273
+msgid ""
+"In order to use this method, you should be familiar with GitHub. This "
+"translation method allows for the translation of the PO files locally."
+msgstr ""
+
+#: ../../FAQ.rst:275
+msgid "Download the translation files"
+msgstr ""
+
+#: ../../FAQ.rst:277
+msgid ""
+"Go to the GitHub project "
+"https://github.com/semiautomaticgit/SemiAutomaticClassificationManual_v4/tree/master/locale"
+" and download the .po files of your language (you can add your language, if "
+"it is not listed), or you can fork the repository. Every file .po is a text "
+"file that refers to a section of the User Manual."
+msgstr ""
+
+#: ../../FAQ.rst:280
+msgid "Edit the translation files"
+msgstr ""
+
+#: ../../FAQ.rst:282
+msgid ""
+"Now you can edit the .po files. It is convenient to edit those file using "
+"one of the following programs: for instance `Poedit "
+"<http://www.poedit.net/>`_ for Windows and Mac OS X, or `Gtranslator "
+"<https://wiki.gnome.org/Apps/Gtranslator>`_ for Linux or `OmegaT "
+"<http://www.omegat.org/en/download_selector/ui.php>`_ (Java based) for "
+"Windows, Linux and Mac OS X. These editors allow for an easy translation of "
+"every sentence in the User Manual."
 msgstr ""

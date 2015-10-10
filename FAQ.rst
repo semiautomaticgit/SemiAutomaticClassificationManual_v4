@@ -234,3 +234,50 @@ Following an incomplete list of these resources:
 	* `Spanish: Descarga de Landsat 8, 7, 5 y 4 Semi Automatic Classification Plugin Qgis 2.8 <http://sistemasdeinformaciongeografica911.blogspot.mx/2015/04/descarga-de-landsat-5-7-y-8-qgis-semi.html>`_;
 	* `Swedish: Landsat 8 och fjärranalys med QGIS <https://geosupportsystem.wordpress.com/2015/04/02/landsat-8-och-fjarranalys-med-qgis/>`_;
 	* `Ukrainian: Посібник користувача модуля Напівавтоматичної класифікації <http://semiautomaticclassificationmanual.readthedocs.org/uk_UA/latest/>`_;
+
+
+.. _other_4:
+
+How can I translate this user manual to another language?
+-----------------------------------------------------------------------------------------
+
+It is possible to easily translate the user manual to any language, because it is written in reStructuredText as markup language (using Sphinx).
+Therefore, your contribution is fundamental for the translation of the manual to your language.
+The following guide illustrates the main steps for the translation, which can be performed:
+
+* using the free online service Transifex;
+* using the gettext .po files.
+
+**Method 1. Translation using the free online service Transifex**
+
+This is probably the easiest way to translate the manual using an online service.
+
+1. Transifex free registration
+	
+	Go to the Transifex login page (https://www.transifex.com/signin/).
+	You can sign in using your Google or Facebook account, or with a free registration.
+	
+2. Join the Semi-automatic Classification Manual project
+	
+	Go to the page https://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/ .
+	Select your language and click the button Join team. If your language is not listed, click the button Request language.
+
+3. Translation
+
+	There are several files to be translated, which refer to the sections of the SCP manual.
+	The translation is performed through an online application, which shows you each sentence in the original English version, and a text editor allows for the translation to your language.
+	This should make the translation process very rapid and easy.
+	
+**Method 2. Translation using the gettext .po files**
+
+In order to use this method, you should be familiar with GitHub. This translation method allows for the translation of the PO files locally.
+
+1. Download the translation files
+
+	Go to the GitHub project https://github.com/semiautomaticgit/SemiAutomaticClassificationManual_v4/tree/master/locale and download the .po files of your language (you can add your language, if it is not listed), or you can fork the repository. 
+	Every file .po is a text file that refers to a section of the User Manual.
+	
+2. Edit the translation files
+
+	Now you can edit the .po files. It is convenient to edit those file using one of the following programs: for instance `Poedit <http://www.poedit.net/>`_ for Windows and Mac OS X, or `Gtranslator <https://wiki.gnome.org/Apps/Gtranslator>`_ for Linux or `OmegaT <http://www.omegat.org/en/download_selector/ui.php>`_ (Java based) for Windows, Linux and Mac OS X.
+	These editors allow for an easy translation of every sentence in the User Manual.
