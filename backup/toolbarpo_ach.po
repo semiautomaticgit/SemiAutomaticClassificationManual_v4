@@ -1,0 +1,140 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4 Manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-16 19:17+0200\n"
+"PO-Revision-Date: 2015-10-10 20:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Acoli (http://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/language/ach/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ach\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../toolbar.rst:5
+msgid "Toolbar"
+msgstr ""
+
+#: ../../toolbar.rst:14
+msgid ":guilabel:`Toolbar`"
+msgstr ""
+
+#: ../../toolbar.rst:16
+msgid ""
+"The ``Toolbar`` allows for the selection of the ``Input image``, and "
+"includes several buttons for opening the main functions of the "
+":ref:`main_interface_window`."
+msgstr ""
+
+#: ../../toolbar.rst:18
+msgid "The following video shows this tool."
+msgstr ""
+
+#: ../../toolbar.rst:24
+msgid "http://www.youtube.com/watch?t=140&v=nZffzX_sMnk"
+msgstr ""
+
+#: ../../toolbar.rst:26
+msgid ""
+"Alternative video link "
+"https://archive.org/details/video_basic_tutorial_1?start=140"
+msgstr ""
+
+#: ../../toolbar.rst:29
+msgid "|br|"
+msgstr ""
+
+#: ../../toolbar.rst:31
+msgid "[P] = Configuration stored in the active project of QGIS"
+msgstr ""
+
+#: ../../toolbar.rst:33
+msgid "[Q] = Configuration stored in QGIS registry"
+msgstr ""
+
+#: ../../toolbar.rst:35
+msgid ""
+"|plugin|: show the :ref:`main_interface_window` and display the "
+":ref:`roi_dock` and the :ref:`classification_dock`;"
+msgstr ""
+
+#: ../../toolbar.rst:36
+msgid "|band_set|: open the :ref:`band_set_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:37
+msgid ""
+"``Input image`` [P]: select the input image from a list of multi-spectral "
+"images loaded in QGIS; input image can be a multi-spectral raster or a set "
+"of single bands defined in the :ref:`band_set_tab` (if the "
+":ref:`band_set_tab` is defined, then this list will contain the item `<< "
+"band set >>`;"
+msgstr ""
+
+#: ../../toolbar.rst:38
+msgid "|refresh|: refresh image list;"
+msgstr ""
+
+#: ../../toolbar.rst:39
+msgid ""
+"``RGB=`` [P]: select a color composites that is applied to the ``Input "
+"image`` ; new color composites can be defined typing the band numbers "
+"separated by ``-`` or ``;`` or ``,`` (e.g. RGB = 4-3-2 or RGB = 4;3;2 or RGB"
+" = 4,3,2);"
+msgstr ""
+
+#: ../../toolbar.rst:40
+msgid "< ``Show`` >: show/hide the input image in the map;"
+msgstr ""
+
+#: ../../toolbar.rst:41
+msgid ""
+"|cumulative_stretch|: display the input image stretching the minimum and "
+"maximum values according to cumulative count of current extent;"
+msgstr ""
+
+#: ../../toolbar.rst:42
+msgid ""
+"|std_dev_stretch|: display the input image stretching the minimum and "
+"maximum values according to standard deviation of current extent;"
+msgstr ""
+
+#: ../../toolbar.rst:43
+msgid "|sign_plot|: open the :ref:`spectral_signature_plot`;"
+msgstr ""
+
+#: ../../toolbar.rst:44
+msgid "|tools|: open the :ref:`tools_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:45
+msgid "|preprocessing|: open the :ref:`pre_processing_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:46
+msgid "|postprocessing|: open the :ref:`post_processing_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:47
+msgid "|bandcalc|: open the :ref:`band_calc_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:48
+msgid "|settings|: open the :ref:`settings_tab`;"
+msgstr ""
+
+#: ../../toolbar.rst:49
+msgid "|guide|: open the online user manual in a web browser;"
+msgstr ""
+
+#: ../../toolbar.rst:50
+msgid ""
+"|help|: open the `Online help <http://fromgistors.blogspot.com/p/ask-for-"
+"help.html>`_ in a web browser; also, a `Facebook group "
+"<https://www.facebook.com/groups/661271663969035/>`_ and a `Google+ "
+"Community <https://plus.google.com/communities/107833394986612468374>`_ are "
+"available for sharing information and asking for help about SCP."
+msgstr ""

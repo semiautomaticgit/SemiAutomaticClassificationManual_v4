@@ -1,0 +1,85 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4 Manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-16 19:17+0200\n"
+"PO-Revision-Date: 2015-10-10 20:43+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Hebrew (http://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/language/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../SCP_menu.rst:5
+msgid "SCP menu"
+msgstr ""
+
+#: ../../SCP_menu.rst:14
+msgid ":guilabel:`SCP menu`"
+msgstr ""
+
+#: ../../SCP_menu.rst:16
+msgid ""
+"The ``SCP menu`` allows for the selection of the main functions of the "
+":ref:`main_interface_window`, the :ref:`spectral_signature_plot`, and the "
+":ref:`scatter_plot`."
+msgstr ""
+
+#: ../../SCP_menu.rst:18
+msgid ""
+"|plugin|: show the :ref:`main_interface_window` and display the "
+":ref:`roi_dock` and the :ref:`classification_dock`;"
+msgstr ""
+
+#: ../../SCP_menu.rst:19
+msgid "|band_set|: open the :ref:`band_set_tab`;"
+msgstr ""
+
+#: ../../SCP_menu.rst:20
+msgid "|sign_plot|: open the :ref:`spectral_signature_plot`;"
+msgstr ""
+
+#: ../../SCP_menu.rst:21
+msgid "|scatter_plot|: open the :ref:`scatter_plot`;"
+msgstr ""
+
+#: ../../SCP_menu.rst:22
+msgid "|tools|: open the :ref:`tools_tab` and the sub-menu thereof;"
+msgstr ""
+
+#: ../../SCP_menu.rst:23
+msgid ""
+"|preprocessing|: open the :ref:`pre_processing_tab` and the sub-menu "
+"thereof;"
+msgstr ""
+
+#: ../../SCP_menu.rst:24
+msgid ""
+"|postprocessing|: open the :ref:`post_processing_tab` and the sub-menu "
+"thereof;"
+msgstr ""
+
+#: ../../SCP_menu.rst:25
+msgid "|bandcalc|: open the :ref:`band_calc_tab`;"
+msgstr ""
+
+#: ../../SCP_menu.rst:26
+msgid "|settings|: open the :ref:`settings_tab` and the sub-menu thereof;"
+msgstr ""
+
+#: ../../SCP_menu.rst:27
+msgid "|guide|: open the online user manual in a web browser;"
+msgstr ""
+
+#: ../../SCP_menu.rst:28
+msgid ""
+"|help|: open the `Online help <http://fromgistors.blogspot.com/p/ask-for-"
+"help.html>`_ in a web browser; also, a `Facebook group "
+"<https://www.facebook.com/groups/661271663969035/>`_ and a `Google+ "
+"Community <https://plus.google.com/communities/107833394986612468374>`_ are "
+"available for sharing information and asking for help about SCP."
+msgstr ""
