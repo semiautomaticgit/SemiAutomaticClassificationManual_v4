@@ -1,0 +1,123 @@
+# 
+# Translators:
+# Luca Congedo <semiautomatic.blogger@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4 Manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-16 19:17+0200\n"
+"PO-Revision-Date: 2016-08-28 17:41+0000\n"
+"Last-Translator: Luca Congedo <semiautomatic.blogger@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../index.rst:4
+msgid "Semi-Automatic Classification Plugin's User Manual"
+msgstr ""
+
+#: ../../index.rst:10
+msgid ""
+"Written by `Luca Congedo "
+"<http://www.researchgate.net/profile/Luca_Congedo>`_, the **Semi-Automatic "
+"Classification Plugin** (SCP) is a free open source plugin for `QGIS "
+"<http://www.qgis.org>`_ that allows for the **semi-automatic "
+"classification** (also supervised classification) of remote sensing images. "
+"Also, it provides several tools for the pre processing of images, the post "
+"processing of classifications, and the raster calculation."
+msgstr ""
+
+#: ../../index.rst:12
+msgid ""
+"SCP allows for the rapid creation of **ROIs** (training areas), through "
+"**region growing** algorithm, which are stored in a shapefile. The **scatter"
+" plot** or ROIs is available. Spectral signatures of training areas are "
+"calculated automatically, and can be displayed in a **spectral signature "
+"plot** along with the values thereof. Spectral distances among signatures "
+"(e.g. Jeffries Matusita distance, or spectral angle) can be calculated for "
+"assessing **spectral separability**. Spectral signatures can be exported and"
+" imported from external sources. Also, a tool allows for the selection and "
+"**download of spectral signatures** from the `USGS Spectral Library "
+"<http://speclab.cr.usgs.gov/spectral-lib.html>`_ ."
+msgstr ""
+
+#: ../../index.rst:16
+msgid ""
+"SCP implements a tool for **searching and downloading Landsat and Sentinel**"
+" images. The following tools are available for the **pre processing** of "
+"images: **automatic Landsat conversion to surface reflectance**, "
+"**clipping** multiple rasters, and **splitting** multi-band rasters."
+msgstr ""
+
+#: ../../index.rst:19
+msgid ""
+"The **classification algorithms** available are: Minimum Distance, Maximum "
+"Likelihood, Spectral Angle Mapping. SCP allows for interactive **preview of "
+"classification**."
+msgstr ""
+
+#: ../../index.rst:21
+msgid ""
+"The **post processing** tools include: **accuracy assessment**, land cover "
+"change, classification report, classification to vector, reclassification of"
+" raster values. Also, a band calc tool allows for the **raster calculation**"
+" using `NumPy functions "
+"<http://docs.scipy.org/doc/numpy/reference/routines.math.html>`_ ."
+msgstr ""
+
+#: ../../index.rst:24
+msgid ""
+"For more information and tutorials visit the official site `From GIS to "
+"Remote Sensing <http://fromgistors.blogspot.com/>`_."
+msgstr ""
+
+#: ../../index.rst:26 ../../index.rst:33 ../../index.rst:40 ../../index.rst:49
+msgid "|br|"
+msgstr "|br|"
+
+#: ../../index.rst:28
+msgid "**How to cite:**"
+msgstr ""
+
+#: ../../index.rst:30
+msgid ""
+"*Congedo Luca, Munafo' Michele, Macchi Silvia (2013). \"Investigating the "
+"Relationship between Land Cover and Vulnerability to Climate Change in Dar "
+"es Salaam\". Working Paper, Rome: Sapienza University.* Available at: "
+"http://www.planning4adaptation.eu/Docs/papers/08_NWP-"
+"DoM_for_LCC_in_Dar_using_Landsat_Imagery.pdf"
+msgstr "*Congedo Luca, Munafo' Michele, Macchi Silvia (2013). \"Investigating the Relationship between Land Cover and Vulnerability to Climate Change in Dar es Salaam\". Working Paper, Rome: Sapienza University.* Available at: http://www.planning4adaptation.eu/Docs/papers/08_NWP-DoM_for_LCC_in_Dar_using_Landsat_Imagery.pdf"
+
+#: ../../index.rst:35
+msgid "**License:**"
+msgstr ""
+
+#: ../../index.rst:37
+msgid ""
+"Except where otherwise noted, content of this work is licensed under a "
+"`Creative Commons Attribution-ShareAlike 4.0 International License "
+"<http://creativecommons.org/licenses/by-sa/4.0/>`_."
+msgstr ""
+
+#: ../../index.rst:42
+msgid ""
+"``Semi-Automatic Classification Plugin is free software: you can "
+"redistribute it and/or modify it under the terms of the GNU General Public "
+"License as published by the Free Software Foundation, version 3 of the "
+"License. Semi-Automatic Classification Plugin is distributed in the hope "
+"that it will be useful, but WITHOUT ANY WARRANTY; without even the implied "
+"warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU"
+" General Public License for more details. You should have received a copy of"
+" the GNU General Public License along with Semi-Automatic Classification "
+"Plugin. If not, see http://www.gnu.org/licenses/.``"
+msgstr ""
+
+#: ../../index.rst:47
+msgid ""
+"``The first version of the Semi-Automatic Classification Plugin was written "
+"by Luca Congedo for the Adapting to Climate Change in Coastal Dar es Salaam "
+"Project (http://www.planning4adaptation.eu).``"
+msgstr ""

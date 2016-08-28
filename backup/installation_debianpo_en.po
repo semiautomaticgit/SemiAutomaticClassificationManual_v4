@@ -1,0 +1,96 @@
+# 
+# Translators:
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4 Manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-16 19:17+0200\n"
+"PO-Revision-Date: 2016-08-28 17:42+0000\n"
+"Last-Translator: Luca Congedo <semiautomatic.blogger@gmail.com>\n"
+"Language-Team: English (http://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../installation_debian.rst:5
+msgid "Installation in Debian Linux"
+msgstr "Installation in Debian Linux"
+
+#: ../../installation_debian.rst:14
+msgid "QGIS download and installation"
+msgstr "QGIS download and installation"
+
+#: ../../installation_debian.rst:16
+msgid "Open a terminal and type::"
+msgstr "Open a terminal and type::"
+
+#: ../../installation_debian.rst:20
+msgid "Press Enter and type the user password;"
+msgstr "Press Enter and type the user password;"
+
+#: ../../installation_debian.rst:22
+msgid "Type in a terminal::"
+msgstr "Type in a terminal::"
+
+#: ../../installation_debian.rst:26
+msgid "Press Enter and wait until the software is downloaded and installed."
+msgstr "Press Enter and wait until the software is downloaded and installed."
+
+#: ../../installation_debian.rst:28
+msgid "Now, QGIS 2 is installed."
+msgstr "Now, QGIS 2 is installed."
+
+#: ../../installation_debian.rst:35
+msgid "Semi-Automatic Classification Plugin installation"
+msgstr "Semi-Automatic Classification Plugin installation"
+
+#: ../../installation_debian.rst:37
+msgid "Run QGIS 2;"
+msgstr "Run QGIS 2;"
+
+#: ../../installation_debian.rst:39
+msgid ""
+"From the main menu, select ``Plugins`` > ``Manage and Install Plugins``;"
+msgstr "From the main menu, select ``Plugins`` > ``Manage and Install Plugins``;"
+
+#: ../../installation_debian.rst:43
+msgid ""
+"From the menu ``All``, select the Semi-Automatic Classification Plugin and "
+"click the button ``Install plugin``;"
+msgstr "From the menu ``All``, select the Semi-Automatic Classification Plugin and click the button ``Install plugin``;"
+
+#: ../../installation_debian.rst:47
+msgid ""
+"The SCP should be automatically activated; however, be sure that the Semi-"
+"Automatic Classification Plugin is checked in the menu ``Installed`` (the "
+"restart of QGIS could be necessary to complete the SCP installation);"
+msgstr "The SCP should be automatically activated; however, be sure that the Semi-Automatic Classification Plugin is checked in the menu ``Installed`` (the restart of QGIS could be necessary to complete the SCP installation);"
+
+#: ../../installation_debian.rst:54
+msgid "Configuration of the plugin"
+msgstr "Configuration of the plugin"
+
+#: ../../installation_debian.rst:56
+msgid ""
+"Now, the Semi-Automatic Classification Plugin is installed and two docks and"
+" a toolbar should be added to QGIS. Also, a SCP menu is available in the "
+"Menu Bar of QGIS. It is possible to move the :ref:`toolbar` and the docks "
+"according to your needs, as in the following image."
+msgstr "Now, the Semi-Automatic Classification Plugin is installed and two docks and a toolbar should be added to QGIS. Also, a SCP menu is available in the Menu Bar of QGIS. It is possible to move the :ref:`toolbar` and the docks according to your needs, as in the following image."
+
+#: ../../installation_debian.rst:62
+msgid ""
+"The configuration of available RAM is recommended in order to reduce the "
+"processing time. From the :ref:`SCP_menu` select |settings| ``Settings > "
+"Processing`` ."
+msgstr "The configuration of available RAM is recommended in order to reduce the processing time. From the :ref:`SCP_menu` select |settings| ``Settings > Processing`` ."
+
+#: ../../installation_debian.rst:67
+msgid ""
+"In the :ref:`settings_tab`, set the ``Available RAM (MB)`` to a value that "
+"should be half of the system RAM. For instance, if your system has 2GB of "
+"RAM, set the value to 1024MB."
+msgstr "In the :ref:`settings_tab`, set the ``Available RAM (MB)`` to a value that should be half of the system RAM. For instance, if your system has 2GB of RAM, set the value to 1024MB."
