@@ -1,0 +1,28 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4 Manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-16 19:17+0200\n"
+"PO-Revision-Date: 2016-08-28 17:41+0000\n"
+"Last-Translator: Luca Congedo <semiautomatic.blogger@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: ../../Installation.rst:5
+msgid "Plugin Installation"
+msgstr ""
+
+#: ../../Installation.rst:11
+msgid ""
+"The Semi-Automatic Classification Plugin requires the installation of `GDAL,"
+" OGR <http://www.gdal.org/>`_, `NumPy <http://www.numpy.org/>`_, `SciPy "
+"<http://www.scipy.org/>`_ and `Matplotlib <http://matplotlib.org/>`_. |br| "
+"This chapter describes the installation of the Semi-Automatic Classification"
+" Plugin for the supported Operating Systems."
+msgstr ""
