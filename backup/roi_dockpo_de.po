@@ -1,0 +1,407 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 4 Manual\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-16 19:17+0200\n"
+"PO-Revision-Date: 2016-08-28 17:44+0000\n"
+"Last-Translator: Luca Congedo <semiautomatic.blogger@gmail.com>\n"
+"Language-Team: German (http://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-4-manual/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../roi_dock.rst:5
+msgid "ROI Creation dock"
+msgstr ""
+
+#: ../../roi_dock.rst:14
+msgid ":guilabel:`ROI creation dock`"
+msgstr ""
+
+#: ../../roi_dock.rst:16
+msgid ""
+"The dock ``ROI creation`` allows for the definition of a **training "
+"shapefile**, and for the creation of **ROIs** (Regions Of Interest) using a "
+"**region growing** algorithm or **manual drawing**."
+msgstr ""
+
+#: ../../roi_dock.rst:18
+msgid ""
+"The training shapefile, created with SCP, is used for storing the ROI "
+"polygons."
+msgstr ""
+
+#: ../../roi_dock.rst:20
+msgid ""
+"SCP allows for the creation of **temporary ROI polygons** using a region "
+"growing algorithm (i.e. image is segmented around a pixel seed including "
+"spectrally homogeneous pixels). Alternatively, ROIs can be drawn manually. "
+"Temporary ROIs are displayed over the image. If the ROI characteristics "
+"(e.g. spectral signature) are considered acceptable, then it can be saved in"
+" the training shapefile and the spectral characteristics are saved in the "
+":ref:`signature_list_file`."
+msgstr ""
+
+#: ../../roi_dock.rst:23
+msgid ""
+"**It is worth pointing out that classification is not based on ROIs, but it "
+"is based on the spectral characteristics of signatures in the** "
+":ref:`signature_list` ."
+msgstr ""
+
+#: ../../roi_dock.rst:25
+msgid ""
+"ROIs are defined with a **Macroclass ID and Class ID** (see "
+":ref:`classes_definition`) that are used for the classification process; in "
+"addition, Macroclass Information (e.g. macroclass name) and Class "
+"Information (e.g. class name) can be defined, but they are not used in the "
+"classification process."
+msgstr ""
+
+#: ../../roi_dock.rst:27
+msgid ""
+"Training shapefiles (which can be created by SCP) must contain at least four"
+" fields as in the following table (custom names can be defined in the "
+":ref:`field_names_training_shapefile`)."
+msgstr ""
+
+#: ../../roi_dock.rst:30
+msgid "Description"
+msgstr ""
+
+#: ../../roi_dock.rst:30
+msgid "Field name"
+msgstr ""
+
+#: ../../roi_dock.rst:30
+msgid "Field type"
+msgstr ""
+
+#: ../../roi_dock.rst:32
+msgid "Macroclass ID"
+msgstr ""
+
+#: ../../roi_dock.rst:32
+msgid "MC_ID"
+msgstr ""
+
+#: ../../roi_dock.rst:32 ../../roi_dock.rst:36
+msgid "int"
+msgstr ""
+
+#: ../../roi_dock.rst:34
+msgid "Macroclass Information"
+msgstr ""
+
+#: ../../roi_dock.rst:34
+msgid "MC_info"
+msgstr ""
+
+#: ../../roi_dock.rst:34 ../../roi_dock.rst:38
+msgid "string"
+msgstr ""
+
+#: ../../roi_dock.rst:36
+msgid "Class ID"
+msgstr ""
+
+#: ../../roi_dock.rst:36
+msgid "C_ID"
+msgstr ""
+
+#: ../../roi_dock.rst:38
+msgid "Class Information"
+msgstr ""
+
+#: ../../roi_dock.rst:38
+msgid "C_info"
+msgstr ""
+
+#: ../../roi_dock.rst:41
+msgid "The following video shows this tool."
+msgstr ""
+
+#: ../../roi_dock.rst:47
+msgid "http://www.youtube.com/watch?t=230&v=nZffzX_sMnk"
+msgstr ""
+
+#: ../../roi_dock.rst:49
+msgid ""
+"Alternative video link "
+"https://archive.org/details/video_basic_tutorial_1?start=230"
+msgstr ""
+
+#: ../../roi_dock.rst:52
+msgid "|br|"
+msgstr "|br|"
+
+#: ../../roi_dock.rst:54
+msgid "[P] = Configuration stored in the active project of QGIS"
+msgstr ""
+
+#: ../../roi_dock.rst:56
+msgid "[Q] = Configuration stored in QGIS registry"
+msgstr ""
+
+#: ../../roi_dock.rst:61
+msgid "Training shapefile"
+msgstr ""
+
+#: ../../roi_dock.rst:66
+msgid ":guilabel:`Training shapefile`"
+msgstr ""
+
+#: ../../roi_dock.rst:68
+msgid ""
+"``Training shapefile`` [P]: select a shapefile from a list of shapefiles "
+"(containing the required fields) loaded in QGIS; ; ROIs polygons are saved "
+"in this shapefile;"
+msgstr ""
+
+#: ../../roi_dock.rst:69
+msgid "|refresh|: refresh layer list;"
+msgstr ""
+
+#: ../../roi_dock.rst:70
+msgid ""
+"[ ``New shp`` ]: create a new shapefile containing the required fields "
+"Macroclass ID, Macroclass Information , Class ID, and Class Information."
+msgstr ""
+
+#: ../../roi_dock.rst:72
+msgid ""
+"**WARNING**: In order to avoid data loss, do not edit the ``Training "
+"shapefile`` in QGIS while it is loaded in the :ref:`training_shapefile`."
+msgstr ""
+
+#: ../../roi_dock.rst:80
+msgid "ROI list"
+msgstr ""
+
+#: ../../roi_dock.rst:85
+msgid ":guilabel:`ROI list`"
+msgstr ""
+
+#: ../../roi_dock.rst:87
+msgid ""
+"The ``ROI list`` displays the ROI polygons collected in the ``Training "
+"shapefile``. Double click on any table item to zoom in the map to that ROI; "
+"also, ROIs can be edited within this table (changes affect also the "
+"shapefile). In order to highlight items perform a mouse selection in the "
+"table."
+msgstr ""
+
+#: ../../roi_dock.rst:94
+msgid "Table fields:"
+msgstr ""
+
+#: ../../roi_dock.rst:92
+msgid "``MC ID`` : ROI Macroclass ID [int];"
+msgstr ""
+
+#: ../../roi_dock.rst:93
+msgid "``MC Info`` : ROI Macroclass Information [text];"
+msgstr ""
+
+#: ../../roi_dock.rst:94
+msgid "``C ID`` : ROI Class ID [int];"
+msgstr ""
+
+#: ../../roi_dock.rst:95
+msgid "``C Info`` : ROI Class Information [text];"
+msgstr ""
+
+#: ../../roi_dock.rst:96
+msgid ""
+"[ ``Add to signature`` ]: calculate ROI spectral signature (from ``Input "
+"image`` pixels under ROI polygon) of highlighted ROIs in the table; "
+"signatures are added to the :ref:`signature_list`; if multiple highlighted "
+"ROIs share the same ``MC ID`` and ``C_ID``, then only one spectral signature"
+" is calculated considering these ROIs as one polygon;"
+msgstr ""
+
+#: ../../roi_dock.rst:97
+msgid ""
+"|sign_plot| : show the ROI spectral signature the "
+":ref:`spectral_signature_plot`; spectral signature is calculated from the "
+"``Input image``;"
+msgstr ""
+
+#: ../../roi_dock.rst:98
+msgid "|scatter_plot| : open the :ref:`scatter_plot`;"
+msgstr ""
+
+#: ../../roi_dock.rst:99
+msgid ""
+"|delete_ROI| : delete highlighted ROIs from the ``Training shapefile``."
+msgstr ""
+
+#: ../../roi_dock.rst:113
+msgid "ROI parameters"
+msgstr ""
+
+#: ../../roi_dock.rst:118
+msgid ":guilabel:`ROI parameters`"
+msgstr ""
+
+#: ../../roi_dock.rst:120
+msgid ""
+"ROI parameters are required for the ROI creation using a region growing "
+"algorithm. Region growing works on the ``Input image`` defined in the "
+":ref:`toolbar`."
+msgstr ""
+
+#: ../../roi_dock.rst:122
+msgid ""
+"``Range radius`` [P]: set the interval which defines the maximum spectral "
+"distance between the seed pixel and the surrounding pixels (in radiometry "
+"unit);"
+msgstr ""
+
+#: ../../roi_dock.rst:123
+msgid ""
+"``Min ROI size`` [P]: set the minimum area of a ROI (in pixel unit); this "
+"setting overrides the ``Range radius`` until the minimum ROI size is "
+"reached; if ``Rapid ROI on band`` is checked, then ROI will have at least "
+"the size defined ``Min ROI size``; if ``Rapid ROI on band`` is unchecked, "
+"then ROI could have a size smaller than ``Min ROI size``;"
+msgstr ""
+
+#: ../../roi_dock.rst:124
+msgid ""
+"``Max ROI width`` [P]: set the maximum width of a ROI (i.e. the side length "
+"of a square, centred at the seed pixel, which inscribes the ROI) in pixel "
+"unit;"
+msgstr ""
+
+#: ../../roi_dock.rst:125
+msgid ""
+"``Rapid ROI on band`` [P]: if checked, ROI is created using only the "
+"selected band of the ``Input image`` defined in the combo box (the process "
+"is quicker); if unchecked, ROI is the result of the intersection between "
+"ROIs calculated using every band (the process is longer, but ROI is "
+"spectrally homogeneous on every band);"
+msgstr ""
+
+#: ../../roi_dock.rst:126
+msgid ""
+"``Automatic refresh ROI`` : create automatically a new ROI while ``Range "
+"radius`` , ``Min ROI size`` , or ``Max ROI width`` are changed;"
+msgstr ""
+
+#: ../../roi_dock.rst:127
+msgid ""
+"``Automatic plot`` : calculate automatically the ROI spectral signature and "
+"display it in the :ref:`spectral_signature_plot` (spectral signature has "
+"``MC Info = tempo_ROI``)."
+msgstr ""
+
+#: ../../roi_dock.rst:132
+msgid "ROI creation"
+msgstr ""
+
+#: ../../roi_dock.rst:137
+msgid ":guilabel:`ROI creation`"
+msgstr ""
+
+#: ../../roi_dock.rst:139
+msgid ""
+"ROI creation is used for creating ROI polygons; these ROIs are **temporary**"
+" until they are saved in the :ref:`training_shapefile` ."
+msgstr ""
+
+#: ../../roi_dock.rst:141
+msgid ""
+"[+]: recall the pointer for ROI creation using the region growing algorithm;"
+" **left click** on the map for creating the ROI: **right click** on the map "
+"for displaying the spectral signature of a pixel of the ``Input image``;"
+msgstr ""
+
+#: ../../roi_dock.rst:142
+msgid ""
+"[ ``Redo`` ]: create a new ROI using the region growing algorithm at the "
+"same point of the previous one;"
+msgstr ""
+
+#: ../../roi_dock.rst:143
+msgid ""
+"|manual|: create a ROI by manual drawing a polygon on the map; after "
+"clicking the button, left click on the map to define the ROI vertices and "
+"right click to define the last vertex closing the polygon;"
+msgstr ""
+
+#: ../../roi_dock.rst:144
+msgid "|multiple|: open the :ref:`multiple_rois_tab`;"
+msgstr ""
+
+#: ../../roi_dock.rst:145
+msgid ""
+"< ``Display cursor for`` > [P]: if the ROI creation pointer is active, "
+"display vegetation index values on the map; vegetation indices available in "
+"the combo box are NDVI (Normalized Difference Vegetation Index) and EVI "
+"(Enhanced Vegetation Index); NDVI requires the near-infrared and red bands; "
+"EVI requires the blue, near-infrared and red bands converted to reflectance;"
+" wavelengths must be defined in the :ref:`band_set_tab`;"
+msgstr ""
+
+#: ../../roi_dock.rst:146
+msgid "< ``Show`` >: show/hide the temporary ROI in the map;"
+msgstr ""
+
+#: ../../roi_dock.rst:147
+msgid "|zoom_to_ROI|: zoom to the last temporary ROI."
+msgstr ""
+
+#: ../../roi_dock.rst:161
+msgid "ROI Signature definition"
+msgstr ""
+
+#: ../../roi_dock.rst:166
+msgid ":guilabel:`ROI Signature definition`"
+msgstr ""
+
+#: ../../roi_dock.rst:168
+msgid ""
+"This allows for the definition of ROI's class and saving the temporary ROI "
+"to the :ref:`training_shapefile` ; in addition, it is possible to "
+"automatically calculate the ROI spectral signature and add it to the "
+":ref:`signature_list` ."
+msgstr ""
+
+#: ../../roi_dock.rst:170
+msgid "``MC ID`` [P]: ROI Macroclass ID [int];"
+msgstr ""
+
+#: ../../roi_dock.rst:171
+msgid "``MC Info`` [P]: ROI Macroclass information [text];"
+msgstr ""
+
+#: ../../roi_dock.rst:172
+msgid "``C ID`` [P]: ROI Class ID [int];"
+msgstr ""
+
+#: ../../roi_dock.rst:173
+msgid "``C Info`` [P]: ROI Class information [text];"
+msgstr ""
+
+#: ../../roi_dock.rst:174
+msgid ""
+"[ ``Save ROI`` ]: save the temporary ROI to the :ref:`training_shapefile` ;"
+msgstr ""
+
+#: ../../roi_dock.rst:175
+msgid ""
+"``Add sig. list`` [P]: if checked, the spectral signature is calculated (the"
+" ROI mean value, and standard deviation for each raster band, and the "
+"covariance matrix) while the ROI is saved to shapefile (it takes some time "
+"depending on the number of ``Input image`` bands);"
+msgstr ""
+
+#: ../../roi_dock.rst:176
+msgid ""
+"[ ``Undo`` ]: delete the last saved ROI from the :ref:`training_shapefile` ."
+msgstr ""
